@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Sito Prezzo Fisso — Base tecnica';
+const description = 'La base tecnica di Sito Prezzo Fisso è online.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="hero" aria-labelledby="page-title">
+    <div class="container">
+      <div class="hero-content">
+        <p class="eyebrow">Phase 0 completata</p>
+        <h1 id="page-title">La base del sito è online.</h1>
+        <p class="hero-copy">
+          Questa homepage provvisoria verifica la pipeline Astro, la build statica e la pubblicazione su
+          GitHub Pages.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

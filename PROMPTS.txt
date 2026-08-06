@@ -1,0 +1,376 @@
+PROMPT 01 — FOUNDATION
+======================
+
+Leggi VISION.md, AGENTS.md, ROADMAP.md e docs/SEO_STRATEGY.md.
+
+Per ora NON costruire il sito completo.
+
+Esegui esclusivamente la Phase 0 della roadmap:
+
+1. inizializza il progetto Astro;
+2. usa output statico;
+3. configura GitHub Pages;
+4. configura GitHub Actions per build e deploy automatici su push a main;
+5. configura il progetto per il dominio custom sitoprezzofisso.it;
+6. crea layout minimale;
+7. crea componente SEO di base;
+8. crea header/footer minimali;
+9. crea sitemap;
+10. crea robots.txt;
+11. crea 404;
+12. crea una homepage placeholder minimale che dimostri che build e deploy funzionano.
+
+Non implementare ancora:
+- design definitivo;
+- pagine commerciali complete;
+- verticali;
+- demo;
+- form;
+- articoli;
+- local SEO.
+
+Esegui npm run build.
+Correggi tutti gli errori.
+
+Aggiorna ROADMAP.md.
+Commit e push se possibile. https://github.com/anbar-dev/sitoprezzofisso.git, repo già creata, altrimenti dammi tu i comandi da eseguire in git cmd
+
+
+PROMPT 02 — DESIGN SYSTEM + HOMEPAGE
+====================================
+
+Leggi tutti i file di progetto.
+
+Lavora esclusivamente sulla Phase 1.
+
+Crea:
+- design system;
+- layout globale definitivo;
+- header;
+- footer;
+- homepage.
+
+Messaggio principale:
+"Sito web professionale. 399 €. Prezzo fisso."
+
+Il sito deve comunicare:
+- prezzo chiaro;
+- processo semplice;
+- comunicazione prevalentemente via email;
+- risultato professionale;
+- niente riunioni inutili;
+- niente sorprese sul prezzo.
+
+Non deve sembrare cheap né generato da AI.
+
+La homepage deve spiegare entro pochi secondi:
+- cosa vendiamo;
+- quanto costa;
+- per chi;
+- cosa include;
+- come funziona;
+- cosa succede se il progetto è più complesso.
+
+Non creare ancora verticali, articoli o demo complete.
+
+Controlla mobile e desktop.
+Esegui build.
+Aggiorna ROADMAP.md.
+Commit e push.
+
+
+PROMPT 03 — FUNNEL OFFERTA 399 €
+=================================
+
+Leggi tutti i file di progetto.
+
+Implementa esclusivamente:
+- /prezzi/
+- /come-funziona/
+- /faq/
+- /richiedi-sito/
+
+Definisci chiaramente cosa include il prodotto da 399 € e cosa è fuori scope.
+
+Crea un form progressivo che consenta di raccogliere quasi tutte le informazioni senza telefonate:
+- nome;
+- email;
+- telefono facoltativo;
+- attività;
+- sito attuale;
+- città/zona;
+- servizi;
+- descrizione;
+- logo sì/no;
+- foto sì/no;
+- WhatsApp sì/no;
+- preferenze colori facoltative;
+- siti di riferimento facoltativi;
+- note.
+
+Per ora usa un adapter/mock separato per il submit.
+Non aggiungere servizi esterni senza necessità.
+Non mettere secret nel frontend.
+
+Esegui build.
+Aggiorna ROADMAP.md.
+Commit e push.
+
+
+PROMPT 04 — FUNNEL PROGETTO AVANZATO
+====================================
+
+Leggi tutti i file di progetto.
+
+Implementa il secondo funnel:
+
+"Il tuo progetto non rientra nell'offerta da 399 €?
+Richiedi fino a 2 preventivi."
+
+Crea:
+- /progetto-su-misura/
+
+Campi:
+- tipologia progetto;
+- descrizione;
+- sito esistente;
+- tempistiche;
+- budget:
+  < 500 €
+  500-1.000 €
+  1.000-2.500 €
+  2.500-5.000 €
+  > 5.000 €
+- nome;
+- email;
+- telefono.
+
+Predisponi una configurazione partner separata, senza inventare partner reali.
+
+Prevedi consenso esplicito per trasmettere i dati necessari a massimo due professionisti partner.
+
+In development non inviare email reali.
+
+Esegui build.
+Aggiorna ROADMAP.md.
+Commit e push.
+
+
+PROMPT 05 — PRIMA VERTICALE: IDRAULICO
+======================================
+
+Leggi tutti i file di progetto.
+
+Crea UNA SOLA pagina verticale modello:
+- /sito-web-idraulico/
+
+Non creare ancora le altre professioni.
+
+La pagina deve essere specifica per un idraulico:
+- servizi tipici;
+- problemi commerciali;
+- struttura ideale del sito;
+- CTA;
+- WhatsApp;
+- richiesta sopralluogo/preventivo;
+- zone servite;
+- gallery lavori;
+- FAQ;
+- valore del sito per un artigiano.
+
+Deve essere una vera landing commerciale, non un articolo SEO gonfiato.
+
+Crea anche una prima demo di sito per idraulico con azienda chiaramente fittizia e marcata come DEMO.
+
+Non inventare recensioni reali.
+
+Fai una revisione critica della pagina e della demo prima di concludere.
+
+Esegui build.
+Aggiorna ROADMAP.md.
+Commit e push.
+
+
+PROMPT 06 — REVISIONE DEL MODELLO VERTICALE
+===========================================
+
+Rivedi /sito-web-idraulico/ e la relativa demo come se fossi:
+
+1. un idraulico poco tecnico;
+2. un SEO specialist;
+3. un CRO specialist;
+4. un web designer senior;
+5. un revisore che cerca segnali di contenuto generato automaticamente.
+
+Trova:
+- testi generici;
+- punti poco credibili;
+- CTA deboli;
+- parti troppo verbose;
+- problemi mobile;
+- elementi che fanno sembrare l'offerta scadente;
+- problemi SEO;
+- opportunità di miglioramento della demo.
+
+Implementa direttamente i miglioramenti.
+
+Non creare ancora altre professioni.
+
+Build, ROADMAP, commit e push.
+
+
+PROMPT 07 — PRIME ALTRE VERTICALI
+=================================
+
+Usa la pagina idraulico come riferimento QUALITATIVO, non come testo da copiare.
+
+Crea pagine realmente specifiche per:
+- imbianchino;
+- elettricista;
+- impresa edile;
+- serramentista.
+
+Per ciascuna differenzia:
+- struttura;
+- servizi;
+- funzionalità;
+- problemi;
+- esempi;
+- FAQ;
+- CTA.
+
+Non limitarti a sostituire il nome della professione.
+
+Crea demo solo se il risultato rimane curato; in caso contrario crea prima le landing e aggiorna ROADMAP.md con le demo ancora da fare.
+
+Esegui audit duplicazioni.
+Build, ROADMAP, commit e push.
+
+
+PROMPT 08 — ALTRE VERTICALI
+===========================
+
+Dopo aver verificato la qualità delle prime verticali, aggiungi:
+- falegname;
+- giardiniere;
+- geometra;
+- termoidraulico;
+- impresa pulizie.
+
+Mantieni contenuti realmente distinti.
+
+Controlla title, description, internal linking e duplicazioni.
+
+Build, ROADMAP, commit e push.
+
+
+PROMPT 09 — CONTENUTI PREZZO / INTENTO COMMERCIALE
+===================================================
+
+Crea contenuti utili e commerciali per questi intenti:
+- quanto costa un sito web;
+- costo sito web per artigiano;
+- sito web a prezzo fisso;
+- sito vetrina prezzi;
+- sito web senza abbonamento;
+- quanto costa mantenere un sito web;
+- sito web o pagina Facebook;
+- cosa deve avere il sito di un artigiano.
+
+Ogni pagina deve avere un intento distinto.
+
+Non allungare artificialmente i testi.
+Non fare keyword stuffing.
+
+Collega sempre in modo naturale alle pagine commerciali e alle verticali pertinenti.
+
+Build, audit SEO, ROADMAP, commit e push.
+
+
+PROMPT 10 — DEMO
+================
+
+Completa demo curate per:
+- idraulico;
+- imbianchino;
+- elettricista;
+- impresa edile;
+- serramentista.
+
+Le demo devono sembrare siti realmente vendibili a 399 €, ma essere chiaramente indicate come demo.
+
+Niente aziende reali inventate.
+Niente recensioni attribuite a persone reali.
+Niente claim falsi.
+
+Ottimizza anche la pagina /demo/.
+
+Build, ROADMAP, commit e push.
+
+
+PROMPT 11 — AUDIT PRE-LANCIO
+============================
+
+Esegui una revisione indipendente dell'intero sito come:
+
+- SEO tecnico;
+- CRO specialist;
+- designer senior;
+- potenziale cliente;
+- revisore anti-spam.
+
+Controlla:
+- pagine troppo simili;
+- contenuti generici;
+- title/meta duplicati;
+- canonical;
+- sitemap;
+- robots;
+- 404;
+- broken links;
+- internal linking;
+- mobile;
+- accessibilità;
+- Core Web Vitals;
+- CTA;
+- percezione del prezzo;
+- chiarezza dello scope;
+- privacy;
+- eventuali claim non verificabili.
+
+Correggi tutto ciò che è ragionevole.
+
+Build, ROADMAP, commit e push.
+
+
+PROMPT 12 — ANALISI SEARCH CONSOLE
+==================================
+
+Usa questo prompt solo quando saranno disponibili dati reali di Search Console.
+
+Analizza i dati Search Console forniti.
+
+Non creare pagine sulla base di brainstorming.
+
+Trova:
+- query con impression in crescita;
+- query posizione 8-30;
+- query con impression ma CTR basso;
+- query che la pagina attuale soddisfa male;
+- cluster di query con intento distinto.
+
+Per ciascuna opportunità indica:
+1. query;
+2. impression;
+3. posizione;
+4. URL attuale;
+5. intervento consigliato;
+6. nuova pagina solo se realmente necessaria.
+
+Implementa le 5 opportunità con maggiore rapporto potenziale/lavoro.
+
+Non creare doorway pages.
+Non generare professione × città automaticamente.
+
+Aggiorna internal linking e sitemap.
+Build, ROADMAP, commit e push.

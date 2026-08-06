@@ -1,0 +1,131 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #17212b;
+  background: #f7f8fa;
+  line-height: 1.6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: min(100% - 2rem, 68rem);
+  margin-inline: auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 10;
+  padding: 0.5rem 0.75rem;
+  color: #fff;
+  background: #17212b;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.site-header {
+  border-bottom: 1px solid #dfe4e8;
+  background: #fff;
+}
+
+.header-inner,
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4rem;
+}
+
+.brand {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  text-decoration: underline;
+}
+
+.hero {
+  display: grid;
+  min-height: 60vh;
+  place-items: center;
+  padding-block: 4rem;
+}
+
+.hero-content {
+  width: min(100%, 42rem);
+  padding: 2rem;
+  border: 1px solid #dfe4e8;
+  border-radius: 0.75rem;
+  background: #fff;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: #566574;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 16ch;
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3.75rem);
+  line-height: 1.05;
+}
+
+.hero-copy {
+  max-width: 38rem;
+  margin-bottom: 0;
+  color: #566574;
+  font-size: 1.125rem;
+}
+
+.site-footer {
+  border-top: 1px solid #dfe4e8;
+  color: #566574;
+  background: #fff;
+  font-size: 0.875rem;
+}
+
+.footer-inner {
+  min-height: 4.5rem;
+}
+
+.footer-inner p {
+  margin-block: 0;
+}
+
+@media (max-width: 38rem) {
+  .footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 1rem;
+  }
+}
