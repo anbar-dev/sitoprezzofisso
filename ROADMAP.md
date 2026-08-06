@@ -17,11 +17,11 @@
 
 ## Phase 1 — Design + Homepage
 
-- [ ] Definire design system
-- [ ] Creare homepage commerciale
-- [ ] Validare messaggio principale
-- [ ] Validare visual mobile
-- [ ] Validare percezione del prezzo 399 €
+- [x] Definire design system
+- [x] Creare homepage commerciale
+- [x] Validare messaggio principale
+- [x] Validare visual mobile
+- [x] Validare percezione del prezzo 399 €
 
 ## Phase 2 — Funnel base
 
