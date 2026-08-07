@@ -20,6 +20,14 @@ const { title, description, canonical, noindex = false, chrome = true } = Astro.
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-2MEEQBGW8S"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2MEEQBGW8S');
+    </script>
     <SEO {title} {description} {canonical} {noindex} />
   </head>
   <body>

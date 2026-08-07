@@ -31,7 +31,7 @@
 - [x] `/richiedi-sito/`
 - [x] Form asincrono
 - [x] Invio email reale verso Andrea con filtro antispam di base
-- [ ] Tracking eventi predisposto
+- [x] Google Analytics 4 base inserito nel layout comune; tracking eventi ancora da definire
 - [x] Privacy base predisposta con consenso esplicito
 - [x] Chiarire homepage, limiti dell'offerta e percorso avanzato
 - [x] Creare `/chi-siamo/` con presentazione del developer e del modo di lavorare
