@@ -8,6 +8,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
 
 <BaseLayout {title} {description} {canonical} noindex chrome={false}>
   <div class="demo-page">
+    <nav class="demo-floating-actions" aria-label="Azioni principali del sito dimostrativo">
+      <a class="demo-floating-back" href="/sito-web-idraulico/"><span aria-hidden="true">←</span> Indietro</a>
+      <a class="demo-floating-contact" href="/richiedi-sito/">Ottieni il tuo sito <span aria-hidden="true">→</span></a>
+    </nav>
     <div class="demo-banner">
       <div class="container demo-banner-inner">
         <strong>SITO DIMOSTRATIVO — esempio di progetto</strong>

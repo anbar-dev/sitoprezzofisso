@@ -67,7 +67,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
     <div class="container closing-inner">
       <p class="eyebrow">Prossimo passo</p>
       <h2 id="closing-title">Se il perimetro ti torna, partiamo dalle informazioni giuste.</h2>
-      <a class="button button--primary" href="/richiedi-sito/">Compila la richiesta <span aria-hidden="true">→</span></a>
+      <div class="button-row">
+        <a class="button button--primary" href="/richiedi-sito/">Compila la richiesta <span aria-hidden="true">→</span></a>
+        <a class="button button--dark" href="/progetto-su-misura/">Vai al progetto avanzato <span aria-hidden="true">→</span></a>
+      </div>
     </div>
   </section>
 </BaseLayout>

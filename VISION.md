@@ -134,3 +134,5 @@ Il proprietario deve intervenire soprattutto per:
 - decisioni commerciali;
 - gestione clienti;
 - approvazione di modifiche importanti.
+
+La procedura riutilizzabile per creare pagine verticali e siti dimostrativi è descritta nel [Vertical Page Playbook](docs/VERTICAL_PAGE_PLAYBOOK.md).

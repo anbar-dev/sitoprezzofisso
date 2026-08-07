@@ -117,3 +117,5 @@ Preferire asset linkabili:
 ## Principio guida
 
 Meglio 30 pagine utili che 3.000 pagine programmatiche senza valore.
+
+Per la progettazione e la verifica delle future pagine verticali, seguire il [Vertical Page Playbook](VERTICAL_PAGE_PLAYBOOK.md).

@@ -120,3 +120,5 @@ Non avviare prima di Phase 8.
 - [ ] Nuove demo
 - [ ] Case study reali
 - [ ] Automazioni post-vendita
+
+Guida per future sales page e demo: [Vertical Page Playbook](docs/VERTICAL_PAGE_PLAYBOOK.md).

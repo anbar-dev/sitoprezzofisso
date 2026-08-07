@@ -73,7 +73,6 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
             <label>Note <span class="label-note">facoltative</span><textarea name="note" rows="6" placeholder="Esigenze particolari, pagine indispensabili, dubbi…"></textarea></label>
             <label class="checkbox-label"><input name="consenso-contatto" type="checkbox" required /> <span>Acconsento a essere ricontattato per valutare questa richiesta. *</span></label>
           </div>
-          <p class="privacy-note">La richiesta viene inviata ad Andrea tramite FormSubmit, un servizio esterno di ricezione email. Il filtro antispam è attivo e, al primo invio, il servizio potrebbe chiedere di confermare l’indirizzo. I dati vengono usati per rispondere alla richiesta.</p>
         </fieldset>
 
         <div class="form-status" data-form-status role="status" aria-live="polite" hidden></div>
