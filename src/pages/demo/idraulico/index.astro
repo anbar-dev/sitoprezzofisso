@@ -1,8 +1,8 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 
-const title = 'Demo sito web per idraulico a Milano | Sito Prezzo Fisso';
-const description = 'Demo dichiarata di un sito web per idraulico a Milano e dintorni: servizi, interventi, zona coperta, fotografie e richiesta di sopralluogo.';
+const title = 'Sito dimostrativo per idraulico a Milano | Sito Prezzo Fisso';
+const description = 'Sito dimostrativo per un’attività idraulica a Milano e dintorni: servizi, interventi, zona coperta, fotografie e richiesta di sopralluogo.';
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
 ---
 
@@ -10,7 +10,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
   <div class="demo-page">
     <div class="demo-banner">
       <div class="container demo-banner-inner">
-        <strong>DEMO — progetto dimostrativo</strong>
+        <strong>SITO DIMOSTRATIVO — esempio di progetto</strong>
         <span>Nome, contatti e disponibilità sono segnaposto. Le fotografie sono asset locali con licenza Unsplash.</span>
         <a href="/sito-web-idraulico/">Torna alla pagina per idraulici →</a>
       </div>
@@ -18,11 +18,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
 
     <header class="demo-site-hero">
       <div class="container demo-site-nav">
-        <a class="demo-brand" href="#demo-title" aria-label="Idraulica Milano, demo">
+        <a class="demo-brand" href="#demo-title" aria-label="Idraulica Milano, sito dimostrativo">
           <span class="demo-brand-mark">IM</span>
-          <span>Idraulica Milano <small>DEMO</small></span>
+          <span>Idraulica Milano <small>SITO DIMOSTRATIVO</small></span>
         </a>
-        <nav aria-label="Navigazione demo">
+        <nav aria-label="Navigazione sito dimostrativo">
           <a href="#servizi-demo">Servizi</a>
           <a href="#come-lavoriamo-demo">Come lavoriamo</a>
           <a href="#zone-demo">Zone</a>
@@ -34,9 +34,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
 
       <div class="container demo-hero-grid">
         <div class="demo-hero-copy">
-          <p class="demo-eyebrow">SERVIZI IDRAULICI · MILANO E HINTERLAND · DEMO</p>
+          <p class="demo-eyebrow">SERVIZI IDRAULICI · MILANO E HINTERLAND · SITO DIMOSTRATIVO</p>
           <h1 id="demo-title">Interventi idraulici per casa, ufficio e condominio.</h1>
-          <p>Riparazioni, sostituzioni e manutenzione ordinaria, presentate in modo chiaro. Il cliente capisce subito il servizio, la zona e come chiedere una valutazione.</p>
+          <p>Riparazioni, sostituzioni e manutenzione ordinaria per casa, ufficio e condominio. Indichiamo subito cosa facciamo, dove interveniamo e come contattarci.</p>
           <div class="demo-button-row">
             <a class="demo-button demo-button--solid" href="/richiedi-sito/">Richiedi un sopralluogo</a>
             <a class="demo-button demo-button--outline" href="#servizi-demo">Vedi i servizi</a>
@@ -65,12 +65,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
 
     <section class="demo-section demo-section--light" id="servizi-demo" aria-labelledby="demo-services-title">
       <div class="container">
-        <div class="demo-section-heading demo-section-heading--split">
+        <div class="demo-section-heading">
           <div>
             <p class="demo-eyebrow">Servizi</p>
-            <h2 id="demo-services-title">Un elenco concreto aiuta a capire se è il professionista giusto.</h2>
+            <h2 id="demo-services-title">Servizi idraulici per casa, ufficio e condominio.</h2>
           </div>
-          <p>La pagina non deve sembrare un catalogo generico. Deve rispondere ai problemi che una persona cerca davvero quando ha un guasto o deve sostituire un elemento.</p>
         </div>
 
         <div class="demo-service-grid demo-service-grid--detailed">
@@ -132,8 +131,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
       <div class="container demo-feature-grid">
         <figure class="demo-feature-image"><img src="/images/demo-idraulico/tubazioni-lavabo.jpg" alt="Tubazioni e valvola sotto un lavabo" loading="lazy" /><figcaption>Un dettaglio dell’impianto può aiutare a capire il problema.</figcaption></figure>
         <div class="demo-feature-copy">
-          <p class="demo-eyebrow">Una richiesta utile</p>
-          <h2 id="demo-brief-title">Meno messaggi generici, più informazioni pratiche.</h2>
+          <p class="demo-eyebrow">Prima dell’intervento</p>
+          <h2 id="demo-brief-title">Raccogliamo le informazioni utili.</h2>
           <p>Per una prima valutazione è utile sapere dove si trova il problema, se l’acqua perde o non defluisce, se l’intervento riguarda un bagno o una cucina e quali elementi sono già stati sostituiti.</p>
           <ul class="demo-check-list"><li>ambiente interessato;</li><li>tipo di guasto o intervento;</li><li>zona di Milano o comune dell’hinterland;</li><li>foto del punto interessato, se disponibili.</li></ul>
           <a class="demo-inline-link" href="/richiedi-sito/">Inserisci queste informazioni nel form →</a>
@@ -146,23 +145,22 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
         <div>
           <p class="demo-eyebrow">Zona di intervento</p>
           <h2 id="demo-zone-title">Milano e comuni dell’hinterland.</h2>
-          <p>In un sito reale questa sezione va adattata alle zone effettivamente coperte, senza promettere disponibilità dove non c’è.</p>
+          <p>Milano e i comuni dell’hinterland indicati qui sotto sono un esempio di area coperta. Inserisci la tua zona nel modulo per verificare la disponibilità.</p>
         </div>
         <div class="demo-area-list">
           <span>Milano</span><span>Sesto San Giovanni</span><span>Cinisello Balsamo</span><span>Rho</span><span>Corsico</span><span>Monza</span><span>Cologno Monzese</span><span>Rozzano</span>
-          <small>Elenco dimostrativo: da sostituire con la zona reale dell’attività.</small>
+          <small>Esempio di area coperta</small>
         </div>
       </div>
     </section>
 
     <section class="demo-section demo-section--light" id="lavori-demo" aria-labelledby="demo-work-title">
       <div class="container">
-        <div class="demo-section-heading demo-section-heading--split">
+        <div class="demo-section-heading">
           <div>
-            <p class="demo-eyebrow">Fotografie</p>
-            <h2 id="demo-work-title">Immagini diverse per mostrare ambienti, componenti e interventi.</h2>
+            <p class="demo-eyebrow">Interventi</p>
+            <h2 id="demo-work-title">I nostri interventi.</h2>
           </div>
-          <p>La gallery può alternare lavori, dettagli tecnici e contesti domestici. Niente fotografie decorative senza rapporto con il servizio.</p>
         </div>
         <div class="demo-work-grid demo-work-grid--gallery">
           <figure class="demo-work-card demo-work-card--wide"><img src="/images/demo-idraulico/idraulico-intervento.jpg" alt="Tecnico al lavoro su tubazioni in un bagno" loading="lazy" /><figcaption>Intervento su impianto bagno</figcaption></figure>
@@ -183,9 +181,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
         </div>
         <div class="demo-faq-list">
           <details open><summary>Quali informazioni devo inviare?</summary><p>Descrizione del problema, comune, ambiente interessato e una fotografia del punto, se possibile. Per una sostituzione, indica anche il prodotto o l’elemento da cambiare.</p></details>
-          <details><summary>Fate anche piccoli interventi?</summary><p>Il sito può distinguere riparazioni, sostituzioni e lavori più ampi, così l’attività riceve richieste coerenti con il proprio lavoro reale.</p></details>
+          <details><summary>Fate anche piccoli interventi?</summary><p>Sì, indichiamo in anticipo se accettiamo piccoli interventi e quali lavori possiamo valutare.</p></details>
           <details><summary>È possibile chiedere un sopralluogo?</summary><p>Sì, il modulo può raccogliere le informazioni necessarie per capire se il sopralluogo è il passaggio corretto.</p></details>
-          <details><summary>Quali comuni sono coperti?</summary><p>La zona deve essere sempre aggiornata e reale. In questa demo mostriamo Milano e alcuni comuni dell’hinterland solo come esempio di struttura.</p></details>
+          <details><summary>Quali comuni sono coperti?</summary><p>La zona deve essere sempre aggiornata e reale. In questo sito dimostrativo mostriamo Milano e alcuni comuni dell’hinterland solo come esempio di struttura.</p></details>
         </div>
       </div>
     </section>
@@ -195,7 +193,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
         <div>
           <p class="demo-eyebrow">Richiesta di contatto</p>
           <h2 id="demo-contact-title">Spiega il problema e indica la zona.</h2>
-          <p>Questa demo non raccoglie richieste per un idraulico reale. Il pulsante apre il modulo del progetto, utile per provare il flusso e vedere come potrebbe essere collegato.</p>
+          <p>Questo sito dimostrativo non raccoglie richieste per un idraulico reale. Il pulsante apre il modulo del progetto, così puoi vedere come potrebbe funzionare per la tua attività.</p>
         </div>
         <div class="demo-contact-card">
           <div class="demo-contact-preview"><span>RICHIESTA SOPRALLUOGO</span><strong>Milano e dintorni</strong><p>Problema, zona, contatto e fotografie: pochi dati, ma quelli che servono davvero.</p></div>
@@ -208,7 +206,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
 
     <footer class="demo-footer">
       <div class="container demo-footer-inner">
-        <span>Idraulica Milano · demo dimostrativa</span>
+        <span>Idraulica Milano · sito dimostrativo</span>
         <div><a href="/richiedi-sito/">Vuoi un sito simile? Richiedi il tuo →</a><small>Foto: <a href="https://unsplash.com/photos/a-plumber-repairs-plumbing-in-a-bathroom-jaP5ClBdIyU" rel="noreferrer">Unsplash</a></small></div>
       </div>
     </footer>

@@ -58,7 +58,7 @@ Nota: il funnel avanzato invia la richiesta ad Andrea, ma non inoltra automatica
 - [x] Usare questa pagina come modello qualitativo, non come copia automatica
 - [x] Revisionare pagina e demo per chiarezza, SEO, conversione, responsive e segnali di contenuto automatico
 
-Nota: la demo idraulico è chiaramente marcata come DEMO, usa una struttura locale per Milano e hinterland solo a scopo dimostrativo, più immagini locali con licenza Unsplash, e non contiene recensioni, clienti, sedi o claim reali.
+Nota: il sito dimostrativo per idraulici è chiaramente marcato come esempio, usa Milano e hinterland solo a scopo dimostrativo, riutilizza fotografie locali con licenza Unsplash nella pagina verticale e nella pagina dimostrativa, e non contiene recensioni, clienti, sedi o claim reali.
 
 ## Phase 5 — Prime verticali
 

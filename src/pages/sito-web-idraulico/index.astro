@@ -15,12 +15,12 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
         <p class="vertical-lead">Servizi chiari, zona di intervento, richiesta di preventivo e contatto rapido: le informazioni che un cliente cerca prima di chiamare.</p>
         <div class="button-row">
           <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
-          <a class="text-link vertical-light-link" href="/demo/idraulico/">Guarda la demo <span aria-hidden="true">↗</span></a>
+          <a class="text-link vertical-light-link" href="/demo/idraulico/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a>
         </div>
         <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/prezzi/">Vedi cosa include</a></p>
       </div>
       <aside class="vertical-hero-card" aria-label="Esempio di struttura per un sito di idraulico">
-        <span class="vertical-demo-badge">Struttura tipo</span>
+        <span class="vertical-demo-badge">Sito dimostrativo</span>
         <div class="vertical-hero-card-head"><span>INTERVENTI IDRAULICI</span><span aria-hidden="true">01</span></div>
         <strong>Prima il problema.<br />Poi la soluzione.</strong>
         <ul class="mini-check-list"><li>Servizi comprensibili</li><li>Zone servite in evidenza</li><li>Richiesta preventivo</li></ul>
@@ -30,6 +30,21 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
 
   <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
     <div class="container vertical-intro-grid"><span><b>01</b> Cosa risolvi</span><span><b>02</b> Dove intervieni</span><span><b>03</b> Come contattarti</span></div>
+  </section>
+
+  <section class="section section--paper vertical-demo-promo" aria-labelledby="demo-promo-title">
+    <div class="container vertical-demo-promo-grid">
+      <div>
+        <p class="eyebrow">Sito dimostrativo</p>
+        <h2 id="demo-promo-title">Vuoi vedere un esempio completo?</h2>
+        <p>Abbiamo preparato una pagina dimostrativa per un’attività idraulica: servizi, fotografie, comuni serviti, domande frequenti e richiesta di contatto.</p>
+        <a class="button button--dark" href="/demo/idraulico/">Apri il sito dimostrativo <span aria-hidden="true">↗</span></a>
+      </div>
+      <a class="vertical-demo-promo-image" href="/demo/idraulico/" aria-label="Apri il sito dimostrativo per idraulici">
+        <img src="/images/demo-idraulico/idraulico-intervento.jpg" alt="Esempio di intervento idraulico mostrato nel sito dimostrativo" loading="lazy" />
+        <span>Apri il sito dimostrativo →</span>
+      </a>
+    </div>
   </section>
 
   <section class="section section--white" aria-labelledby="why-title">
@@ -73,13 +88,13 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
 
   <section class="section section--white" aria-labelledby="gallery-title">
     <div class="container">
-      <div class="vertical-section-heading vertical-section-heading--split"><div><p class="eyebrow">Gallery lavori</p><h2 id="gallery-title">Le immagini devono dimostrare il lavoro, non riempire spazio.</h2></div><p>La demo mostra la struttura. Nel sito reale inseriremo solo fotografie disponibili e pertinenti: installazioni, dettagli, prima/dopo o attrezzatura.</p></div>
+      <div class="vertical-section-heading vertical-section-heading--split"><div><p class="eyebrow">Immagini del sito dimostrativo</p><h2 id="gallery-title">Guarda come possono essere presentati gli interventi.</h2></div><a class="button button--dark" href="/demo/idraulico/">Apri il sito dimostrativo <span aria-hidden="true">↗</span></a></div>
       <div class="vertical-gallery-grid">
-        <article class="vertical-gallery-card"><div class="gallery-visual gallery-visual--pipe"><span>FOTO LAVORO</span></div><p>Installazione o riparazione</p></article>
-        <article class="vertical-gallery-card"><div class="gallery-visual gallery-visual--tap"><span>FOTO LAVORO</span></div><p>Dettaglio di una finitura</p></article>
-        <article class="vertical-gallery-card"><div class="gallery-visual gallery-visual--tool"><span>FOTO LAVORO</span></div><p>Attrezzatura e intervento</p></article>
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-idraulico/idraulico-intervento.jpg" alt="Idraulico al lavoro in un bagno" loading="lazy" /></div><p>Intervento su impianto bagno</p></article>
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-idraulico/tubazioni-lavabo.jpg" alt="Tubazioni e valvola sotto un lavabo" loading="lazy" /></div><p>Controllo di tubazioni e valvole</p></article>
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-idraulico/rubinetto-acqua.jpg" alt="Rubinetteria della cucina" loading="lazy" /></div><p>Rubinetteria e sostituzioni</p></article>
       </div>
-      <p class="gallery-note">Nella demo le immagini sono segnaposto: non rappresentano lavori reali e non sono attribuite a un'azienda reale.</p>
+      <p class="gallery-note">Le immagini fanno parte del sito dimostrativo e sono accompagnate da una nota chiara: non rappresentano lavori di un’azienda reale.</p>
     </div>
   </section>
 
@@ -104,13 +119,13 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
         <details open><summary>Quali servizi dovrebbe mostrare un idraulico?</summary><p>Quelli che vuoi davvero ricevere: riparazioni, perdite, scarichi, installazioni, manutenzione o sopralluoghi. Meglio pochi servizi spiegati bene che un elenco generico.</p></details>
         <details><summary>Devo indicare le zone servite?</summary><p>Sì, se lavori in un'area definita. Inserire comuni o provincia aiuta il cliente a capire subito se può contattarti.</p></details>
         <details><summary>Posso ricevere richieste via WhatsApp?</summary><p>Sì, il sito può avere un pulsante WhatsApp. È importante usare un numero dedicato o comunque gestibile anche durante gli interventi.</p></details>
-        <details><summary>Posso inserire foto dei lavori?</summary><p>Sì. Le foto reali aiutano a rendere credibile il servizio; nella demo usiamo solo segnaposto dichiarati.</p></details>
+        <details><summary>Posso inserire foto dei lavori?</summary><p>Sì. Le foto reali aiutano a rendere credibile il servizio; nel sito dimostrativo puoi vedere come possono essere organizzate.</p></details>
         <details><summary>Quanto costa il modello per idraulico?</summary><p>La pagina rientra nell'offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
       </div>
     </div>
   </section>
 
   <section class="closing-cta" aria-labelledby="vertical-closing-title">
-    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online servizi, zona e modo di contattarti.</h2><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per la tua attività <span aria-hidden="true">→</span></a></div>
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online servizi, zona e modo di contattarti.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per la tua attività <span aria-hidden="true">→</span></a><a class="button button--dark" href="/demo/idraulico/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a></div></div>
   </section>
 </BaseLayout>
