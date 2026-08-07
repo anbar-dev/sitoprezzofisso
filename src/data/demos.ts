@@ -63,4 +63,13 @@ export const demoSites: DemoSite[] = [
     verticalPath: '/sito-web-serramentista/',
     verticalLabel: 'Scopri il modello per serramentisti',
   },
+  {
+    slug: 'falegname',
+    title: 'Falegname',
+    summary: 'Arredi su misura, cucine, librerie e lavorazioni in legno.',
+    image: '/images/demo-falegname/falegname-hero.webp',
+    imageAlt: "Falegname che allinea l'anta di un mobile su misura",
+    verticalPath: '/sito-web-falegname/',
+    verticalLabel: 'Scopri il modello per falegnami',
+  },
 ];

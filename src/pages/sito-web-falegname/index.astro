@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Sito web per falegname a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Un sito web professionale per falegnami: arredi su misura, cucine, librerie, riparazioni e richiesta di sopralluogo, con un prezzo base di 399 €.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="vertical-hero" aria-labelledby="page-title">
+    <div class="container vertical-hero-grid">
+      <div>
+        <p class="eyebrow vertical-eyebrow">Modello per falegnami</p>
+        <h1 id="page-title">Il sito web per il tuo lavoro da falegname. Fai vedere il su misura, 399 €.</h1>
+        <p class="vertical-lead">Arredi, cucine, librerie, porte e riparazioni: il cliente capisce che cosa puoi realizzare, come iniziare e quali informazioni inviarti.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link vertical-light-link" href="/demo/falegname/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/prezzi/">Vedi cosa comprende</a></p>
+      </div>
+      <aside class="vertical-hero-card" aria-label="Esempio di struttura per il sito di un falegname">
+        <span class="vertical-demo-badge">Struttura esempio</span>
+        <div class="vertical-hero-card-head"><span>ARREDI SU MISURA</span><span aria-hidden="true">01</span></div>
+        <strong>Fai vedere il progetto.<br />Poi raccogli le misure utili.</strong>
+        <ul class="mini-check-list">
+          <li>Lavorazioni distinte</li>
+          <li>Materiali e dettagli</li>
+          <li>Richiesta di sopralluogo</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
+    <div class="container vertical-intro-grid"><span><b>01</b> Che cosa realizzi</span><span><b>02</b> Per quale ambiente</span><span><b>03</b> Che cosa inviare</span></div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="why-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">Il cliente deve capire quando serve un lavoro su misura.</h2></div>
+      <div class="vertical-copy"><p>Chi cerca un falegname può avere una nicchia da sfruttare, una cucina da completare, una libreria da adattare o un mobile da riparare.</p><p>Un sito utile non trasforma ogni richiesta in un preventivo automatico: mostra il tipo di lavoro, spiega il modo di iniziare e raccoglie foto e misure indicative.</p></div>
+    </div>
+    <div class="container vertical-problem-grid">
+      <article class="vertical-card"><span>01</span><h3>Il su misura è difficile da immaginare</h3><p>Foto di dettagli, materiali e ambienti aiutano a capire il risultato senza promettere un progetto identico per tutti.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Richieste senza dimensioni</h3><p>Stanza, ingombri e fotografie già disponibili permettono di arrivare al primo contatto con una descrizione più utile.</p></article>
+      <article class="vertical-card"><span>03</span><h3>Servizi troppo generici</h3><p>Separare arredi, cucine, porte e riparazioni fa capire quale tipo di lavoro vuoi davvero valutare.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="services-title">
+    <div class="container">
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Lavorazioni riconoscibili, non un elenco di legni.</h2><p>Una selezione concreta aiuta il cliente a capire se il tuo modo di lavorare è adatto al progetto.</p></div>
+      <div class="vertical-service-grid">
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Arredi su misura</h3><p>Nicchie, mobili contenitori e soluzioni integrate da progettare in base allo spazio e all'uso quotidiano.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Cucine e complementi</h3><p>Elementi, ante, mensole e completamenti da valutare partendo da misure, impianti e materiali scelti.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Librerie e boiserie</h3><p>Composizioni a parete, scaffalature e rivestimenti pensati per seguire proporzioni e caratteristiche dell'ambiente.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Porte e pannellature</h3><p>Porte interne, scorrevoli, rivestimenti e pannelli da verificare in base ai vani e alla posa necessaria.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Riparazioni e modifiche</h3><p>Restauro leggero, sostituzione di elementi o adattamenti da valutare dopo aver visto il mobile e il problema.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Sopralluogo e preventivo</h3><p>Raccogli ambiente, zona, uso previsto, fotografie e misure indicative prima di definire il passo successivo.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="content-title">
+    <div class="container vertical-two-column vertical-two-column--dark">
+      <div class="vertical-heading"><p class="eyebrow">Contenuti che fanno chiarezza</p><h2 id="content-title">Un buon progetto parte dallo spazio reale.</h2></div>
+      <div class="vertical-structure-list">
+        <div><span>01</span><p><strong>Ambiente:</strong> cucina, soggiorno, ingresso, camera o spazio di lavoro.</p></div>
+        <div><span>02</span><p><strong>Esigenza:</strong> contenere, separare, completare o riparare un elemento esistente.</p></div>
+        <div><span>03</span><p><strong>Ingombri:</strong> dimensioni indicative, accessi e vincoli già conosciuti.</p></div>
+        <div><span>04</span><p><strong>Materiali:</strong> preferenze, fotografie e riferimenti disponibili, senza presentare una scelta definitiva.</p></div>
+        <div><span>05</span><p><strong>Zona:</strong> comuni o provincia realmente serviti, senza promettere consegne o posa fuori area.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="structure-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Dall'ambiente da risolvere alla richiesta di sopralluogo.</h2></div>
+      <div class="vertical-copy"><p>Per un falegname il sito deve far vedere il dettaglio e il risultato, senza fingere che un mobile su misura si possa quotare senza misure, materiali e confronto sul posto.</p><ul class="plain-list"><li>apertura con attività, zona e contatto;</li><li>lavorazioni distinte per arredi, cucine e riparazioni;</li><li>foto reali di dettagli, ambienti e finiture;</li><li>nota chiara su progetto, materiali e preventivo.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="contact-title">
+    <div class="container vertical-contact-grid">
+      <div><p class="eyebrow">Contatto pensato per il mestiere</p><h2 id="contact-title">Raccogli lo spazio, senza promettere un prezzo prima del rilievo.</h2></div>
+      <div><p>Il modulo può chiedere comune, ambiente, uso previsto, dimensioni indicative, materiali preferiti e fotografie già disponibili. Il preventivo dipende sempre dal progetto e dalla verifica reale.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/progetto-su-misura/">Se il progetto è più ampio <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="value-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il valore per il falegname</p><h2 id="value-title">Un punto ordinato per spiegare il su misura e come iniziare.</h2></div>
+      <div class="vertical-copy"><p>Il sito non sostituisce il disegno, il campionario o il rilievo. Aiuta però il cliente a capire se il servizio è pertinente e ad arrivare al contatto con una richiesta meno vaga.</p><ul class="plain-list"><li>separi arredi completi e interventi puntuali;</li><li>indichi prima la zona e il tipo di ambiente;</li><li>mostri dettagli reali invece di un catalogo impersonale;</li><li>raccogli dati utili senza trasformare il modulo in un progetto tecnico.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="vertical-faq-title">
+    <div class="container faq-layout vertical-faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="vertical-faq-title">Prima di chiedere il sito.</h2><p>Le risposte aiutano a preparare contenuti utili senza trasformare la pagina in un preventivo automatico.</p></div>
+      <div class="faq-list">
+        <details open><summary>Quali servizi dovrebbe mostrare un falegname?</summary><p>Quelli che vuoi davvero ricevere: arredi su misura, cucine, librerie, boiserie, porte, complementi, riparazioni o modifiche. Meglio dividerli in modo concreto che usare una voce generica come “lavori in legno”.</p></details>
+        <details><summary>Posso pubblicare foto di mobili già realizzati?</summary><p>Sì, se sono immagini tue e puoi pubblicarle. Accompagnale con una descrizione reale dell'ambiente, della lavorazione e dei materiali, senza inventare clienti o risultati.</p></details>
+        <details><summary>Il modulo può chiedere le misure?</summary><p>Può raccogliere dimensioni indicative, fotografie e vincoli già conosciuti, chiarendo che il progetto definitivo richiede rilievo e confronto.</p></details>
+        <details><summary>Devo indicare i materiali disponibili?</summary><p>Puoi presentare i materiali e le finiture che utilizzi davvero. La scelta definitiva dipende dal progetto, dal budget e dalla disponibilità reale.</p></details>
+        <details><summary>Quanto costa il modello per falegname?</summary><p>La pagina rientra nell'offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="vertical-closing-title">
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online lavorazioni, materiali e modo di chiedere un sopralluogo.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per la tua attività <span aria-hidden="true">→</span></a><a class="button button--dark" href="/demo/falegname/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+</BaseLayout>

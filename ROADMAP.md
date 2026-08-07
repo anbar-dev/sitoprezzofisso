@@ -68,7 +68,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] sito web per elettricista
 - [x] sito web per impresa edile
 - [x] sito web per serramentista
-- [ ] sito web per falegname
+- [x] sito web per falegname
 - [x] sito web per giardiniere
 - [ ] sito web per geometra
 - [ ] sito web per termoidraulico
@@ -85,6 +85,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] Creare hub `/demo/` e collegare gli esempi da navigazione, homepage e footer
 - [x] Demo impresa edile
 - [x] Demo serramentista
+- [x] Demo falegname
 
 ## Phase 7 — Contenuti commerciali SEO
 
