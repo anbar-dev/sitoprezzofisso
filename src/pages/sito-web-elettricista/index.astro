@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Sito web per elettricista a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Un sito web professionale per elettricisti: guasti, impianti civili, illuminazione, zona servita e richiesta di sopralluogo, con un prezzo base di 399 €.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="vertical-hero" aria-labelledby="page-title">
+    <div class="container vertical-hero-grid">
+      <div>
+        <p class="eyebrow vertical-eyebrow">Modello per artigiani</p>
+        <h1 id="page-title">Un sito web per elettricista, chiaro prima del sopralluogo. 399 €.</h1>
+        <p class="vertical-lead">Guasti, impianti civili, illuminazione e piccoli lavori: il cliente capisce cosa puoi valutare, dove intervieni e quali informazioni inviare.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link vertical-light-link" href="/prezzi/">Vedi cosa comprende <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/come-funziona/">Scopri come funziona</a></p>
+      </div>
+      <aside class="vertical-hero-card" aria-label="Esempio di struttura per un sito di elettricista">
+        <span class="vertical-demo-badge">Struttura esempio</span>
+        <div class="vertical-hero-card-head"><span>IMPIANTI E INTERVENTI</span><span aria-hidden="true">01</span></div>
+        <strong>Prima il problema.<br />Poi il lavoro.</strong>
+        <ul class="mini-check-list">
+          <li>Servizi separati</li>
+          <li>Zona servita in evidenza</li>
+          <li>Richiesta di sopralluogo</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
+    <div class="container vertical-intro-grid"><span><b>01</b> Che problema risolvi</span><span><b>02</b> Dove intervieni</span><span><b>03</b> Cosa inviare</span></div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="why-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">Il cliente deve distinguere un guasto da un lavoro programmato.</h2></div>
+      <div class="vertical-copy"><p>Chi cerca un elettricista può avere una presa che non funziona, un punto luce da aggiungere, un quadro da verificare o un impianto da realizzare.</p><p>Un sito utile non fa diagnosi a distanza: organizza i servizi, indica la zona e raccoglie le informazioni che possono aiutare a capire il tipo di richiesta prima del contatto.</p></div>
+    </div>
+    <div class="container vertical-problem-grid">
+      <article class="vertical-card"><span>01</span><h3>Richieste senza contesto</h3><p>Ambiente, problema osservato e urgenza aiutano a ricevere una descrizione più utile, senza indovinare la causa.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Servizi troppo indistinti</h3><p>Separare riparazioni, impianti, illuminazione e piccoli adeguamenti fa capire al cliente cosa può chiedere.</p></article>
+      <article class="vertical-card"><span>03</span><h3>Informazioni tecniche mancanti</h3><p>Foto, planimetria o dati dell’impianto possono essere indicati come utili, solo quando disponibili e sicuri da condividere.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="services-title">
+    <div class="container">
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Servizi descritti come li cerca il cliente.</h2><p>Una selezione concreta aiuta a capire se si tratta di una riparazione, di un’installazione o di un lavoro da valutare sul posto.</p></div>
+      <div class="vertical-service-grid">
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Guasti e riparazioni</h3><p>Prese, interruttori, luci o parti dell’impianto che presentano un problema da verificare.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Impianti civili</h3><p>Interventi in appartamenti, uffici e piccoli esercizi, con una descrizione chiara del lavoro richiesto.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Illuminazione</h3><p>Nuovi punti luce, sostituzioni, faretti o soluzioni da valutare in base agli ambienti e ai collegamenti esistenti.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Quadri e protezioni</h3><p>Controlli, sostituzioni o adeguamenti da presentare senza promettere un esito prima della verifica tecnica.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Prese e piccoli lavori</h3><p>Aggiunta o spostamento di punti elettrici, quando il lavoro rientra davvero nelle attività che offri.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Sopralluogo e preventivo</h3><p>Raccogli zona, tipo di ambiente, descrizione del problema e fotografie utili prima di definire il passo successivo.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="content-title">
+    <div class="container vertical-two-column vertical-two-column--dark">
+      <div class="vertical-heading"><p class="eyebrow">Contenuti che fanno chiarezza</p><h2 id="content-title">Una buona richiesta parte dalle informazioni giuste.</h2></div>
+      <div class="vertical-structure-list">
+        <div><span>01</span><p><strong>Problema:</strong> cosa non funziona, da quando e in quale ambiente si manifesta.</p></div>
+        <div><span>02</span><p><strong>Lavoro:</strong> riparazione, nuovo punto luce, sostituzione o intervento da definire.</p></div>
+        <div><span>03</span><p><strong>Impianto:</strong> informazioni già disponibili, senza chiedere al cliente di fare verifiche rischiose.</p></div>
+        <div><span>04</span><p><strong>Materiale:</strong> fotografie, schema o planimetria solo se presenti e condivisibili in sicurezza.</p></div>
+        <div><span>05</span><p><strong>Zona:</strong> comuni o provincia realmente coperti, senza dichiarare una reperibilità continua.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="structure-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Una pagina che separa urgenze, lavori e contatto.</h2></div>
+      <div class="vertical-copy"><p>Per un elettricista, il sito deve essere rapido da consultare anche dal telefono e non confondere una richiesta urgente con un lavoro da progettare.</p><ul class="plain-list"><li>hero con attività, zona e contatto;</li><li>servizi divisi per guasti, impianti e illuminazione;</li><li>indicazioni su cosa inviare per una prima valutazione;</li><li>nota chiara su sopralluogo e verifiche tecniche.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="contact-title">
+    <div class="container vertical-contact-grid">
+      <div><p class="eyebrow">Contatto pensato per il mestiere</p><h2 id="contact-title">Raccogli il problema senza fare diagnosi a distanza.</h2></div>
+      <div><p>Il modulo può chiedere città o zona, tipo di ambiente, problema osservato e disponibilità di fotografie. Per sicurezza, il sito deve invitare a non intervenire sull’impianto e a descrivere solo ciò che il cliente può osservare senza rischi.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/progetto-su-misura/">Se il progetto è più ampio <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="value-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il valore per l’elettricista</p><h2 id="value-title">Un punto chiaro per spiegare cosa puoi valutare.</h2></div>
+      <div class="vertical-copy"><p>Il sito non sostituisce il sopralluogo o la verifica tecnica. Aiuta però il cliente a capire se il servizio è pertinente e ad arrivare al contatto con una richiesta meno vaga.</p><ul class="plain-list"><li>riduci le domande ripetute sui servizi;</li><li>separi piccoli interventi e lavori più articolati;</li><li>indichi la zona prima che parta una richiesta fuori area.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="vertical-faq-title">
+    <div class="container faq-layout vertical-faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="vertical-faq-title">Prima di chiedere il sito.</h2><p>Le risposte aiutano a preparare contenuti utili senza trasformare la pagina in una diagnosi o in una promessa tecnica.</p></div>
+      <div class="faq-list">
+        <details open><summary>Quali servizi dovrebbe mostrare un elettricista?</summary><p>Quelli che vuoi davvero ricevere: guasti e riparazioni, impianti civili, illuminazione, prese, quadri o sopralluoghi. Meglio distinguere le attività invece di usare una voce generica come “servizi elettrici”.</p></details>
+        <details><summary>Posso ricevere richieste urgenti dal sito?</summary><p>Puoi indicare un canale di contatto per le richieste urgenti, ma senza promettere reperibilità continua se non è un servizio realmente organizzato.</p></details>
+        <details><summary>Devo pubblicare certificazioni o abilitazioni?</summary><p>Puoi inserire solo informazioni reali, aggiornate e pertinenti alla tua attività. Il sito non dovrebbe formulare dichiarazioni tecniche o legali non verificate.</p></details>
+        <details><summary>È utile chiedere fotografie dell’impianto?</summary><p>Sì, quando il cliente le ha già e può condividerle senza esporsi a rischi. Il modulo dovrebbe chiarire che non è necessario aprire quadri o fare prove per inviare la richiesta.</p></details>
+        <details><summary>Quanto costa il modello per elettricista?</summary><p>La pagina rientra nell’offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="vertical-closing-title">
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online servizi, zona e modo di chiedere un sopralluogo.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per la tua attività <span aria-hidden="true">→</span></a><a class="button button--dark" href="/prezzi/">Controlla il perimetro da 399 € <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+</BaseLayout>
