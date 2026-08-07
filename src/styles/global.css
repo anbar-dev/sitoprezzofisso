@@ -749,6 +749,100 @@ h1 strong {
   font-size: 0.85rem;
 }
 
+.advanced-hero {
+  background: var(--color-ink);
+}
+
+.advanced-hero h1,
+.advanced-hero .page-lead,
+.advanced-hero .eyebrow {
+  color: var(--color-white);
+}
+
+.advanced-hero .eyebrow {
+  color: var(--color-accent);
+}
+
+.advanced-hero-note {
+  padding: 1.5rem;
+  border-left: 4px solid var(--color-accent);
+  color: var(--color-white);
+  background: rgb(255 253 249 / 8%);
+}
+
+.advanced-hero-note .price-label {
+  color: var(--color-accent);
+}
+
+.advanced-hero-note strong {
+  display: block;
+  margin-top: 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.advanced-hero-note p {
+  margin: 1.25rem 0 0;
+  color: rgb(255 253 249 / 72%);
+  font-size: 0.9rem;
+}
+
+.referral-explainer {
+  grid-template-columns: minmax(0, 1fr) minmax(17rem, 0.8fr);
+}
+
+.referral-copy > p:first-child {
+  margin-top: 0;
+  color: var(--color-ink-soft);
+  font-size: 1.08rem;
+}
+
+.referral-limit {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 1.25rem 0;
+  border-block: 1px solid var(--color-line);
+}
+
+.referral-limit strong {
+  color: var(--color-coral);
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+
+.referral-limit span {
+  max-width: 12rem;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.consent-box {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--color-line);
+  background: var(--color-white);
+}
+
+.consent-box p {
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-size: 0.85rem;
+}
+
+.consent-box p + p {
+  margin-top: 0.75rem;
+  color: var(--color-muted);
+}
+
 .offer-list {
   border-top: 1px solid var(--color-line);
 }

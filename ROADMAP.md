@@ -38,13 +38,15 @@ Nota: il form dell'offerta base usa un adapter locale di sviluppo; non invia né
 
 ## Phase 3 — Funnel progetto avanzato
 
-- [ ] `/progetto-su-misura/`
-- [ ] Form richiesta fino a 2 preventivi
-- [ ] Campo budget
-- [ ] Campo tempistiche
-- [ ] Consenso specifico per inoltro partner
-- [ ] Configurazione partner separata
-- [ ] Nessun invio reale in development
+- [x] `/progetto-su-misura/`
+- [x] Form richiesta fino a 2 preventivi
+- [x] Campo budget
+- [x] Campo tempistiche
+- [x] Consenso specifico per inoltro partner
+- [x] Configurazione partner separata
+- [x] Nessun invio reale in development
+
+Nota: il funnel avanzato usa un adapter locale e una configurazione partner vuota/disattivata; non vengono inventati partner e nessun dato viene inoltrato in development.
 
 ## Phase 4 — Prima verticale SEO
 

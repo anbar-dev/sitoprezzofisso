@@ -1,0 +1,109 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Progetto web su misura: richiedi fino a 2 preventivi | Sito Prezzo Fisso';
+const description = 'Il tuo progetto non rientra nel sito da 399 €? Descrivilo e richiedi, con consenso esplicito, fino a 2 preventivi da professionisti partner.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="page-hero advanced-hero" aria-labelledby="page-title">
+    <div class="container page-hero-grid">
+      <div>
+        <p class="eyebrow">Percorso avanzato</p>
+        <h1 id="page-title">Il tuo progetto non rientra nell'offerta da 399 €?</h1>
+        <p class="page-lead">Raccontaci cosa ti serve. Se il progetto richiede funzioni o dimensioni diverse, puoi richiedere fino a 2 preventivi.</p>
+      </div>
+      <aside class="advanced-hero-note">
+        <span class="price-label">Come funziona</span>
+        <strong>Un brief.<br />Fino a 2 richieste.</strong>
+        <p>Il passaggio dei dati avviene solo con il tuo consenso esplicito.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="when-title">
+    <div class="container referral-explainer">
+      <div>
+        <p class="eyebrow">Quando serve</p>
+        <h2 id="when-title">Non tutto deve stare dentro un pacchetto standard.</h2>
+      </div>
+      <div class="referral-copy">
+        <p>Questo percorso è pensato per richieste come ecommerce, aree riservate, gestionali, prenotazioni complesse, integrazioni o sviluppo custom significativo.</p>
+        <div class="referral-limit"><strong>Massimo 2</strong><span>preventivi richiesti con un solo brief</span></div>
+        <p class="muted-note">Non pubblichiamo nomi o promesse di partner sul sito. La configurazione è separata e resta disattivata in development.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="advanced-steps-title">
+    <div class="container">
+      <div class="section-heading section-heading--light">
+        <p class="eyebrow">Il percorso avanzato</p>
+        <h2 id="advanced-steps-title">Prima capiamo il progetto. Poi decidiamo il passo successivo.</h2>
+      </div>
+      <ol class="large-process-list">
+        <li><span>01</span><div><h3>Descrivi esigenza e contesto</h3><p>Indica tipologia, obiettivi, sito esistente, tempistiche e budget. Non serve preparare un documento tecnico.</p></div></li>
+        <li><span>02</span><div><h3>Valutiamo il perimetro</h3><p>La richiesta viene inquadrata per capire se può essere indirizzata a un progetto avanzato.</p></div></li>
+        <li><span>03</span><div><h3>Con il tuo consenso, inoltriamo</h3><p>In produzione potranno essere trasmessi solo i dati necessari a un massimo di 2 professionisti partner compatibili.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--paper form-section" aria-labelledby="advanced-form-title">
+    <div class="container form-layout">
+      <div class="form-heading">
+        <p class="eyebrow">Richiesta progetto avanzato</p>
+        <h2 id="advanced-form-title">Dati concreti, senza telefonate obbligatorie.</h2>
+        <p>Il modulo è in modalità demo: nessuna email viene inviata e nessun dato viene inoltrato o salvato.</p>
+        <a class="text-link" href="/prezzi/">Il progetto è più semplice? Guarda i 399 € <span aria-hidden="true">→</span></a>
+      </div>
+
+      <form class="progressive-form" data-progressive-form="advanced">
+        <div class="form-progress-meta"><span data-form-progress-label>Passaggio 1 di 3</span><span>circa 4 minuti</span></div>
+        <div class="form-progress-track" aria-hidden="true"><span data-form-progress></span></div>
+
+        <fieldset data-form-step>
+          <legend>Il progetto</legend>
+          <p class="fieldset-intro">Che cosa vuoi realizzare?</p>
+          <div class="field-grid field-grid--two">
+            <label>Tipologia di progetto *<select name="tipologia" required><option value="" disabled selected>Scegli…</option><option>Ecommerce</option><option>Sito con funzioni personalizzate</option><option>Gestionale o area riservata</option><option>Prenotazioni o integrazioni</option><option>Altro</option></select></label>
+            <label>Tempistiche *<select name="tempistiche" required><option value="" disabled selected>Scegli…</option><option>Nessuna scadenza definita</option><option>Entro 1 mese</option><option>Da 1 a 3 mesi</option><option>Oltre 3 mesi</option></select></label>
+            <label class="field-span-two">Descrizione del progetto *<textarea name="descrizione" rows="6" placeholder="Qual è l'obiettivo? Chi userà il progetto? Quali funzioni sono indispensabili?" required></textarea></label>
+            <label class="field-span-two">Sito esistente <span class="label-note">facoltativo</span><input name="sito-esistente" type="url" placeholder="https://" /></label>
+            <label class="field-span-two">Budget indicativo *<select name="budget" required><option value="" disabled selected>Scegli una fascia…</option><option>&lt; 500 €</option><option>500-1.000 €</option><option>1.000-2.500 €</option><option>2.500-5.000 €</option><option>&gt; 5.000 €</option></select></label>
+          </div>
+        </fieldset>
+
+        <fieldset data-form-step hidden>
+          <legend>I tuoi contatti</legend>
+          <p class="fieldset-intro">L'email è il canale principale per il seguito della richiesta.</p>
+          <div class="field-grid field-grid--two">
+            <label>Nome e cognome *<input name="nome" type="text" autocomplete="name" required /></label>
+            <label>Email *<input name="email" type="email" autocomplete="email" required /></label>
+            <label>Telefono <span class="label-note">facoltativo</span><input name="telefono" type="tel" autocomplete="tel" /></label>
+          </div>
+        </fieldset>
+
+        <fieldset data-form-step hidden>
+          <legend>Consenso</legend>
+          <p class="fieldset-intro">Leggi cosa autorizzi prima di inviare.</p>
+          <div class="consent-box">
+            <p>In un ambiente attivo, il consenso qui sotto autorizzerebbe l'inoltro dei dati necessari a un massimo di 2 professionisti partner compatibili, con lo scopo di ricevere preventivi per questo progetto.</p>
+            <p>I dati non verrebbero utilizzati per finalità diverse da questa richiesta. In development, invece, il flusso resta simulato e non inoltra nulla.</p>
+          </div>
+          <label class="checkbox-label"><input name="consenso-partner" type="checkbox" required /> <span>Acconsento esplicitamente alla trasmissione dei dati necessari a un massimo di 2 professionisti partner per ricevere preventivi. *</span></label>
+          <p class="privacy-note">TODO: sostituire questo testo con informativa privacy e condizioni del servizio validate professionalmente prima di attivare l'invio reale.</p>
+        </fieldset>
+
+        <div class="form-status" data-form-status role="status" aria-live="polite" hidden></div>
+        <div class="form-actions">
+          <button class="button button--quiet" type="button" data-form-previous hidden>← Indietro</button>
+          <div class="form-actions-right"><button class="button button--dark" type="button" data-form-next>Continua <span aria-hidden="true">→</span></button><button class="button button--primary" type="submit" data-form-submit hidden>Invia la richiesta <span aria-hidden="true">→</span></button></div>
+        </div>
+      </form>
+    </div>
+  </section>
+</BaseLayout>
+
+<script src="../../scripts/advanced-project-form.ts"></script>
