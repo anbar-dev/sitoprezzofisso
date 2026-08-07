@@ -77,7 +77,7 @@ Solo dopo approvazione della pagina idraulico:
 ## Phase 6 — Demo
 
 - [x] Demo idraulico
-- [ ] Demo imbianchino
+- [x] Demo imbianchino
 - [ ] Demo elettricista
 - [ ] Demo impresa edile
 - [ ] Demo serramentista

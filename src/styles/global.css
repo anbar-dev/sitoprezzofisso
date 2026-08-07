@@ -3923,6 +3923,115 @@ h1 strong {
   color: rgb(255 255 255 / 84%);
 }
 
+/* Painter demo: warm material palette distinct from the plumbing example. */
+.demo-page.demo-painter {
+  --demo-navy: #3c2f2b;
+  --demo-blue: #b96548;
+  --demo-blue-light: #f3e7dd;
+  --demo-orange: #d58e62;
+  --demo-paper: #f7f3ed;
+  --demo-ink: #332925;
+  --demo-muted: #766960;
+  --demo-line: #e1d5ca;
+}
+
+.demo-page.demo-painter .demo-banner-inner strong,
+.demo-page.demo-painter .demo-eyebrow,
+.demo-page.demo-painter .demo-hero-meta b,
+.demo-page.demo-painter .demo-process-grid li > span {
+  color: #edc39b;
+}
+
+.demo-page.demo-painter .demo-site-hero,
+.demo-page.demo-painter .demo-contact-section {
+  background: var(--demo-navy);
+}
+
+.demo-page.demo-painter .demo-brand-mark {
+  color: var(--demo-navy);
+  background: #edc39b;
+}
+
+.demo-page.demo-painter .demo-brand small {
+  color: #edc39b;
+}
+
+.demo-page.demo-painter .demo-banner-inner {
+  padding-right: 16rem;
+}
+
+.demo-page.demo-painter .demo-site-nav nav a:hover,
+.demo-page.demo-painter .demo-site-nav nav a:focus-visible,
+.demo-page.demo-painter .demo-nav-cta:hover,
+.demo-page.demo-painter .demo-nav-cta:focus-visible {
+  color: #edc39b;
+}
+
+.demo-page.demo-painter .demo-nav-cta {
+  border-color: #edc39b;
+  color: #edc39b;
+}
+
+.demo-page.demo-painter .demo-button--solid {
+  color: var(--demo-navy);
+  background: #edc39b;
+}
+
+.demo-page.demo-painter .demo-button--solid:hover,
+.demo-page.demo-painter .demo-button--solid:focus-visible {
+  background: #f3d1b2;
+}
+
+.demo-page.demo-painter .demo-button--outline:hover,
+.demo-page.demo-painter .demo-button--outline:focus-visible,
+.demo-page.demo-painter .demo-button--light {
+  color: var(--demo-navy);
+  background: #edc39b;
+}
+
+.demo-page.demo-painter .demo-button--outline:hover,
+.demo-page.demo-painter .demo-button--outline:focus-visible {
+  border-color: #edc39b;
+}
+
+.demo-page.demo-painter .demo-area-list span {
+  border-color: #d9bda5;
+  color: var(--demo-blue);
+  background: var(--demo-blue-light);
+}
+
+.demo-page.demo-painter .demo-contact-card {
+  border-top-color: var(--demo-orange);
+  box-shadow: 0.8rem 0.8rem 0 #edc39b;
+}
+
+.demo-page.demo-painter .demo-contact-preview a,
+.demo-page.demo-painter .demo-inline-link {
+  color: var(--demo-blue);
+}
+
+.demo-page.demo-painter .demo-floating-actions a {
+  border-color: #edc39b;
+  background: #2b211e;
+}
+
+.demo-page.demo-painter .demo-floating-actions a:hover,
+.demo-page.demo-painter .demo-floating-actions a:focus-visible {
+  color: var(--demo-navy);
+  background: #edc39b;
+}
+
+.demo-page.demo-painter .demo-floating-actions .demo-floating-contact {
+  border-color: var(--demo-orange);
+  background: var(--demo-orange);
+}
+
+.demo-page.demo-painter .demo-floating-actions .demo-floating-contact:hover,
+.demo-page.demo-painter .demo-floating-actions .demo-floating-contact:focus-visible {
+  color: var(--demo-white);
+  background: #c77750;
+}
+
 .demo-page .demo-feature-copy h2 + p,
 .demo-page .demo-zone-layout h2 + p,
 .demo-page .demo-contact-grid h2 + p {
@@ -3940,8 +4049,24 @@ h1 strong {
 }
 
 @media (max-width: 38rem) {
+  .demo-page.demo-painter .demo-banner-inner {
+    padding-right: 0;
+  }
+
+  .demo-page.demo-painter .demo-banner {
+    padding-top: 4.3rem;
+  }
+
   .vertical-demo-promo-image,
   .vertical-demo-promo-image img {
     min-height: 17rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .demo-page.demo-painter .demo-nav-cta {
+    flex: 1 0 100%;
+    margin-left: 0;
+    text-align: center;
   }
 }
