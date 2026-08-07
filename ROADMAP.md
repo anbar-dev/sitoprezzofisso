@@ -64,7 +64,7 @@ Nota: il sito dimostrativo per idraulici è chiaramente marcato come esempio, us
 
 Solo dopo approvazione della pagina idraulico:
 
-- [ ] sito web per imbianchino
+- [x] sito web per imbianchino
 - [ ] sito web per elettricista
 - [ ] sito web per impresa edile
 - [ ] sito web per serramentista

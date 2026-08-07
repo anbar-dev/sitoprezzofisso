@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Sito web per imbianchino a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Un sito web professionale per imbianchini: lavori, finiture, foto, zone servite e richiesta di sopralluogo, con un prezzo base di 399 €.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="vertical-hero" aria-labelledby="page-title">
+    <div class="container vertical-hero-grid">
+      <div>
+        <p class="eyebrow vertical-eyebrow">Modello per artigiani</p>
+        <h1 id="page-title">Un sito web per imbianchino che fa vedere il lavoro. 399 €.</h1>
+        <p class="vertical-lead">Tinteggiature, preparazione delle superfici, finiture e zona servita: il cliente trova le informazioni utili prima di chiedere un sopralluogo.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link vertical-light-link" href="/prezzi/">Vedi cosa comprende <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/come-funziona/">Scopri come funziona</a></p>
+      </div>
+      <aside class="vertical-hero-card" aria-label="Esempio di struttura per un sito di imbianchino">
+        <span class="vertical-demo-badge">Struttura esempio</span>
+        <div class="vertical-hero-card-head"><span>TINTEGGIATURE E FINITURE</span><span aria-hidden="true">01</span></div>
+        <strong>Prima il risultato.<br />Poi il preventivo.</strong>
+        <ul class="mini-check-list">
+          <li>Lavori spiegati bene</li>
+          <li>Foto e superfici in evidenza</li>
+          <li>Richiesta di sopralluogo</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
+    <div class="container vertical-intro-grid"><span><b>01</b> Che lavoro esegui</span><span><b>02</b> Dove lavori</span><span><b>03</b> Cosa inviare</span></div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="why-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">Il cliente vuole capire che risultato può aspettarsi.</h2></div>
+      <div class="vertical-copy"><p>Chi cerca un imbianchino non cerca soltanto “un lavoro di pittura”. Può avere una stanza da rinfrescare, una parete da ripristinare, una facciata da trattare o una finitura decorativa da valutare.</p><p>Un sito utile rende concreti questi casi: mostra quali lavori segui, quali informazioni ti servono e in quale zona puoi fare un sopralluogo.</p></div>
+    </div>
+    <div class="container vertical-problem-grid">
+      <article class="vertical-card"><span>01</span><h3>Servizi troppo generici</h3><p>Dividere interni, esterni, ripristini e decorativi aiuta il cliente a riconoscere il lavoro di cui ha bisogno.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Foto senza contesto</h3><p>Una galleria funziona meglio quando spiega ambiente, superficie e tipo di intervento, senza attribuire lavori non verificabili.</p></article>
+      <article class="vertical-card"><span>03</span><h3>Preventivi poco preparati</h3><p>Il modulo può chiedere zona, metri indicativi, stato delle pareti e foto utili prima del contatto.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="services-title">
+    <div class="container">
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Servizi descritti con parole concrete.</h2><p>La pagina non deve contenere ogni lavorazione possibile: deve aiutare il cliente a capire se il tuo modo di lavorare è adatto al suo ambiente.</p></div>
+      <div class="vertical-service-grid">
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Tinteggiatura interni</h3><p>Pareti, soffitti, stanze e appartamenti: chiarisci se lavori su ambienti singoli o interventi più ampi.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Esterni e facciate</h3><p>Indica i lavori che gestisci su facciate, balconi o altri spazi esterni, sempre in base alle tue competenze reali.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Preparazione pareti</h3><p>Rasature, stuccature, carteggiatura e piccoli ripristini possono spiegare cosa succede prima del colore.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Finiture decorative</h3><p>Se le proponi, presenta effetti e materiali in modo comprensibile, con foto reali e senza promettere un risultato standard.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Rinfresco di ambienti</h3><p>Una sezione dedicata a chi deve rinnovare una stanza e vuole capire come preparare la richiesta.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Sopralluogo e preventivo</h3><p>Spiega quali dati o fotografie aiutano a valutare il lavoro prima di concordare il sopralluogo.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="content-title">
+    <div class="container vertical-two-column vertical-two-column--dark">
+      <div class="vertical-heading"><p class="eyebrow">Contenuti che aiutano</p><h2 id="content-title">Il colore conta, ma anche il contesto.</h2></div>
+      <div class="vertical-structure-list">
+        <div><span>01</span><p><strong>Ambiente:</strong> stanza, altezza, uso dello spazio e stato attuale delle pareti.</p></div>
+        <div><span>02</span><p><strong>Superficie:</strong> pittura esistente, crepe, macchie o preparazioni da valutare.</p></div>
+        <div><span>03</span><p><strong>Finitura:</strong> colore, effetto o livello di copertura che il cliente vuole discutere.</p></div>
+        <div><span>04</span><p><strong>Foto:</strong> immagini reali dei lavori, con una didascalia che spiega cosa è stato fatto.</p></div>
+        <div><span>05</span><p><strong>Zona:</strong> comuni o provincia realmente coperti, senza indicare una sede che non esiste.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="structure-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Una pagina che parte dagli ambienti e arriva alla richiesta.</h2></div>
+      <div class="vertical-copy"><p>Per un imbianchino, il sito può restare semplice e completo: il cliente deve riconoscere il proprio lavoro, vedere esempi pertinenti e sapere cosa preparare.</p><ul class="plain-list"><li>presentazione breve del mestiere e della zona;</li><li>servizi separati per interni, esterni e finiture;</li><li>foto reali con descrizioni chiare;</li><li>contatto con informazioni utili per il sopralluogo.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="contact-title">
+    <div class="container vertical-contact-grid">
+      <div><p class="eyebrow">Contatto pensato per il mestiere</p><h2 id="contact-title">Raccogli le informazioni che servono prima di parlare di prezzo.</h2></div>
+      <div><p>Il modulo può chiedere città o zona, tipo di ambiente, superficie indicativa, stato delle pareti e disponibilità di fotografie. WhatsApp resta un'alternativa per chi preferisce scrivere dal telefono.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/progetto-su-misura/">Se il progetto è più ampio <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="value-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il valore per l'imbianchino</p><h2 id="value-title">Un riferimento ordinato da condividere quando arriva una richiesta.</h2></div>
+      <div class="vertical-copy"><p>Il sito non sostituisce foto, passaparola o contatto diretto. Li organizza in un punto che il cliente può consultare quando sta confrontando soluzioni.</p><ul class="plain-list"><li>presenti il tuo lavoro senza spiegare sempre tutto da capo;</li><li>selezioni le richieste più vicine ai servizi che vuoi offrire;</li><li>arrivi al contatto con una prima descrizione dell'ambiente e del lavoro.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="vertical-faq-title">
+    <div class="container faq-layout vertical-faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="vertical-faq-title">Prima di chiedere il sito.</h2><p>Le risposte aiutano a capire quali contenuti preparare e quando l'offerta base è sufficiente.</p></div>
+      <div class="faq-list">
+        <details open><summary>Quali lavori dovrebbe mostrare un imbianchino?</summary><p>Quelli che vuoi davvero ricevere: tinteggiatura di interni, esterni, preparazione delle pareti, rinfreschi o finiture decorative. Meglio una selezione precisa che un elenco indistinto.</p></details>
+        <details><summary>Devo avere già molte fotografie?</summary><p>No, ma le foto reali sono utili per rendere concreta la presentazione. Anche pochi esempi ben descritti sono più utili di immagini generiche non collegate al tuo lavoro.</p></details>
+        <details><summary>Posso chiedere un preventivo dal sito?</summary><p>Puoi raccogliere una richiesta di contatto o di sopralluogo. Il sito non deve promettere un prezzo automatico se servono condizioni e valutazioni diverse per ogni ambiente.</p></details>
+        <details><summary>È utile indicare i colori disponibili?</summary><p>Puoi indicare preferenze, marchi o finiture che tratti davvero. Lascia spazio alla valutazione del caso concreto e non trasformare la pagina in un catalogo difficile da aggiornare.</p></details>
+        <details><summary>Quanto costa il modello per imbianchino?</summary><p>La pagina rientra nell'offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="vertical-closing-title">
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online lavori, finiture e modo di contattarti.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per la tua attività <span aria-hidden="true">→</span></a><a class="button button--dark" href="/prezzi/">Controlla il perimetro da 399 € <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+</BaseLayout>
