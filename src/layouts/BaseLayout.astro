@@ -9,9 +9,10 @@ interface Props {
   description: string;
   canonical?: string;
   noindex?: boolean;
+  chrome?: boolean;
 }
 
-const { title, description, canonical, noindex = false } = Astro.props;
+const { title, description, canonical, noindex = false, chrome = true } = Astro.props;
 ---
 
 <!doctype html>
@@ -23,10 +24,10 @@ const { title, description, canonical, noindex = false } = Astro.props;
   </head>
   <body>
     <a class="skip-link" href="#main-content">Vai al contenuto</a>
-    <Header />
+    {chrome && <Header />}
     <main id="main-content">
       <slot />
     </main>
-    <Footer />
+    {chrome && <Footer />}
   </body>
 </html>

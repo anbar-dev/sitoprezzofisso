@@ -54,6 +54,7 @@ Nota: il funnel avanzato usa un adapter locale e una configurazione partner vuot
 - [x] Creare demo idraulico
 - [x] Validare struttura, testo, CTA e design
 - [x] Usare questa pagina come modello qualitativo, non come copia automatica
+- [x] Revisionare pagina e demo per chiarezza, SEO, conversione, responsive e segnali di contenuto automatico
 
 Nota: la demo idraulico è chiaramente marcata come DEMO, usa segnaposto dichiarati e non contiene recensioni, clienti o claim reali.
 

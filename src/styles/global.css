@@ -1375,6 +1375,23 @@ h1 strong {
   line-height: 1.55;
 }
 
+.vertical-hero-note {
+  max-width: 37rem;
+  margin: 1.5rem 0 0;
+  color: rgb(255 253 249 / 68%);
+  font-size: 0.82rem;
+}
+
+.vertical-hero-note strong {
+  color: var(--color-white);
+}
+
+.vertical-hero-note a {
+  color: var(--color-accent);
+  font-weight: 800;
+  text-underline-offset: 0.2rem;
+}
+
 .vertical-light-link {
   color: var(--color-white);
 }
@@ -2114,6 +2131,13 @@ h1 strong {
   font: inherit;
 }
 
+.demo-contact-card input:focus,
+.demo-contact-card textarea:focus {
+  border-color: var(--color-ink);
+  outline: 3px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
 .demo-contact-card textarea {
   resize: vertical;
 }
@@ -2354,6 +2378,10 @@ h1 strong {
 
   .vertical-hero-card {
     box-shadow: 0.6rem 0.6rem 0 var(--color-coral);
+  }
+
+  .vertical-hero-note {
+    font-size: 0.78rem;
   }
 
   .form-actions {
