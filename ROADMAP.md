@@ -82,6 +82,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] Demo giardiniere
 - [x] Revisione editoriale in italiano naturale delle 4 verticali e delle 4 demo
 - [x] Rifinitura finale di titoli e CTA nelle demo
+- [x] Creare hub `/demo/` e collegare gli esempi da navigazione, homepage e footer
 - [ ] Demo impresa edile
 - [ ] Demo serramentista
 

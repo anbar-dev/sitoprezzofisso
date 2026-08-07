@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import DemoCards from '../components/DemoCards.astro';
 
 const title = 'Sito web professionale a 399 € | Sito Prezzo Fisso';
 const description =
@@ -140,7 +141,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
           <span class="card-number">01</span>
           <h3>Artigiani e microimprese</h3>
           <p>Servizi, zone operative e contatti in un posto ordinato, facile da consultare anche dal telefono.</p>
-          <a class="card-link" href="/demo/idraulico/">Guarda la demo per idraulici <span aria-hidden="true">→</span></a>
+          <a class="card-link" href="/demo/">Guarda tutti gli esempi <span aria-hidden="true">→</span></a>
         </article>
         <article class="audience-card audience-card--featured">
           <span class="card-number">02</span>
@@ -153,6 +154,20 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
           <p>Informazioni essenziali, orari e riferimenti per trasformare una visita in una richiesta concreta.</p>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section class="section section--white demo-showcase" aria-labelledby="demo-showcase-title">
+    <div class="container">
+      <div class="section-heading demo-showcase-heading">
+        <div>
+          <p class="eyebrow">Guarda prima di scegliere</p>
+          <h2 id="demo-showcase-title">Un esempio concreto vale più di una promessa generica.</h2>
+          <p>Abbiamo preparato alcuni siti dimostrativi per mostrare come possono essere organizzati servizi, immagini e contatti.</p>
+        </div>
+        <a class="button button--dark" href="/demo/">Vedi tutti gli esempi <span aria-hidden="true">→</span></a>
+      </div>
+      <DemoCards compact />
     </div>
   </section>
 

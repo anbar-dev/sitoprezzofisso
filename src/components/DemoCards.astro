@@ -1,0 +1,29 @@
+---
+import { demoSites } from '../data/demos';
+
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+---
+
+<div class:list={['demo-card-grid', { 'demo-card-grid--compact': compact }]}>
+  {demoSites.map((demo) => (
+    <article class="demo-card">
+      <a class="demo-card-image" href={`/demo/${demo.slug}/`} aria-label={`Apri il sito dimostrativo per ${demo.title.toLowerCase()}`}>
+        <img src={demo.image} alt={demo.imageAlt} loading={compact ? 'lazy' : undefined} />
+        <span class="demo-card-image-label">Sito dimostrativo</span>
+      </a>
+      <div class="demo-card-content">
+        <p class="eyebrow">Modello per professionisti</p>
+        <h3><a href={`/demo/${demo.slug}/`}>{demo.title}</a></h3>
+        <p>{demo.summary}</p>
+        <div class="demo-card-actions">
+          <a class="card-link" href={`/demo/${demo.slug}/`}>Apri il sito dimostrativo <span aria-hidden="true">→</span></a>
+          <a class="demo-card-vertical-link" href={demo.verticalPath}>{demo.verticalLabel}</a>
+        </div>
+      </div>
+    </article>
+  ))}
+</div>

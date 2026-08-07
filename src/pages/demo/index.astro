@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DemoCards from '../../components/DemoCards.astro';
+
+const title = 'Esempi di siti web per artigiani | Sito Prezzo Fisso';
+const description = 'Guarda esempi di siti web per idraulici, imbianchini, elettricisti e giardinieri: strutture concrete per presentare servizi, zone e contatti.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="demo-index-hero" aria-labelledby="page-title">
+    <div class="container demo-index-hero-grid">
+      <div>
+        <p class="eyebrow">Esempi concreti</p>
+        <h1 id="page-title">Guarda come può diventare il sito della tua attività.</h1>
+        <p class="demo-index-lead">Questi siti dimostrativi mostrano come organizzare servizi, immagini, zona di lavoro e contatti in una presenza online semplice e professionale.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="/prezzi/">Cosa comprende l'offerta <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <aside class="demo-index-note" aria-label="Nota sui siti dimostrativi">
+        <span class="card-number">01 / 04</span>
+        <h2>Non sono aziende reali.</h2>
+        <p>Nomi, recapiti, zone e disponibilità presenti nelle demo sono segnaposto. Servono a farti vedere la struttura e il livello di cura del progetto.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="demo-list-title">
+    <div class="container">
+      <div class="section-heading demo-index-section-heading">
+        <p class="eyebrow">Scegli un esempio</p>
+        <h2 id="demo-list-title">Quattro modi diversi di presentare un lavoro concreto.</h2>
+        <p>Ogni demo parte dalle domande che un potenziale cliente si fa prima di contattare un professionista.</p>
+      </div>
+      <DemoCards />
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="demo-choice-title">
+    <div class="container two-column-content">
+      <div>
+        <p class="eyebrow">Non trovi ancora il tuo mestiere?</p>
+        <h2 id="demo-choice-title">La struttura si adatta alla tua attività.</h2>
+      </div>
+      <div>
+        <p>Le demo servono a rendere visibile il risultato, non a obbligarti a usare testi o immagini già pronti. Nel brief possiamo partire dai tuoi servizi, dalla zona in cui lavori e dal modo in cui vuoi ricevere richieste.</p>
+        <a class="button button--dark" href="/richiedi-sito/">Racconta la tua attività <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
