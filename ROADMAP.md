@@ -50,10 +50,12 @@ Nota: il funnel avanzato usa un adapter locale e una configurazione partner vuot
 
 ## Phase 4 — Prima verticale SEO
 
-- [ ] Creare `/sito-web-idraulico/`
-- [ ] Creare demo idraulico
-- [ ] Validare struttura, testo, CTA e design
-- [ ] Usare questa pagina come modello qualitativo, non come copia automatica
+- [x] Creare `/sito-web-idraulico/`
+- [x] Creare demo idraulico
+- [x] Validare struttura, testo, CTA e design
+- [x] Usare questa pagina come modello qualitativo, non come copia automatica
+
+Nota: la demo idraulico è chiaramente marcata come DEMO, usa segnaposto dichiarati e non contiene recensioni, clienti o claim reali.
 
 ## Phase 5 — Prime verticali
 
@@ -71,7 +73,7 @@ Solo dopo approvazione della pagina idraulico:
 
 ## Phase 6 — Demo
 
-- [ ] Demo idraulico
+- [x] Demo idraulico
 - [ ] Demo imbianchino
 - [ ] Demo elettricista
 - [ ] Demo impresa edile
