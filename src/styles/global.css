@@ -4197,3 +4197,130 @@ h1 strong {
     text-align: center;
   }
 }
+
+/* Gardener demo: an earthy forest, moss and terracotta identity. */
+.demo-page.demo-gardener {
+  --demo-navy: #193d35;
+  --demo-blue: #4b7965;
+  --demo-blue-light: #e5eee7;
+  --demo-orange: #bb7048;
+  --demo-paper: #f4f3ec;
+  --demo-ink: #263a32;
+  --demo-muted: #68766b;
+  --demo-line: #d9e0d7;
+}
+
+.demo-page.demo-gardener .demo-banner-inner strong,
+.demo-page.demo-gardener .demo-eyebrow,
+.demo-page.demo-gardener .demo-hero-meta b,
+.demo-page.demo-gardener .demo-process-grid li > span {
+  color: #d8b46e;
+}
+
+.demo-page.demo-gardener .demo-site-hero,
+.demo-page.demo-gardener .demo-contact-section {
+  background: var(--demo-navy);
+}
+
+.demo-page.demo-gardener .demo-brand-mark {
+  color: var(--demo-navy);
+  background: #d8b46e;
+}
+
+.demo-page.demo-gardener .demo-brand small {
+  color: #d8b46e;
+}
+
+.demo-page.demo-gardener .demo-banner-inner {
+  padding-right: 16rem;
+}
+
+.demo-page.demo-gardener .demo-site-nav nav a:hover,
+.demo-page.demo-gardener .demo-site-nav nav a:focus-visible,
+.demo-page.demo-gardener .demo-nav-cta:hover,
+.demo-page.demo-gardener .demo-nav-cta:focus-visible {
+  color: #d8b46e;
+}
+
+.demo-page.demo-gardener .demo-nav-cta {
+  border-color: #d8b46e;
+  color: #d8b46e;
+}
+
+.demo-page.demo-gardener .demo-button--solid {
+  color: var(--demo-navy);
+  background: #d8b46e;
+}
+
+.demo-page.demo-gardener .demo-button--solid:hover,
+.demo-page.demo-gardener .demo-button--solid:focus-visible {
+  background: #ebd39b;
+}
+
+.demo-page.demo-gardener .demo-button--outline:hover,
+.demo-page.demo-gardener .demo-button--outline:focus-visible,
+.demo-page.demo-gardener .demo-button--light {
+  color: var(--demo-navy);
+  background: #d8b46e;
+}
+
+.demo-page.demo-gardener .demo-button--outline:hover,
+.demo-page.demo-gardener .demo-button--outline:focus-visible {
+  border-color: #d8b46e;
+}
+
+.demo-page.demo-gardener .demo-area-list span {
+  border-color: #b9d0bd;
+  color: var(--demo-blue);
+  background: var(--demo-blue-light);
+}
+
+.demo-page.demo-gardener .demo-contact-card {
+  border-top-color: var(--demo-orange);
+  box-shadow: 0.8rem 0.8rem 0 #d8b46e;
+}
+
+.demo-page.demo-gardener .demo-contact-preview a,
+.demo-page.demo-gardener .demo-inline-link {
+  color: var(--demo-blue);
+}
+
+.demo-page.demo-gardener .demo-floating-actions a {
+  border-color: #d8b46e;
+  background: #102c27;
+}
+
+.demo-page.demo-gardener .demo-floating-actions a:hover,
+.demo-page.demo-gardener .demo-floating-actions a:focus-visible {
+  color: var(--demo-navy);
+  background: #d8b46e;
+}
+
+.demo-page.demo-gardener .demo-floating-actions .demo-floating-contact {
+  border-color: var(--demo-orange);
+  background: var(--demo-orange);
+}
+
+.demo-page.demo-gardener .demo-floating-actions .demo-floating-contact:hover,
+.demo-page.demo-gardener .demo-floating-actions .demo-floating-contact:focus-visible {
+  color: var(--demo-white);
+  background: #a85f3c;
+}
+
+@media (max-width: 38rem) {
+  .demo-page.demo-gardener .demo-banner-inner {
+    padding-right: 0;
+  }
+
+  .demo-page.demo-gardener .demo-banner {
+    padding-top: 4.3rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .demo-page.demo-gardener .demo-nav-cta {
+    flex: 1 0 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}
