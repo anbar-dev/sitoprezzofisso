@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = 'Sito dimostrativo per serramentista | Sito Prezzo Fisso';
+const description = 'Sito dimostrativo per un serramentista: finestre, porte, persiane, zanzariere, posa, zona indicativa e richiesta di sopralluogo.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical} noindex chrome={false}>
+  <div class="demo-page">
+    <nav class="demo-floating-actions" aria-label="Azioni principali del sito dimostrativo">
+      <a class="demo-floating-back" href="/sito-web-serramentista/"><span aria-hidden="true">←</span> Indietro</a>
+      <a class="demo-floating-contact" href="/richiedi-sito/">Ottieni il tuo sito <span aria-hidden="true">→</span></a>
+    </nav>
+    <div class="demo-banner">
+      <div class="container demo-banner-inner">
+        <strong>SITO DIMOSTRATIVO — esempio di progetto</strong>
+        <span>Nome, contatti, zona e disponibilità sono segnaposto. Le immagini sono generate per questo esempio.</span>
+        <a href="/sito-web-serramentista/">Torna alla pagina per serramentisti →</a>
+      </div>
+    </div>
+
+    <header class="demo-site-hero">
+      <div class="container demo-site-nav">
+        <a class="demo-brand" href="#demo-title" aria-label="Infissi Esempio, sito dimostrativo">
+          <span class="demo-brand-mark">IE</span>
+          <span>Infissi Esempio <small>SITO DIMOSTRATIVO</small></span>
+        </a>
+        <nav aria-label="Navigazione sito dimostrativo">
+          <a href="#servizi-demo">Soluzioni</a>
+          <a href="#come-lavoriamo-demo">Metodo</a>
+          <a href="#zone-demo">Zona</a>
+          <a href="#lavori-demo">Lavori</a>
+          <a href="#contatti-demo">Contatti</a>
+        </nav>
+        <a class="demo-nav-cta" href="#contatti-demo">Richiedi un sopralluogo</a>
+      </div>
+
+      <div class="container demo-hero-grid">
+        <div class="demo-hero-copy">
+          <p class="demo-eyebrow">INFISSI E POSA · VERONA E PROVINCIA · SITO DIMOSTRATIVO</p>
+          <h1 id="demo-title">Più luce, più comfort, una posa valutata bene.</h1>
+          <p>Finestre, portefinestre, porte e schermature da scegliere in base all'ambiente. Qui trovi le soluzioni che possiamo valutare, la zona indicativa e il modo più semplice per iniziare.</p>
+          <div class="demo-button-row">
+            <a class="demo-button demo-button--solid" href="#contatti-demo">Racconta la tua esigenza</a>
+            <a class="demo-button demo-button--outline" href="#servizi-demo">Vedi le soluzioni</a>
+          </div>
+          <div class="demo-hero-meta">
+            <span><b>01</b> Verona</span>
+            <span><b>02</b> Finestre e porte</span>
+            <span><b>03</b> Sopralluogo</span>
+          </div>
+        </div>
+        <figure class="demo-hero-art">
+          <img src="/images/demo-serramentista/serramentista-hero.webp" alt="Installatore che misura una finestra in un appartamento" fetchpriority="high" />
+          <figcaption>Immagine generata per il sito dimostrativo · nessun lavoro reale</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <section class="demo-intro-strip" aria-label="Soluzioni presentate">
+      <div class="container demo-intro-grid">
+        <span>Finestre e portefinestre</span>
+        <span>Porte interne e d'ingresso</span>
+        <span>Persiane e tapparelle</span>
+        <span>Zanzariere e regolazioni</span>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--light" id="servizi-demo" aria-labelledby="demo-services-title">
+      <div class="container">
+        <div class="demo-section-heading"><div><p class="demo-eyebrow">Soluzioni</p><h2 id="demo-services-title">Ogni apertura ha esigenze diverse.</h2></div></div>
+        <div class="demo-service-grid demo-service-grid--detailed">
+          <article><span>01</span><h3>Finestre e portefinestre</h3><p>Sostituzione o nuova posa per ambienti che hanno bisogno di luce, chiusura e una finitura coerente.</p><ul><li>valutazione dell'apertura;</li><li>materiali e finiture;</li><li>posa da verificare.</li></ul></article>
+          <article><span>02</span><h3>Porte interne</h3><p>Soluzioni per camere, disimpegni e ambienti rinnovati, partendo da misure e telaio già presenti.</p><ul><li>porte battenti o scorrevoli;</li><li>finiture da scegliere;</li><li>controllo del vano.</li></ul></article>
+          <article><span>03</span><h3>Porte d'ingresso</h3><p>Sostituzione e installazione da valutare in base all'edificio, alla soglia e alle esigenze di chiusura.</p><ul><li>misure del vano;</li><li>accesso e trasporto;</li><li>soluzione da definire.</li></ul></article>
+          <article><span>04</span><h3>Persiane e tapparelle</h3><p>Schermature e avvolgibili da confrontare con il sistema esistente e con l'accesso all'edificio.</p><ul><li>riparazione o sostituzione;</li><li>materiali e colori;</li><li>verifica dei meccanismi.</li></ul></article>
+          <article><span>05</span><h3>Zanzariere</h3><p>Soluzioni per finestre e portefinestre, con una prima valutazione di spazio, apertura e passaggio.</p><ul><li>modelli da valutare;</li><li>misure indicative;</li><li>finiture coordinate.</li></ul></article>
+          <article><span>06</span><h3>Regolazioni e riparazioni</h3><p>Chiusure, guarnizioni e ferramenta da controllare prima di proporre un intervento o una sostituzione.</p><ul><li>problema osservato;</li><li>foto del dettaglio;</li><li>verifica sul posto.</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--blue" id="come-lavoriamo-demo" aria-labelledby="demo-process-title">
+      <div class="container"><div class="demo-section-heading"><p class="demo-eyebrow">Come lavoriamo</p><h2 id="demo-process-title">Prima capiamo l'apertura. Poi valutiamo la soluzione.</h2></div>
+        <ol class="demo-process-grid"><li><span>01</span><h3>Racconta l'ambiente</h3><p>Indica in quale stanza o spazio si trova l'infisso e che cosa vuoi migliorare o sostituire.</p></li><li><span>02</span><h3>Invia ciò che hai</h3><p>Foto, misure indicative e immagini del dettaglio aiutano a capire la richiesta prima del sopralluogo.</p></li><li><span>03</span><h3>Valutiamo il da farsi</h3><p>In base alle informazioni ricevute si capisce se servono un rilievo, un campionario o altri dettagli.</p></li></ol>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--white" aria-labelledby="demo-brief-title">
+      <div class="container demo-feature-grid"><figure class="demo-feature-image"><img src="/images/demo-serramentista/sigillatura-finestra.webp" alt="Installatore che sigilla il bordo di una finestra" loading="lazy" /><figcaption>Un dettaglio di posa può aiutare a raccontare il modo di lavorare.</figcaption></figure><div class="demo-feature-copy"><p class="demo-eyebrow">Prima del sopralluogo</p><h2 id="demo-brief-title">Più dettagli ci dai, meglio inquadriamo l'apertura.</h2><p>Per una prima valutazione è utile sapere in quale ambiente si trova il serramento, se vuoi sostituirlo o ripararlo e quali foto o misure indicative hai già disponibili.</p><ul class="demo-check-list"><li>tipo di ambiente e comune;</li><li>finestra, porta o schermatura;</li><li>problema osservato o risultato desiderato;</li><li>foto del vano e del dettaglio, se disponibili.</li></ul><a class="demo-inline-link" href="#contatti-demo">Racconta la tua esigenza →</a></div></div>
+    </section>
+
+    <section class="demo-section demo-section--sand" id="zone-demo" aria-labelledby="demo-zone-title">
+      <div class="container demo-zone-layout"><div><p class="demo-eyebrow">Zona di intervento</p><h2 id="demo-zone-title">Verona e comuni della provincia.</h2><p>I comuni qui sotto mostrano solo come può essere presentata una zona di lavoro. Nella richiesta indica il tuo comune, così sarà possibile verificare la disponibilità.</p></div><div class="demo-area-list"><span>Verona</span><span>San Martino Buon Albergo</span><span>Villafranca di Verona</span><span>Negrar di Valpolicella</span><span>Sommacampagna</span><span>San Giovanni Lupatoto</span><span>Castel d'Azzano</span><span>Pescantina</span><small>Esempio di area coperta</small></div></div>
+    </section>
+
+    <section class="demo-section demo-section--light" id="lavori-demo" aria-labelledby="demo-work-title">
+      <div class="container"><div class="demo-section-heading"><div><p class="demo-eyebrow">Interventi</p><h2 id="demo-work-title">Alcuni esempi di soluzione.</h2></div></div><div class="demo-work-grid demo-work-grid--gallery"><figure class="demo-work-card demo-work-card--wide"><img src="/images/demo-serramentista/interno-finito.webp" alt="Soggiorno luminoso con finestre nuove e pavimento in legno" loading="lazy" /><figcaption>Interno dopo la sostituzione degli infissi</figcaption></figure><figure class="demo-work-card"><img src="/images/demo-serramentista/sigillatura-finestra.webp" alt="Sigillatura del bordo di una finestra durante la posa" loading="lazy" /><figcaption>Dettaglio di posa</figcaption></figure><figure class="demo-work-card"><img src="/images/demo-serramentista/persiane-esterne.webp" alt="Persiane verdi e porta finestra su una facciata residenziale" loading="lazy" /><figcaption>Persiane e porta finestra</figcaption></figure><figure class="demo-work-card"><img src="/images/demo-serramentista/serramentista-hero.webp" alt="Misurazione di un infisso in un appartamento" loading="lazy" /><figcaption>Rilievo dell'apertura</figcaption></figure></div><p class="demo-small-note">Immagini generate con OpenAI ImageGen per questo esempio: non rappresentano lavori, clienti o indirizzi reali.</p></div>
+    </section>
+
+    <section class="demo-section demo-section--white" aria-labelledby="demo-faq-title"><div class="container demo-faq-layout"><div class="demo-section-heading"><p class="demo-eyebrow">Domande frequenti</p><h2 id="demo-faq-title">Prima di chiedere un sopralluogo.</h2></div><div class="demo-faq-list"><details open><summary>Che cosa devo scrivere nella richiesta?</summary><p>Indica il comune, l'ambiente, il tipo di infisso e se vuoi sostituire, installare o riparare. Se puoi, aggiungi fotografie del vano.</p></details><details><summary>Valutate anche riparazioni?</summary><p>La disponibilità va verificata caso per caso. La pagina può distinguere regolazioni e riparazioni da sostituzioni complete.</p></details><details><summary>Posso inviare misure prese da solo?</summary><p>Sì, come indicazione iniziale. Le misure definitive e la soluzione corretta richiedono rilievo e verifica dell'apertura.</p></details><details><summary>In quali comuni lavorate?</summary><p>La zona deve essere sempre aggiornata e reale. In questo esempio mostriamo Verona e alcuni comuni della provincia solo per illustrare la struttura.</p></details></div></div></section>
+
+    <section class="demo-contact-section" id="contatti-demo" aria-labelledby="demo-contact-title"><div class="container demo-contact-grid"><div><p class="demo-eyebrow">Richiesta di contatto</p><h2 id="demo-contact-title">Racconta quale apertura vuoi migliorare.</h2><p>Indica dove si trova l'infisso, che cosa vuoi cambiare e quali informazioni hai già: così possiamo capire se serve un sopralluogo.</p></div><div class="demo-contact-card"><div class="demo-contact-preview"><span>CONTATTI</span><strong>Infissi Esempio</strong><p>Verona e provincia. Descrivi l'ambiente e il serramento da valutare.</p><a href="tel:+390450000000">045 000 0000</a><a href="mailto:contatti@infissiesempio.example">contatti@infissiesempio.example</a></div><a class="demo-button demo-button--solid" href="mailto:contatti@infissiesempio.example">Scrivici</a><a class="demo-button demo-button--light" href="tel:+390450000000">Chiama 045 000 0000</a><small>Recapiti di esempio: questa è una pagina dimostrativa e non rappresenta un'attività reale.</small></div></div></section>
+
+    <footer class="demo-footer"><div class="container demo-footer-inner"><span>Infissi Esempio · sito dimostrativo</span><div><a href="/richiedi-sito/">Vuoi un sito simile? Richiedi il tuo →</a><small>Immagini generate per questo esempio · nessun lavoro reale</small></div></div></footer>
+  </div>
+</BaseLayout>

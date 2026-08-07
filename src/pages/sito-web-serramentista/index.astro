@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Sito web per serramentista a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Un sito web professionale per serramentisti: finestre, porte, persiane, zanzariere, posa e richiesta di sopralluogo, con un prezzo base di 399 €.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="vertical-hero" aria-labelledby="page-title">
+    <div class="container vertical-hero-grid">
+      <div>
+        <p class="eyebrow vertical-eyebrow">Modello per serramentisti</p>
+        <h1 id="page-title">Il sito web per il tuo lavoro da serramentista. Fai capire il risultato prima del sopralluogo, 399 €.</h1>
+        <p class="vertical-lead">Finestre, porte, persiane, zanzariere e posa: il cliente capisce che cosa puoi fornire o installare, dove lavori e quali informazioni inviarti.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link vertical-light-link" href="/demo/serramentista/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/prezzi/">Vedi cosa comprende</a></p>
+      </div>
+      <aside class="vertical-hero-card" aria-label="Esempio di struttura per il sito di un serramentista">
+        <span class="vertical-demo-badge">Struttura esempio</span>
+        <div class="vertical-hero-card-head"><span>INFISSI E POSA</span><span aria-hidden="true">01</span></div>
+        <strong>Mostra la soluzione.<br />Poi raccogli le misure utili.</strong>
+        <ul class="mini-check-list">
+          <li>Prodotti e lavorazioni distinte</li>
+          <li>Foto degli ambienti</li>
+          <li>Richiesta di sopralluogo</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
+    <div class="container vertical-intro-grid"><span><b>01</b> Che cosa installi</span><span><b>02</b> Quale ambiente valuti</span><span><b>03</b> Che cosa inviare</span></div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="why-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">Il cliente deve distinguere una sostituzione da una riparazione.</h2></div>
+      <div class="vertical-copy"><p>Chi cerca un serramentista può voler cambiare le finestre, installare una porta, sistemare una tapparella o capire se una zanzariera è adatta al proprio spazio.</p><p>Un sito utile non fa un preventivo a distanza: presenta le lavorazioni, chiarisce la zona e raccoglie foto e informazioni utili per il sopralluogo.</p></div>
+    </div>
+    <div class="container vertical-problem-grid">
+      <article class="vertical-card"><span>01</span><h3>Prodotti senza contesto</h3><p>Finestre, porte e schermature hanno esigenze diverse: separarle aiuta il cliente a scegliere il percorso corretto.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Misure improvvisate</h3><p>Foto, ambiente e misure indicative possono aiutare, senza trasformare il modulo in una rilevazione tecnica.</p></article>
+      <article class="vertical-card"><span>03</span><h3>Posa poco spiegata</h3><p>Indicare se fornisci, installi o valuti il prodotto evita aspettative diverse prima del contatto.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="services-title">
+    <div class="container">
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Soluzioni concrete, senza un catalogo infinito.</h2><p>Una selezione delle lavorazioni reali aiuta a capire quale richiesta può essere valutata.</p></div>
+      <div class="vertical-service-grid">
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Finestre e portefinestre</h3><p>Sostituzione o installazione di infissi per abitazioni e piccoli spazi, con materiali e finiture da definire.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Porte interne e d'ingresso</h3><p>Fornitura, posa o sostituzione di porte, valutando misure, apertura, telaio e condizioni esistenti.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Persiane e tapparelle</h3><p>Schermature, avvolgibili e sostituzioni da valutare in base all'edificio, all'accesso e al sistema già presente.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Zanzariere</h3><p>Soluzioni per finestre, portefinestre e passaggi, partendo da foto e dimensioni indicative dell'apertura.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Regolazioni e riparazioni</h3><p>Guarnizioni, ferramenta, chiusure o piccoli problemi da verificare prima di proporre una sostituzione.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Sopralluogo e preventivo</h3><p>Raccogli ambiente, zona, tipo di intervento e immagini già disponibili prima di definire il passo successivo.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="content-title">
+    <div class="container vertical-two-column vertical-two-column--dark">
+      <div class="vertical-heading"><p class="eyebrow">Contenuti che fanno chiarezza</p><h2 id="content-title">Una buona richiesta parte dall'apertura da valutare.</h2></div>
+      <div class="vertical-structure-list">
+        <div><span>01</span><p><strong>Ambiente:</strong> camera, soggiorno, bagno, ingresso o spazio esterno.</p></div>
+        <div><span>02</span><p><strong>Intervento:</strong> sostituzione, nuova posa, regolazione o prodotto da scegliere.</p></div>
+        <div><span>03</span><p><strong>Infisso:</strong> materiale e stato attuale, solo se già conosciuti dal cliente.</p></div>
+        <div><span>04</span><p><strong>Misure:</strong> dimensioni indicative e fotografie dell'apertura, senza presentarle come definitive.</p></div>
+        <div><span>05</span><p><strong>Zona:</strong> comuni o provincia realmente serviti, senza promettere disponibilità fuori area.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="structure-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Dalla stanza da migliorare alla richiesta di sopralluogo.</h2></div>
+      <div class="vertical-copy"><p>Per un serramentista il sito deve far vedere il risultato e spiegare il tipo di intervento, senza fingere che una finestra si possa quotare senza verificare misure, posa e contesto.</p><ul class="plain-list"><li>apertura con attività, zona e contatto;</li><li>servizi distinti per infissi, porte e schermature;</li><li>foto reali di materiali, ambienti e dettagli di posa;</li><li>nota chiara su rilievo, prodotti e preventivo.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="contact-title">
+    <div class="container vertical-contact-grid">
+      <div><p class="eyebrow">Contatto pensato per il mestiere</p><h2 id="contact-title">Raccogli l'apertura, senza promettere un prezzo prima della verifica.</h2></div>
+      <div><p>Il modulo può chiedere comune, tipo di infisso, ambiente, intervento desiderato, misure indicative e fotografie già disponibili. Il preventivo dipende sempre dal rilievo e dalla soluzione scelta.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/progetto-su-misura/">Se il progetto è più ampio <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="value-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il valore per il serramentista</p><h2 id="value-title">Un punto ordinato per spiegare prodotti, posa e modo di iniziare.</h2></div>
+      <div class="vertical-copy"><p>Il sito non sostituisce il rilievo, il campionario o la verifica del vano. Aiuta però il cliente a capire se il servizio è pertinente e ad arrivare al contatto con una richiesta meno vaga.</p><ul class="plain-list"><li>separi fornitura, posa e riparazione;</li><li>indichi prima la zona e il tipo di ambiente;</li><li>mostri dettagli reali senza usare un catalogo impersonale;</li><li>raccogli dati utili senza trasformare il modulo in una scheda tecnica.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="vertical-faq-title">
+    <div class="container faq-layout vertical-faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="vertical-faq-title">Prima di chiedere il sito.</h2><p>Le risposte aiutano a preparare contenuti utili senza trasformare la pagina in un preventivo automatico.</p></div>
+      <div class="faq-list">
+        <details open><summary>Quali servizi dovrebbe mostrare un serramentista?</summary><p>Quelli che vuoi davvero ricevere: finestre, portefinestre, porte, persiane, tapparelle, zanzariere, posa o riparazioni. Meglio dividerli in modo concreto che usare una voce generica come “infissi”.</p></details>
+        <details><summary>Posso pubblicare foto di finestre già installate?</summary><p>Sì, se sono immagini tue e puoi pubblicarle. Accompagnale con una descrizione reale dell'ambiente e del tipo di intervento, senza inventare clienti o risultati.</p></details>
+        <details><summary>Il modulo può chiedere le misure?</summary><p>Può raccogliere misure indicative e fotografie già disponibili, chiarendo che la valutazione definitiva richiede rilievo e verifica dell'apertura.</p></details>
+        <details><summary>Posso parlare di risparmio energetico?</summary><p>Puoi descrivere caratteristiche reali dei prodotti e delle soluzioni che proponi. Evita promesse di risparmio o prestazioni non documentate per il caso specifico.</p></details>
+        <details><summary>Quanto costa il modello per serramentista?</summary><p>La pagina rientra nell'offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="vertical-closing-title">
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online prodotti, zona e modo di chiedere un sopralluogo.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per la tua attività <span aria-hidden="true">→</span></a><a class="button button--dark" href="/demo/serramentista/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+</BaseLayout>

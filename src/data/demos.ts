@@ -54,4 +54,13 @@ export const demoSites: DemoSite[] = [
     verticalPath: '/sito-web-impresa-edile/',
     verticalLabel: 'Scopri il modello per imprese edili',
   },
+  {
+    slug: 'serramentista',
+    title: 'Serramentista',
+    summary: 'Finestre, porte, schermature, posa e richiesta di sopralluogo.',
+    image: '/images/demo-serramentista/serramentista-hero.webp',
+    imageAlt: 'Installatore che misura una finestra in un appartamento',
+    verticalPath: '/sito-web-serramentista/',
+    verticalLabel: 'Scopri il modello per serramentisti',
+  },
 ];
