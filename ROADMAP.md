@@ -30,13 +30,13 @@
 - [x] `/faq/`
 - [x] `/richiedi-sito/`
 - [x] Form asincrono
-- [x] Adapter/mock per submit
+- [x] Invio email reale verso Andrea con filtro antispam di base
 - [ ] Tracking eventi predisposto
 - [x] Privacy base predisposta con consenso esplicito e TODO per informativa definitiva
 - [x] Chiarire homepage, limiti dell'offerta e percorso avanzato
 - [x] Creare `/chi-siamo/` con presentazione del developer e del modo di lavorare
 
-Nota: il form dell'offerta base usa un adapter locale di sviluppo; non invia né salva dati finché non viene collegato un servizio di ricezione.
+Nota: il form dell'offerta base invia tramite FormSubmit verso `andrea.baragiola@outlook.it`. Al primo invio può essere richiesta una conferma dell'indirizzo; l'informativa privacy definitiva resta da validare professionalmente.
 
 ## Phase 3 — Funnel progetto avanzato
 
@@ -46,9 +46,9 @@ Nota: il form dell'offerta base usa un adapter locale di sviluppo; non invia né
 - [x] Campo tempistiche
 - [x] Consenso specifico per inoltro partner
 - [x] Configurazione partner separata
-- [x] Nessun invio reale in development
+- [x] Invio della richiesta ad Andrea
 
-Nota: il funnel avanzato usa un adapter locale e una configurazione partner vuota/disattivata; non vengono inventati partner e nessun dato viene inoltrato in development.
+Nota: il funnel avanzato invia la richiesta ad Andrea, ma non inoltra automaticamente dati a partner. La configurazione partner resta separata e vuota finché non viene definita realmente.
 
 ## Phase 4 — Prima verticale SEO
 
@@ -58,7 +58,7 @@ Nota: il funnel avanzato usa un adapter locale e una configurazione partner vuot
 - [x] Usare questa pagina come modello qualitativo, non come copia automatica
 - [x] Revisionare pagina e demo per chiarezza, SEO, conversione, responsive e segnali di contenuto automatico
 
-Nota: la demo idraulico è chiaramente marcata come DEMO, usa segnaposto dichiarati e non contiene recensioni, clienti o claim reali.
+Nota: la demo idraulico è chiaramente marcata come DEMO, usa immagini locali con licenza Unsplash e non contiene recensioni, clienti, sedi o claim reali.
 
 ## Phase 5 — Prime verticali
 

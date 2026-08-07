@@ -2,32 +2,115 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 
 const title = 'Demo sito web per idraulico | Sito Prezzo Fisso';
-const description = 'Demo dichiarata di un sito web per idraulico: servizi, zone, interventi e richiesta di preventivo. Nessuna azienda reale o recensione reale.';
+const description = 'Demo dichiarata di un sito web per idraulico con servizi, zone, fotografie e richiesta di contatto. Nessuna azienda reale o recensione reale.';
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
 ---
 
 <BaseLayout {title} {description} {canonical} noindex chrome={false}>
-  <div class="demo-banner"><div class="container demo-banner-inner"><strong>DEMO — progetto dimostrativo</strong><span>Nome, contatti, zone e immagini sono segnaposto.</span><a href="/sito-web-idraulico/">Torna alla pagina per idraulici →</a></div></div>
+  <div class="demo-banner">
+    <div class="container demo-banner-inner">
+      <strong>DEMO — progetto dimostrativo</strong>
+      <span>Nome, contatti e zone sono segnaposto. Le foto sono locali e utilizzabili con licenza Unsplash.</span>
+      <a href="/sito-web-idraulico/">Scopri la pagina per idraulici →</a>
+    </div>
+  </div>
 
-  <section class="demo-site-hero" aria-labelledby="demo-title">
-    <div class="container demo-site-nav"><a class="demo-brand" href="#demo-title"><span class="demo-brand-mark">ID</span><span>Idraulica Demo</span></a><nav aria-label="Navigazione demo"><a href="#servizi-demo">Servizi</a><a href="#zone-demo">Zone</a><a href="#contatti-demo">Contatti</a></nav><a class="demo-nav-cta" href="#contatti-demo">Richiedi un preventivo</a></div>
+  <header class="demo-site-hero">
+    <div class="container demo-site-nav">
+      <a class="demo-brand" href="#demo-title" aria-label="Idraulica Demo, home">
+        <span class="demo-brand-mark">ID</span>
+        <span>Idraulica Demo</span>
+      </a>
+      <nav aria-label="Navigazione demo">
+        <a href="#servizi-demo">Servizi</a>
+        <a href="#zone-demo">Zone</a>
+        <a href="#lavori-demo">Lavori</a>
+        <a href="#contatti-demo">Contatti</a>
+      </nav>
+      <a class="demo-nav-cta" href="/richiedi-sito/">Richiedi il tuo sito</a>
+    </div>
     <div class="container demo-hero-grid">
-      <div><p class="demo-eyebrow">IDRAULICA · DEMO</p><h1 id="demo-title">Quando l'acqua non aspetta, sai chi chiamare.</h1><p>Dalla perdita sotto il lavello alla sostituzione di un sanitario: interventi chiari per casa e attività.</p><div class="demo-button-row"><a class="demo-button demo-button--solid" href="#contatti-demo">Descrivi il problema</a><a class="demo-text-link" href="#servizi-demo">Vedi i servizi ↓</a></div></div>
-      <div class="demo-hero-art" aria-label="Segnaposto immagine dimostrativa"><span>IMMAGINE<br />DEMO</span><i></i></div>
+      <div>
+        <p class="demo-eyebrow">IDRAULICA · DEMO</p>
+        <h1 id="demo-title">Quando l’acqua non aspetta, sai chi chiamare.</h1>
+        <p>Riparazioni, installazioni e manutenzione per casa e attività. Una pagina fatta per far capire subito cosa fai e dove intervieni.</p>
+        <div class="demo-button-row">
+          <a class="demo-button demo-button--solid" href="/richiedi-sito/">Compila il form</a>
+          <a class="demo-button demo-button--outline" href="/sito-web-idraulico/">Perché funziona per un idraulico</a>
+        </div>
+      </div>
+      <figure class="demo-hero-art">
+        <img src="/images/demo-idraulico/idraulico-intervento.jpg" alt="Idraulico al lavoro in un bagno durante un intervento" fetchpriority="high" />
+        <figcaption>Immagine dimostrativa · Bhāgya Laxmi / Unsplash</figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <section class="demo-section demo-section--light" id="servizi-demo" aria-labelledby="demo-services-title">
+    <div class="container">
+      <div class="demo-section-heading">
+        <p class="demo-eyebrow">Cosa facciamo</p>
+        <h2 id="demo-services-title">Interventi chiari, senza giri di parole.</h2>
+      </div>
+      <div class="demo-service-grid">
+        <article><span>01</span><h3>Riparazioni</h3><p>Perdite, rubinetti e piccoli guasti da valutare.</p></article>
+        <article><span>02</span><h3>Scarichi</h3><p>Disotturazioni e problemi di deflusso.</p></article>
+        <article><span>03</span><h3>Installazioni</h3><p>Sanitari, rubinetteria e sostituzioni.</p></article>
+        <article><span>04</span><h3>Manutenzione</h3><p>Controlli e interventi programmati.</p></article>
+      </div>
     </div>
   </section>
 
-  <section class="demo-section demo-section--light" id="servizi-demo" aria-labelledby="demo-services-title">
-    <div class="container"><div class="demo-section-heading"><p class="demo-eyebrow">Cosa facciamo</p><h2 id="demo-services-title">Interventi chiari, senza giri di parole.</h2></div><div class="demo-service-grid"><article><span>01</span><h3>Riparazioni</h3><p>Perdite, rubinetti e piccoli guasti da valutare.</p></article><article><span>02</span><h3>Scarichi</h3><p>Disotturazioni e problemi di deflusso.</p></article><article><span>03</span><h3>Installazioni</h3><p>Sanitari, rubinetteria e sostituzioni.</p></article><article><span>04</span><h3>Manutenzione</h3><p>Controlli e interventi programmati.</p></article></div></div>
-  </section>
-
   <section class="demo-section demo-section--cream" id="zone-demo" aria-labelledby="demo-zone-title">
-    <div class="container demo-split-section"><div><p class="demo-eyebrow">Dove interveniamo</p><h2 id="demo-zone-title">Una zona chiara evita richieste fuori area.</h2></div><div class="demo-zone-card"><span>ZONE SERVITE — DEMO</span><strong>Comune dimostrativo<br />e dintorni</strong><p>Sostituire con i comuni realmente coperti dall'attività.</p></div></div>
+    <div class="container demo-split-section">
+      <div>
+        <p class="demo-eyebrow">Dove interveniamo</p>
+        <h2 id="demo-zone-title">Una zona chiara evita richieste fuori area.</h2>
+      </div>
+      <div class="demo-zone-card">
+        <span>ZONE SERVITE · DEMO</span>
+        <strong>Comune dimostrativo<br />e dintorni</strong>
+        <p>Sostituire con i comuni realmente coperti dall’attività.</p>
+        <a class="demo-inline-link" href="/richiedi-sito/">Indica la tua zona nel form →</a>
+      </div>
+    </div>
   </section>
 
-  <section class="demo-section demo-section--light" aria-labelledby="demo-work-title"><div class="container"><div class="demo-section-heading"><p class="demo-eyebrow">Lavori</p><h2 id="demo-work-title">Una gallery con lavori pertinenti.</h2></div><div class="demo-work-grid"><div class="demo-work-card demo-work-card--one"><span>DETTAGLIO DEMO</span></div><div class="demo-work-card demo-work-card--two"><span>INSTALLAZIONE DEMO</span></div><div class="demo-work-card demo-work-card--three"><span>ATTREZZATURA DEMO</span></div></div><p class="demo-small-note">Nella versione reale inseriremo solo fotografie disponibili e pertinenti. Questi elementi grafici non rappresentano lavori reali.</p></div></section>
+  <section class="demo-section demo-section--light" id="lavori-demo" aria-labelledby="demo-work-title">
+    <div class="container">
+      <div class="demo-section-heading">
+        <p class="demo-eyebrow">Lavori</p>
+        <h2 id="demo-work-title">Le foto fanno capire il lavoro prima ancora del testo.</h2>
+      </div>
+      <div class="demo-work-grid">
+        <figure class="demo-work-card demo-work-card--wide"><img src="/images/demo-idraulico/idraulico-intervento.jpg" alt="Intervento di installazione idraulica in un bagno" loading="lazy" /><figcaption>Installazione e manutenzione</figcaption></figure>
+        <figure class="demo-work-card"><img src="/images/demo-idraulico/attrezzatura.jpg" alt="Attrezzatura e raccordi per lavori idraulici" loading="lazy" /><figcaption>Attrezzatura e raccordi</figcaption></figure>
+        <figure class="demo-work-card demo-work-card--tools"><img src="/images/demo-idraulico/attrezzatura.jpg" alt="Dettaglio di utensili e componenti idraulici" loading="lazy" /><figcaption>Dettagli del mestiere</figcaption></figure>
+      </div>
+      <p class="demo-small-note">Le fotografie sono asset dimostrativi con licenza Unsplash; nella versione reale useremmo immagini dell’attività, quando disponibili.</p>
+    </div>
+  </section>
 
-  <section class="demo-contact-section" id="contatti-demo" aria-labelledby="demo-contact-title"><div class="container demo-contact-grid"><div><p class="demo-eyebrow">Richiedi un preventivo</p><h2 id="demo-contact-title">Racconta cosa è successo.</h2><p>Indica il problema, la zona e quando preferisci essere ricontattato.</p></div><div class="demo-contact-card"><label for="demo-name">Nome<input id="demo-name" name="name" type="text" autocomplete="name" placeholder="Il tuo nome" /></label><label for="demo-email">Email<input id="demo-email" name="email" type="email" autocomplete="email" placeholder="nome@email.it" /></label><label for="demo-area">Zona<input id="demo-area" name="area" type="text" placeholder="Comune o zona" /></label><label for="demo-description">Descrizione<textarea id="demo-description" name="description" rows="4" placeholder="Es. perdita sotto il lavello…"></textarea></label><button class="demo-button demo-button--solid" type="button">Invia richiesta demo</button><small>Demo: questo modulo non invia dati.</small></div></div></section>
+  <section class="demo-contact-section" id="contatti-demo" aria-labelledby="demo-contact-title">
+    <div class="container demo-contact-grid">
+      <div>
+        <p class="demo-eyebrow">Richiedi un preventivo</p>
+        <h2 id="demo-contact-title">Racconta cosa è successo.</h2>
+        <p>Il sito reale può raccogliere problema, zona e contatto in pochi campi, così la richiesta arriva più ordinata.</p>
+      </div>
+      <div class="demo-contact-card">
+        <div class="demo-contact-preview"><span>FORM DI CONTATTO</span><strong>Perdita sotto il lavello?</strong><p>Descrivi il problema e indica la zona. Ti ricontatteremo per capire il prossimo passo.</p></div>
+        <a class="demo-button demo-button--solid" href="/richiedi-sito/">Compila il form reale</a>
+        <a class="demo-button demo-button--dark" href="/sito-web-idraulico/">Vai alla pagina idraulico</a>
+        <small>Questa è una demo: non raccoglie richieste per un idraulico reale.</small>
+      </div>
+    </div>
+  </section>
 
-  <section class="demo-footer"><div class="container demo-footer-inner"><span>Idraulica Demo · sito dimostrativo</span><a href="/richiedi-sito/">Vuoi un sito simile? Richiedi il tuo →</a></div></section>
+  <footer class="demo-footer">
+    <div class="container demo-footer-inner">
+      <span>Idraulica Demo · sito dimostrativo</span>
+      <a href="/richiedi-sito/">Vuoi un sito simile? Richiedi il tuo →</a>
+    </div>
+  </footer>
 </BaseLayout>

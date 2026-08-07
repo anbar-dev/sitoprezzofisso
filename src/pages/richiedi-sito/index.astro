@@ -13,7 +13,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
         <p class="eyebrow">Il primo passo</p>
         <h1 id="page-title">Raccontaci il tuo lavoro, con i tuoi tempi.</h1>
         <p class="page-lead">Il modulo raccoglie le informazioni utili per capire l'attività e verificare se il sito da 399 € è il percorso giusto.</p>
-        <ul class="form-promise-list"><li>Niente telefonata obbligatoria</li><li>Puoi salvare le informazioni prima di inviarle</li><li>Il modulo demo non invia dati a servizi esterni</li></ul>
+        <ul class="form-promise-list"><li>Niente telefonata obbligatoria</li><li>Puoi tornare indietro tra i passaggi</li><li>La richiesta arriva direttamente ad Andrea</li></ul>
       </div>
       <aside class="form-side-note"><strong>399 €</strong><span>offerta base</span><a href="/prezzi/">Controlla cosa include →</a></aside>
     </div>
@@ -23,7 +23,13 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
     <div class="container form-layout">
       <div class="form-heading"><p class="eyebrow">Richiesta sito base</p><h2 id="form-title">Informazioni essenziali, poi dettagli utili.</h2><p>I campi con l'asterisco sono necessari. Puoi tornare indietro tra i passaggi senza perdere quello che hai scritto.</p></div>
 
-      <form class="progressive-form" data-progressive-form="base">
+      <form class="progressive-form" data-progressive-form="base" action="https://formsubmit.co/ajax/andrea.baragiola@outlook.it" method="post">
+        <input type="hidden" name="_subject" value="Nuova richiesta sito base — Sito Prezzo Fisso" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="true" />
+        <input type="hidden" name="_blacklist" value="viagra,casino,crypto investment,seo backlink" />
+        <input type="hidden" name="_honey" value="" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <input type="hidden" name="_form_started" value="" data-form-started />
         <div class="form-progress-meta"><span data-form-progress-label>Passaggio 1 di 4</span><span>circa 5 minuti</span></div>
         <div class="form-progress-track" aria-hidden="true"><span data-form-progress></span></div>
 
@@ -68,7 +74,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
             <label>Note <span class="label-note">facoltative</span><textarea name="note" rows="6" placeholder="Esigenze particolari, pagine indispensabili, dubbi…"></textarea></label>
             <label class="checkbox-label"><input name="consenso-contatto" type="checkbox" required /> <span>Acconsento a essere ricontattato per valutare questa richiesta. *</span></label>
           </div>
-          <p class="privacy-note">Demo tecnica: il modulo non invia né salva dati. TODO: sostituire questo testo con un'informativa privacy professionale prima di attivare un invio reale.</p>
+          <p class="privacy-note">Il modulo invia la richiesta ad Andrea tramite un servizio esterno di ricezione email. È previsto un filtro antispam automatico; al primo invio il servizio potrebbe chiedere di confermare l’indirizzo. TODO: sostituire questo testo con informativa privacy e condizioni del servizio validate professionalmente.</p>
         </fieldset>
 
         <div class="form-status" data-form-status role="status" aria-live="polite" hidden></div>

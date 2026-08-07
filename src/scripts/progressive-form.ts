@@ -11,7 +11,10 @@ export function setupProgressiveForm(
   const previousButton = form.querySelector<HTMLButtonElement>('[data-form-previous]');
   const nextButton = form.querySelector<HTMLButtonElement>('[data-form-next]');
   const submitButton = form.querySelector<HTMLButtonElement>('[data-form-submit]');
+  const startedField = form.querySelector<HTMLInputElement>('[data-form-started]');
   let currentStep = 0;
+
+  if (startedField) startedField.value = String(Date.now());
 
   const updateStep = (stepIndex: number) => {
     currentStep = stepIndex;
@@ -53,6 +56,14 @@ export function setupProgressiveForm(
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
     if (!validateCurrentStep() || !status || !submitButton) return;
+
+    const startedAt = Number(startedField?.value ?? Date.now());
+    if (Date.now() - startedAt < 2500) {
+      status.textContent = 'Controlla i dati inseriti prima di inviare la richiesta.';
+      status.dataset.state = 'error';
+      status.hidden = false;
+      return;
+    }
 
     submitButton.disabled = true;
     submitButton.textContent = 'Invio in corso…';

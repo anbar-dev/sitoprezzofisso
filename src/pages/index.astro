@@ -25,21 +25,53 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
         <p class="hero-note"><span class="status-dot" aria-hidden="true"></span> Comunicazione ordinaria via email · niente riunioni inutili</p>
       </div>
 
-      <aside class="price-card" aria-label="Riepilogo dell'offerta base">
+      <aside class="price-card price-card-carousel" aria-label="Riepilogo dell'offerta e del percorso">
         <div class="price-card-top">
-          <span>Offerta base</span>
-          <span class="card-index">01 / 03</span>
+          <span data-carousel-label>Offerta base</span>
+          <span class="card-index" data-carousel-index>01 / 03</span>
         </div>
-        <p class="price"><span>€</span>399</p>
-        <p class="price-caption">Realizzazione di un sito vetrina semplice, professionale e responsive. Eventuali costi ricorrenti di dominio, hosting o servizi terzi sono separati.</p>
-        <ul class="check-list">
-          <li>Struttura fino a 3 pagine</li>
-          <li>SEO tecnica di base</li>
-          <li>Fino a 3 cicli di revisione</li>
-        </ul>
-        <div class="price-card-foot">
-          <span class="line" aria-hidden="true"></span>
-          <span>Scope definito prima di iniziare</span>
+        <div class="price-card-slides" data-carousel-slides aria-live="polite">
+          <article class="price-card-slide" data-carousel-slide>
+            <p class="price"><span>€</span>399</p>
+            <p class="price-caption">Realizzazione di un sito vetrina semplice, professionale e responsive. Eventuali costi ricorrenti di dominio, hosting o servizi terzi sono separati.</p>
+            <ul class="check-list">
+              <li>Struttura fino a 3 pagine</li>
+              <li>SEO tecnica di base</li>
+              <li>Fino a 3 cicli di revisione</li>
+            </ul>
+            <div class="price-card-foot"><span class="line" aria-hidden="true"></span><span>Scope definito prima di iniziare</span></div>
+          </article>
+          <article class="price-card-slide" data-carousel-slide hidden>
+            <p class="carousel-kicker">Cosa succede dopo</p>
+            <h2>Un percorso breve e leggibile.</h2>
+            <p class="price-caption">Raccogliamo le informazioni, prepariamo la prima versione, riceviamo revisioni consolidate e pubblichiamo.</p>
+            <ul class="check-list">
+              <li>Brief via email</li>
+              <li>Prima versione del sito</li>
+              <li>Pubblicazione sul tuo dominio</li>
+            </ul>
+            <div class="price-card-foot"><span class="line" aria-hidden="true"></span><span>Niente riunioni obbligatorie</span></div>
+          </article>
+          <article class="price-card-slide" data-carousel-slide hidden>
+            <p class="carousel-kicker">Se il progetto cresce</p>
+            <h2>Funzioni più ampie? Si cambia percorso.</h2>
+            <p class="price-caption">Ecommerce, gestionali e integrazioni partono da fasce diverse: nel form puoi indicare il budget e chiedere fino a 2 preventivi.</p>
+            <ul class="check-list">
+              <li>Fasce da 1.000 € in su</li>
+              <li>Brief unico</li>
+              <li>Consenso esplicito per l'inoltro</li>
+            </ul>
+            <div class="price-card-foot"><span class="line" aria-hidden="true"></span><span>Progetto valutato caso per caso</span></div>
+          </article>
+        </div>
+        <div class="carousel-controls" aria-label="Riepilogo scorrevole">
+          <button type="button" class="carousel-arrow" data-carousel-previous aria-label="Scheda precedente">←</button>
+          <div class="carousel-dots">
+            <button type="button" class="carousel-dot is-active" data-carousel-dot="0" aria-label="Mostra scheda 1" aria-current="true"></button>
+            <button type="button" class="carousel-dot" data-carousel-dot="1" aria-label="Mostra scheda 2"></button>
+            <button type="button" class="carousel-dot" data-carousel-dot="2" aria-label="Mostra scheda 3"></button>
+          </div>
+          <button type="button" class="carousel-arrow" data-carousel-next aria-label="Scheda successiva">→</button>
         </div>
       </aside>
     </div>
@@ -108,7 +140,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
           <span class="card-number">01</span>
           <h3>Artigiani e microimprese</h3>
           <p>Servizi, zone operative e contatti in un posto ordinato, facile da consultare anche dal telefono.</p>
-          <a class="card-link" href="/sito-web-idraulico/">Vedi il modello per idraulici <span aria-hidden="true">→</span></a>
+          <a class="card-link" href="/demo/idraulico/">Guarda la demo per idraulici <span aria-hidden="true">→</span></a>
         </article>
         <article class="audience-card audience-card--featured">
           <span class="card-number">02</span>
@@ -237,7 +269,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
     <div class="container two-column-content">
       <div>
         <p class="eyebrow">Chi c'è dietro</p>
-        <h2 id="about-home-title">Un developer web, con un processo semplice.</h2>
+        <h2 id="about-home-title">Mi occupo direttamente del tuo sito.</h2>
       </div>
       <div>
         <p>Sono uno sviluppatore di siti web e costruisco siti vetrina semplici, veloci e facili da consultare. Ho creato Sito Prezzo Fisso per rendere più leggibile un acquisto che spesso parte da preventivi vaghi e riunioni non necessarie.</p>
@@ -259,3 +291,29 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
     </div>
   </section>
 </BaseLayout>
+
+<script is:inline>
+  const carousel = document.querySelector('[data-carousel-slides]');
+  const slides = carousel ? Array.from(carousel.querySelectorAll('[data-carousel-slide]')) : [];
+  const dots = Array.from(document.querySelectorAll('[data-carousel-dot]'));
+  const label = document.querySelector('[data-carousel-label]');
+  const index = document.querySelector('[data-carousel-index]');
+  const labels = ['Offerta base', 'Come funziona', 'Percorso avanzato'];
+  let current = 0;
+
+  const showSlide = (next) => {
+    current = (next + slides.length) % slides.length;
+    slides.forEach((slide, slideIndex) => { slide.hidden = slideIndex !== current; });
+    dots.forEach((dot, dotIndex) => {
+      dot.classList.toggle('is-active', dotIndex === current);
+      if (dotIndex === current) dot.setAttribute('aria-current', 'true');
+      else dot.removeAttribute('aria-current');
+    });
+    if (label) label.textContent = labels[current];
+    if (index) index.textContent = `${String(current + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
+  };
+
+  document.querySelector('[data-carousel-previous]')?.addEventListener('click', () => showSlide(current - 1));
+  document.querySelector('[data-carousel-next]')?.addEventListener('click', () => showSlide(current + 1));
+  dots.forEach((dot, dotIndex) => dot.addEventListener('click', () => showSlide(dotIndex)));
+</script>
