@@ -69,7 +69,7 @@ Solo dopo approvazione della pagina idraulico:
 - [ ] sito web per impresa edile
 - [ ] sito web per serramentista
 - [ ] sito web per falegname
-- [ ] sito web per giardiniere
+- [x] sito web per giardiniere
 - [ ] sito web per geometra
 - [ ] sito web per termoidraulico
 - [ ] sito web per impresa pulizie

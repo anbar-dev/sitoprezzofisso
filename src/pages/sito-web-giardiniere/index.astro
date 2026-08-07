@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Sito web per giardiniere a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Un sito web professionale per giardinieri: manutenzione, potature, impianti di irrigazione, progettazione del verde e richiesta di sopralluogo, con un prezzo base di 399 €.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="vertical-hero" aria-labelledby="page-title">
+    <div class="container vertical-hero-grid">
+      <div>
+        <p class="eyebrow vertical-eyebrow">Modello per artigiani</p>
+        <h1 id="page-title">Un sito web per giardiniere, curato come il tuo lavoro. 399 €.</h1>
+        <p class="vertical-lead">Manutenzione, potature, impianti di irrigazione e progettazione del verde: il cliente capisce cosa fai, dove lavori e come chiedere un sopralluogo.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link vertical-light-link" href="/prezzi/">Vedi cosa comprende <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/come-funziona/">Scopri come funziona</a></p>
+      </div>
+      <aside class="vertical-hero-card" aria-label="Esempio di struttura per un sito di giardiniere">
+        <span class="vertical-demo-badge">Struttura esempio</span>
+        <div class="vertical-hero-card-head"><span>CURA DEL VERDE</span><span aria-hidden="true">01</span></div>
+        <strong>Prima il giardino.<br />Poi il lavoro.</strong>
+        <ul class="mini-check-list">
+          <li>Servizi per stagione</li>
+          <li>Zone servite in evidenza</li>
+          <li>Richiesta di sopralluogo</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
+    <div class="container vertical-intro-grid"><span><b>01</b> Che spazio curi</span><span><b>02</b> Quali lavori esegui</span><span><b>03</b> Cosa inviare</span></div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="why-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">Il cliente deve capire che tipo di cura cerca.</h2></div>
+      <div class="vertical-copy"><p>Chi cerca un giardiniere può avere un prato da mantenere, una siepe da potare, un giardino da riorganizzare o un impianto di irrigazione da controllare.</p><p>Un sito utile non promette un risultato uguale per ogni spazio: presenta le attività, chiarisce la zona e raccoglie le informazioni che servono per valutare il sopralluogo.</p></div>
+    </div>
+    <div class="container vertical-problem-grid">
+      <article class="vertical-card"><span>01</span><h3>Servizi troppo generici</h3><p>Separare manutenzione, potature, irrigazione e progettazione aiuta il cliente a riconoscere il lavoro di cui ha bisogno.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Spazi molto diversi</h3><p>Giardino privato, terrazzo, condominio o area verde richiedono informazioni e aspettative differenti.</p></article>
+      <article class="vertical-card"><span>03</span><h3>Sopralluoghi poco preparati</h3><p>Zona, dimensione indicativa, accesso e fotografie già disponibili rendono la prima richiesta più utile.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="services-title">
+    <div class="container">
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Servizi descritti in base allo spazio e alla stagione.</h2><p>Una selezione concreta aiuta il cliente a capire se cerchi manutenzione ricorrente, un intervento puntuale o un progetto più ampio.</p></div>
+      <div class="vertical-service-grid">
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Manutenzione del giardino</h3><p>Taglio del prato, pulizia, bordure e cura ordinaria degli spazi verdi secondo frequenza e stagione.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Potatura e gestione piante</h3><p>Siepi, arbusti e alberature da valutare in base alla specie, alle dimensioni e al periodo corretto.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Impianti di irrigazione</h3><p>Installazione, regolazione o controllo di sistemi per distribuire l'acqua in modo adatto allo spazio.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Prati e nuove piantumazioni</h3><p>Preparazione, semina o messa a dimora da raccontare senza garantire risultati prima di conoscere il terreno.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Terrazzi e piccoli spazi</h3><p>Vasi, fioriere e soluzioni verdi per balconi e terrazzi, con attenzione a esposizione e manutenzione.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Sopralluogo e preventivo</h3><p>Raccogli zona, tipo di spazio, dimensioni indicative e fotografie già disponibili prima del contatto.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="structure-title">
+    <div class="container vertical-two-column vertical-two-column--dark">
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Una pagina che parte dallo spazio e arriva al sopralluogo.</h2></div>
+      <div class="vertical-structure-list">
+        <div><span>01</span><p><strong>Attività:</strong> manutenzione, potature, irrigazione o progettazione spiegate senza categorie vaghe.</p></div>
+        <div><span>02</span><p><strong>Spazio:</strong> giardino, terrazzo, condominio o area verde realmente gestiti.</p></div>
+        <div><span>03</span><p><strong>Stagione:</strong> indicazioni utili per lavori ricorrenti e interventi da programmare.</p></div>
+        <div><span>04</span><p><strong>Richiesta:</strong> superficie indicativa, esposizione, accesso e obiettivo del cliente.</p></div>
+        <div><span>05</span><p><strong>Zona:</strong> comuni o provincia realmente coperti, senza dichiarare sedi inesistenti.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="content-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Contenuti che aiutano</p><h2 id="content-title">Il verde si presenta meglio quando ogni immagine ha un contesto.</h2></div>
+      <div class="vertical-copy"><p>Le fotografie reali possono mostrare il tuo modo di lavorare, ma è utile accompagnarle con una didascalia: tipo di spazio, intervento eseguito e stagione, senza attribuire risultati o lavori non verificabili.</p><ul class="plain-list"><li>prima e dopo solo quando le immagini sono realmente tue;</li><li>descrizione di piante, superfici o impianti coinvolti;</li><li>zona indicativa e tipo di intervento;</li><li>nota su manutenzione ricorrente o lavoro una tantum.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="contact-title">
+    <div class="container vertical-contact-grid">
+      <div><p class="eyebrow">Contatto pensato per il mestiere</p><h2 id="contact-title">Raccogli le informazioni utili prima di parlare di prezzo.</h2></div>
+      <div><p>Il modulo può chiedere comune, tipo di spazio, dimensioni indicative, accessibilità, frequenza desiderata e fotografie già disponibili. Il preventivo resta legato alla valutazione reale del lavoro.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/progetto-su-misura/">Se il progetto è più ampio <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="value-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il valore per il giardiniere</p><h2 id="value-title">Un punto ordinato per spiegare come ti prendi cura degli spazi.</h2></div>
+      <div class="vertical-copy"><p>Il sito non sostituisce il sopralluogo, il passaparola o la conoscenza delle piante. Aiuta però il cliente a capire se il servizio è pertinente e ad arrivare al contatto con una richiesta meno vaga.</p><ul class="plain-list"><li>separi manutenzione ordinaria e lavori puntuali;</li><li>indichi prima la zona e il tipo di spazio;</li><li>mostri il tuo approccio con contenuti e foto reali;</li><li>raccogli dati utili senza trasformare il modulo in un questionario tecnico.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="vertical-faq-title">
+    <div class="container faq-layout vertical-faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="vertical-faq-title">Prima di chiedere il sito.</h2><p>Le risposte aiutano a capire quali contenuti preparare e quando l'offerta base è sufficiente.</p></div>
+      <div class="faq-list">
+        <details open><summary>Quali servizi dovrebbe mostrare un giardiniere?</summary><p>Quelli che vuoi davvero ricevere: manutenzione, potature, irrigazione, prati, piantumazioni, terrazzi o progettazione del verde. Meglio una selezione concreta che un elenco generico.</p></details>
+        <details><summary>Devo indicare le zone servite?</summary><p>Sì, se lavori in un'area definita. Comuni o provincia aiutano il cliente a capire subito se può chiedere un sopralluogo.</p></details>
+        <details><summary>Posso inserire foto dei miei giardini?</summary><p>Sì, se sono immagini tue e puoi pubblicarle. Accompagnale con una descrizione reale del lavoro, dello spazio e dell'intervento eseguito.</p></details>
+        <details><summary>Il sito può gestire prenotazioni ricorrenti?</summary><p>L'offerta base può presentare il servizio e raccogliere una richiesta. Un calendario o una gestione complessa degli appuntamenti richiedono un progetto da valutare separatamente.</p></details>
+        <details><summary>Quanto costa il modello per giardiniere?</summary><p>La pagina rientra nell'offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="vertical-closing-title">
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online servizi, zona e modo di chiedere un sopralluogo.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per la tua attività <span aria-hidden="true">→</span></a><a class="button button--dark" href="/prezzi/">Vedi l'offerta base <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+</BaseLayout>
