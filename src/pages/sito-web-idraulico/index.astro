@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const title = 'Sito web per idraulico a prezzo fisso | Sito Prezzo Fisso';
-const description = 'Un sito web professionale per idraulici: servizi, zone servite, richiesta preventivo, sopralluogo e WhatsApp, con un prezzo base di 399 €.';
+const description = 'Un sito web professionale per idraulici: servizi, zone coperte, richieste di preventivo e sopralluoghi, con un prezzo base di 399 €.';
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
 ---
 
@@ -11,8 +11,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
     <div class="container vertical-hero-grid">
       <div>
         <p class="eyebrow vertical-eyebrow">Modello per artigiani</p>
-        <h1 id="page-title">Un sito web per idraulico, chiaro e professionale. 399 €.</h1>
-        <p class="vertical-lead">Servizi chiari, zona di intervento, richiesta di preventivo e contatto rapido: le informazioni che un cliente cerca prima di chiamare.</p>
+        <h1 id="page-title">Il sito web per il tuo lavoro da idraulico. Chiaro, professionale, 399 €.</h1>
+        <p class="vertical-lead">Chi cerca un idraulico vuole capire in fretta che cosa fai, dove intervieni e come raccontarti il problema.</p>
         <div class="button-row">
           <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
           <a class="text-link vertical-light-link" href="/demo/idraulico/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a>
@@ -22,14 +22,14 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
       <aside class="vertical-hero-card" aria-label="Esempio di struttura per un sito di idraulico">
         <span class="vertical-demo-badge">Sito dimostrativo</span>
         <div class="vertical-hero-card-head"><span>INTERVENTI IDRAULICI</span><span aria-hidden="true">01</span></div>
-        <strong>Prima il problema.<br />Poi la soluzione.</strong>
+        <strong>Racconta il problema.<br />Troviamo il passo giusto.</strong>
         <ul class="mini-check-list"><li>Servizi comprensibili</li><li>Zone servite in evidenza</li><li>Richiesta preventivo</li></ul>
       </aside>
     </div>
   </section>
 
   <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
-    <div class="container vertical-intro-grid"><span><b>01</b> Cosa risolvi</span><span><b>02</b> Dove intervieni</span><span><b>03</b> Come contattarti</span></div>
+    <div class="container vertical-intro-grid"><span><b>01</b> Che cosa risolvi</span><span><b>02</b> Dove intervieni</span><span><b>03</b> Come contattarti</span></div>
   </section>
 
   <section class="section section--paper vertical-demo-promo" aria-labelledby="demo-promo-title">
@@ -37,7 +37,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
       <div>
         <p class="eyebrow">Sito dimostrativo</p>
         <h2 id="demo-promo-title">Vuoi vedere un esempio completo?</h2>
-        <p>Abbiamo preparato una pagina dimostrativa per un’attività idraulica: servizi, fotografie, comuni serviti, domande frequenti e richiesta di contatto.</p>
+        <p>Abbiamo preparato un esempio completo per un’attività idraulica, con servizi, fotografie, zona di intervento, domande frequenti e contatti.</p>
         <a class="button button--dark" href="/demo/idraulico/">Apri il sito dimostrativo <span aria-hidden="true">↗</span></a>
       </div>
       <a class="vertical-demo-promo-image" href="/demo/idraulico/" aria-label="Apri il sito dimostrativo per idraulici">
@@ -49,37 +49,37 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
 
   <section class="section section--white" aria-labelledby="why-title">
     <div class="container vertical-two-column">
-      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">Il cliente deve capire subito se sei l'idraulico giusto.</h2></div>
-      <div class="vertical-copy"><p>Chi cerca un idraulico spesso parte da una situazione concreta: una perdita, uno scarico bloccato, un rubinetto da sostituire o un impianto da sistemare.</p><p>Il sito deve ridurre i dubbi in pochi secondi: fai proprio quel tipo di intervento? Operi in quella zona? Come può il cliente mandarti le informazioni utili?</p></div>
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">Chi ha un guasto vuole capire subito se puoi intervenire.</h2></div>
+      <div class="vertical-copy"><p>Di solito la ricerca parte da un problema preciso: una perdita, uno scarico intasato, un rubinetto da cambiare o un impianto da sistemare.</p><p>Il sito deve rispondere subito alle domande più pratiche: fai questo tipo di lavoro? Copri quella zona? Quali informazioni ti servono per capire la situazione?</p></div>
     </div>
     <div class="container vertical-problem-grid">
-      <article class="vertical-card"><span>01</span><h3>Richieste vaghe</h3><p>Servizi distinti aiutano il cliente a spiegare se cerca una riparazione, un'installazione o un sopralluogo.</p></article>
-      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Richieste fuori zona</h3><p>Comuni o provincia in evidenza fanno capire subito dove intervieni e dove no.</p></article>
-      <article class="vertical-card"><span>03</span><h3>Contatto mentre lavori</h3><p>Un modulo breve o WhatsApp raccolgono il problema anche quando non puoi rispondere al telefono.</p></article>
+      <article class="vertical-card"><span>01</span><h3>Richieste poco chiare</h3><p>Servizi distinti aiutano il cliente a spiegare se ha bisogno di una riparazione, di un’installazione o di un sopralluogo.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Richieste fuori zona</h3><p>Indicare comuni e provincia chiarisce subito dove lavori e evita contatti che non puoi gestire.</p></article>
+      <article class="vertical-card"><span>03</span><h3>Contatto mentre lavori</h3><p>Un modulo breve o WhatsApp permettono di lasciare il problema anche quando non puoi rispondere al telefono.</p></article>
     </div>
   </section>
 
   <section class="section section--paper" aria-labelledby="services-title">
     <div class="container">
-      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Servizi descritti come li cercano i clienti.</h2><p>Non serve un catalogo infinito. Serve una selezione precisa dei lavori che vuoi ricevere.</p></div>
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Fai capire subito quali lavori prendi in carico.</h2><p>Non serve un catalogo infinito: basta una selezione precisa dei servizi che vuoi ricevere.</p></div>
       <div class="vertical-service-grid">
-        <article class="vertical-service-card"><span class="service-number">01</span><h3>Perdite e riparazioni</h3><p>Ricerca della perdita, riparazione di tubazioni e interventi su rubinetti o sanitari.</p></article>
-        <article class="vertical-service-card"><span class="service-number">02</span><h3>Scarichi e disotturazioni</h3><p>Spiega il tipo di problema e invita a inviare una foto o una breve descrizione.</p></article>
-        <article class="vertical-service-card"><span class="service-number">03</span><h3>Installazioni</h3><p>Rubinetteria, sanitari, box doccia e sostituzioni: lavori diversi, con aspettative diverse.</p></article>
-        <article class="vertical-service-card"><span class="service-number">04</span><h3>Manutenzione impianti</h3><p>Una sezione dedicata per chi cerca continuità, controllo e interventi programmati.</p></article>
-        <article class="vertical-service-card"><span class="service-number">05</span><h3>Sopralluogo e preventivo</h3><p>Raccogli foto, indirizzo, urgenza e descrizione prima di fissare il sopralluogo.</p></article>
-        <article class="vertical-service-card"><span class="service-number">06</span><h3>Interventi urgenti</h3><p>Se offri questo servizio, chiarisci disponibilità e modalità di contatto senza promettere reperibilità continua.</p></article>
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Perdite e riparazioni</h3><p>Ricerca delle perdite, riparazione delle tubazioni e interventi su rubinetti e sanitari.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Scarichi e disotturazioni</h3><p>Descrivi i problemi più comuni e indica quali foto o informazioni possono essere utili.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Installazioni</h3><p>Rubinetteria, sanitari, box doccia e sostituzioni: ogni lavoro ha esigenze diverse.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Manutenzione degli impianti</h3><p>Un punto dedicato a chi cerca controlli, continuità e interventi programmati.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Sopralluogo e preventivo</h3><p>Raccogli foto, indirizzo, urgenza e descrizione del problema prima di fissare il sopralluogo.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Interventi urgenti</h3><p>Se li offri, spiega come contattarti senza promettere una reperibilità continua che non puoi garantire.</p></article>
       </div>
     </div>
   </section>
 
   <section class="section section--ink" aria-labelledby="structure-title">
     <div class="container vertical-two-column vertical-two-column--dark">
-      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Una pagina che accompagna dalla ricerca alla richiesta.</h2></div>
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Dalla ricerca al primo contatto, senza passaggi inutili.</h2></div>
       <div class="vertical-structure-list">
-        <div><span>01</span><p><strong>Hero:</strong> mestiere, area servita e CTA di contatto.</p></div>
-        <div><span>02</span><p><strong>Servizi:</strong> interventi spiegati con parole concrete.</p></div>
-        <div><span>03</span><p><strong>Metodo:</strong> cosa inviare per ottenere una prima valutazione.</p></div>
+        <div><span>01</span><p><strong>In apertura:</strong> mestiere, zona servita e modo più semplice per contattarti.</p></div>
+        <div><span>02</span><p><strong>Servizi:</strong> interventi spiegati con parole che il cliente riconosce.</p></div>
+        <div><span>03</span><p><strong>Prima valutazione:</strong> che cosa inviare per descrivere il problema.</p></div>
         <div><span>04</span><p><strong>Zone:</strong> comuni o provincia realmente coperti.</p></div>
         <div><span>05</span><p><strong>Contatti:</strong> telefono, WhatsApp e richiesta di sopralluogo.</p></div>
       </div>
@@ -100,8 +100,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
 
   <section class="section section--accent" aria-labelledby="contact-title">
     <div class="container vertical-contact-grid">
-      <div><p class="eyebrow">Contatto pensato per il mestiere</p><h2 id="contact-title">Dai al cliente un modo semplice per spiegare il problema.</h2></div>
-      <div><p>Il modulo può chiedere guasto, zona e una foto. WhatsApp resta un'alternativa rapida per chi preferisce scrivere dal telefono.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/prezzi/">Cosa include il prezzo <span aria-hidden="true">↗</span></a></div></div>
+      <div><p class="eyebrow">Contatto pensato per il mestiere</p><h2 id="contact-title">Aiuta il cliente a spiegarti il problema.</h2></div>
+      <div><p>Il modulo può chiedere che cosa è successo, dove ti trovi e una foto del punto interessato. WhatsApp resta un’alternativa rapida per chi preferisce scrivere dal telefono.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/prezzi/">Cosa comprende il prezzo <span aria-hidden="true">↗</span></a></div></div>
     </div>
   </section>
 

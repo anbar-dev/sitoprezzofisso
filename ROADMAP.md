@@ -80,6 +80,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] Demo imbianchino
 - [x] Demo elettricista
 - [x] Demo giardiniere
+- [x] Revisione editoriale in italiano naturale delle 4 verticali e delle 4 demo
 - [ ] Demo impresa edile
 - [ ] Demo serramentista
 
