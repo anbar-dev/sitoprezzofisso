@@ -4070,3 +4070,130 @@ h1 strong {
     text-align: center;
   }
 }
+
+/* Electrician demo: a precise navy, copper and amber identity. */
+.demo-page.demo-electrician {
+  --demo-navy: #102d45;
+  --demo-blue: #147a86;
+  --demo-blue-light: #e3f1f1;
+  --demo-orange: #cf7b3e;
+  --demo-paper: #f4f6f5;
+  --demo-ink: #182f3c;
+  --demo-muted: #62747b;
+  --demo-line: #d4e0df;
+}
+
+.demo-page.demo-electrician .demo-banner-inner strong,
+.demo-page.demo-electrician .demo-eyebrow,
+.demo-page.demo-electrician .demo-hero-meta b,
+.demo-page.demo-electrician .demo-process-grid li > span {
+  color: #f0bb79;
+}
+
+.demo-page.demo-electrician .demo-site-hero,
+.demo-page.demo-electrician .demo-contact-section {
+  background: var(--demo-navy);
+}
+
+.demo-page.demo-electrician .demo-brand-mark {
+  color: var(--demo-navy);
+  background: #f0bb79;
+}
+
+.demo-page.demo-electrician .demo-brand small {
+  color: #f0bb79;
+}
+
+.demo-page.demo-electrician .demo-banner-inner {
+  padding-right: 16rem;
+}
+
+.demo-page.demo-electrician .demo-site-nav nav a:hover,
+.demo-page.demo-electrician .demo-site-nav nav a:focus-visible,
+.demo-page.demo-electrician .demo-nav-cta:hover,
+.demo-page.demo-electrician .demo-nav-cta:focus-visible {
+  color: #f0bb79;
+}
+
+.demo-page.demo-electrician .demo-nav-cta {
+  border-color: #f0bb79;
+  color: #f0bb79;
+}
+
+.demo-page.demo-electrician .demo-button--solid {
+  color: var(--demo-navy);
+  background: #f0bb79;
+}
+
+.demo-page.demo-electrician .demo-button--solid:hover,
+.demo-page.demo-electrician .demo-button--solid:focus-visible {
+  background: #f6d09e;
+}
+
+.demo-page.demo-electrician .demo-button--outline:hover,
+.demo-page.demo-electrician .demo-button--outline:focus-visible,
+.demo-page.demo-electrician .demo-button--light {
+  color: var(--demo-navy);
+  background: #f0bb79;
+}
+
+.demo-page.demo-electrician .demo-button--outline:hover,
+.demo-page.demo-electrician .demo-button--outline:focus-visible {
+  border-color: #f0bb79;
+}
+
+.demo-page.demo-electrician .demo-area-list span {
+  border-color: #aed1d1;
+  color: var(--demo-blue);
+  background: var(--demo-blue-light);
+}
+
+.demo-page.demo-electrician .demo-contact-card {
+  border-top-color: var(--demo-orange);
+  box-shadow: 0.8rem 0.8rem 0 #f0bb79;
+}
+
+.demo-page.demo-electrician .demo-contact-preview a,
+.demo-page.demo-electrician .demo-inline-link {
+  color: var(--demo-blue);
+}
+
+.demo-page.demo-electrician .demo-floating-actions a {
+  border-color: #f0bb79;
+  background: #0a2133;
+}
+
+.demo-page.demo-electrician .demo-floating-actions a:hover,
+.demo-page.demo-electrician .demo-floating-actions a:focus-visible {
+  color: var(--demo-navy);
+  background: #f0bb79;
+}
+
+.demo-page.demo-electrician .demo-floating-actions .demo-floating-contact {
+  border-color: var(--demo-orange);
+  background: var(--demo-orange);
+}
+
+.demo-page.demo-electrician .demo-floating-actions .demo-floating-contact:hover,
+.demo-page.demo-electrician .demo-floating-actions .demo-floating-contact:focus-visible {
+  color: var(--demo-white);
+  background: #b96535;
+}
+
+@media (max-width: 38rem) {
+  .demo-page.demo-electrician .demo-banner-inner {
+    padding-right: 0;
+  }
+
+  .demo-page.demo-electrician .demo-banner {
+    padding-top: 4.3rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .demo-page.demo-electrician .demo-nav-cta {
+    flex: 1 0 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}

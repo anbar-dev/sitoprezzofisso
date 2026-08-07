@@ -78,7 +78,7 @@ Solo dopo approvazione della pagina idraulico:
 
 - [x] Demo idraulico
 - [x] Demo imbianchino
-- [ ] Demo elettricista
+- [x] Demo elettricista
 - [ ] Demo impresa edile
 - [ ] Demo serramentista
 
