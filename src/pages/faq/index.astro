@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'FAQ sul sito web da 399 € | Sito Prezzo Fisso';
+const description = 'Risposte alle domande più comuni sul sito web da 399 €: pagine, materiali, revisioni, dominio, SEO e attività fuori scope.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="container narrow-content">
+      <p class="eyebrow">Prima di partire</p>
+      <h1 id="page-title">Le risposte che servono per decidere con calma.</h1>
+      <p class="page-lead">Qui trovi i dettagli pratici dell'offerta base. Se non trovi il tuo caso, descrivilo nel modulo: è il modo più rapido per capire se siamo compatibili.</p>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="faq-title">
+    <div class="container faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="faq-title">Niente parti nascoste.</h2><p>Il prezzo funziona quando anche il perimetro è comprensibile.</p></div>
+      <div class="faq-list">
+        <details open><summary>Che tipo di sito ricevo per 399 €?</summary><p>Un sito vetrina semplice e professionale, fino a 3 pagine oppure una struttura one-page equivalente, ottimizzato per smartphone e desktop.</p></details>
+        <details><summary>Il dominio e l'hosting sono inclusi?</summary><p>Ci occupiamo del collegamento del dominio del cliente e della pubblicazione. Costi ricorrenti di dominio, hosting o servizi terzi non sono inclusi nel prezzo base e vanno valutati separatamente.</p></details>
+        <details><summary>Devo avere già testi, logo e fotografie?</summary><p>No, ma i materiali disponibili aiutano a rendere il sito più specifico. Nel modulo puoi indicare cosa hai già e cosa manca.</p></details>
+        <details><summary>Quante modifiche posso chiedere?</summary><p>Sono inclusi fino a 3 cicli di revisione. Ogni ciclo deve contenere una richiesta complessiva e ordinata; non sono revisioni illimitate.</p></details>
+        <details><summary>Il sito compare automaticamente su Google?</summary><p>Il sito viene predisposto con SEO tecnica di base, sitemap e struttura semantica. Nessuno può garantire posizioni o tempi di indicizzazione: la visibilità dipende anche da contenuti, concorrenza e settore.</p></details>
+        <details><summary>Posso inserire WhatsApp?</summary><p>Sì, se è un canale adatto alla tua attività. Possiamo aggiungere un pulsante per avviare il contatto, usando il numero che ci fornisci.</p></details>
+        <details><summary>Realizzate ecommerce o aree riservate?</summary><p>No, non fanno parte dell'offerta base. Se il progetto richiede funzioni avanzate, non lo facciamo rientrare artificialmente nei 399 €.</p></details>
+        <details><summary>Quanto tempo ci vuole?</summary><p>Dipende da quanto sono completi materiali e feedback. Dopo la richiesta chiarifichiamo i passaggi e le dipendenze, senza promettere tempi standard uguali per ogni attività.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="faq-cta-title">
+    <div class="container closing-inner"><p class="eyebrow">Hai un caso concreto?</p><h2 id="faq-cta-title">Mandaci le informazioni di base. Ti aiutiamo a inquadrarlo.</h2><a class="button button--primary" href="/richiedi-sito/">Compila la richiesta <span aria-hidden="true">→</span></a></div>
+  </section>
+</BaseLayout>

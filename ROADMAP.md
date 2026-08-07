@@ -25,14 +25,16 @@
 
 ## Phase 2 — Funnel base
 
-- [ ] `/prezzi/`
-- [ ] `/come-funziona/`
-- [ ] `/faq/`
-- [ ] `/richiedi-sito/`
-- [ ] Form asincrono
-- [ ] Adapter/mock per submit
+- [x] `/prezzi/`
+- [x] `/come-funziona/`
+- [x] `/faq/`
+- [x] `/richiedi-sito/`
+- [x] Form asincrono
+- [x] Adapter/mock per submit
 - [ ] Tracking eventi predisposto
-- [ ] Privacy base predisposta
+- [x] Privacy base predisposta con consenso esplicito e TODO per informativa definitiva
+
+Nota: il form dell'offerta base usa un adapter locale di sviluppo; non invia né salva dati finché non viene collegato un servizio di ricezione.
 
 ## Phase 3 — Funnel progetto avanzato
 

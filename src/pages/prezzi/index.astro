@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Cosa include il sito web da 399 € | Sito Prezzo Fisso';
+const description = 'Scopri cosa comprende il sito web professionale da 399 €, cosa resta fuori scope e quando serve un progetto avanzato.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="container page-hero-grid">
+      <div>
+        <p class="eyebrow">L'offerta base</p>
+        <h1 id="page-title">Un sito chiaro anche prima di iniziare.</h1>
+        <p class="page-lead">399 € per un sito vetrina semplice, curato e pronto a presentare bene la tua attività. Il perimetro è definito in anticipo.</p>
+      </div>
+      <div class="page-price-block">
+        <span class="price-label">Prezzo fisso</span>
+        <strong>399 €</strong>
+        <span>Sito vetrina · responsive · SEO di base</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="included-title">
+    <div class="container">
+      <div class="section-heading section-heading--split">
+        <div>
+          <p class="eyebrow">Dentro l'offerta</p>
+          <h2 id="included-title">Il necessario per partire con ordine.</h2>
+        </div>
+        <p>Il sito viene costruito attorno alle informazioni che servono davvero a un potenziale cliente: cosa fai, dove lavori, perché contattarti e come farlo.</p>
+      </div>
+      <div class="offer-list">
+        <article class="offer-row"><span>01</span><div><h3>Struttura vetrina</h3><p>Massimo 3 pagine oppure una struttura one-page equivalente, con navigazione e gerarchia dei contenuti definite.</p></div></article>
+        <article class="offer-row"><span>02</span><div><h3>Design professionale e responsive</h3><p>Un layout adattato all'attività, leggibile su smartphone, tablet e desktop.</p></div></article>
+        <article class="offer-row"><span>03</span><div><h3>Contatti semplici</h3><p>Modulo di contatto e, se utile, pulsante WhatsApp per facilitare la richiesta.</p></div></article>
+        <article class="offer-row"><span>04</span><div><h3>SEO tecnica di base</h3><p>Title, meta description, heading semantici, sitemap e predisposizione per Search Console.</p></div></article>
+        <article class="offer-row"><span>05</span><div><h3>Pubblicazione</h3><p>Collegamento del dominio del cliente e preparazione della pubblicazione del sito.</p></div></article>
+        <article class="offer-row"><span>06</span><div><h3>Fino a 3 cicli di revisione</h3><p>Ogni ciclo raccoglie una richiesta complessiva e ordinata, così il lavoro resta sostenibile.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="excluded-title">
+    <div class="container scope-grid">
+      <div>
+        <p class="eyebrow">Fuori scope</p>
+        <h2 id="excluded-title">Il prezzo resta chiaro perché i limiti sono chiari.</h2>
+      </div>
+      <div class="scope-panel">
+        <p>L'offerta base non comprende:</p>
+        <ul class="plain-list plain-list--cross">
+          <li>ecommerce o cataloghi con pagamento;</li>
+          <li>gestionali, aree riservate o funzioni custom significative;</li>
+          <li>prenotazioni complesse e integrazioni esterne;</li>
+          <li>branding completo, fotografia o copywriting specialistico;</li>
+          <li>revisioni illimitate o produzione continua di contenuti.</li>
+        </ul>
+        <p class="scope-bridge">Hai bisogno di qualcosa di più ampio? <a href="/richiedi-sito/">Raccontaci il progetto</a>: capiremo se il percorso base è adatto prima di iniziare.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="closing-title">
+    <div class="container closing-inner">
+      <p class="eyebrow">Prossimo passo</p>
+      <h2 id="closing-title">Se il perimetro ti torna, partiamo dalle informazioni giuste.</h2>
+      <a class="button button--primary" href="/richiedi-sito/">Compila la richiesta <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</BaseLayout>

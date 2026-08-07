@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Richiedi il tuo sito web da 399 € | Sito Prezzo Fisso';
+const description = 'Racconta la tua attività e richiedi un sito web professionale da 399 €. Modulo asincrono, senza telefonate obbligatorie.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="page-hero page-hero--form" aria-labelledby="page-title">
+    <div class="container page-hero-grid">
+      <div>
+        <p class="eyebrow">Il primo passo</p>
+        <h1 id="page-title">Raccontaci il tuo lavoro, con i tuoi tempi.</h1>
+        <p class="page-lead">Il modulo raccoglie le informazioni utili per capire l'attività e verificare se il sito da 399 € è il percorso giusto.</p>
+        <ul class="form-promise-list"><li>Niente telefonata obbligatoria</li><li>Puoi salvare le informazioni prima di inviarle</li><li>Il modulo demo non invia dati a servizi esterni</li></ul>
+      </div>
+      <aside class="form-side-note"><strong>399 €</strong><span>offerta base</span><a href="/prezzi/">Controlla cosa include →</a></aside>
+    </div>
+  </section>
+
+  <section class="section section--white form-section" aria-labelledby="form-title">
+    <div class="container form-layout">
+      <div class="form-heading"><p class="eyebrow">Richiesta sito base</p><h2 id="form-title">Informazioni essenziali, poi dettagli utili.</h2><p>I campi con l'asterisco sono necessari. Puoi tornare indietro tra i passaggi senza perdere quello che hai scritto.</p></div>
+
+      <form class="progressive-form" data-progressive-form>
+        <div class="form-progress-meta"><span data-form-progress-label>Passaggio 1 di 4</span><span>circa 5 minuti</span></div>
+        <div class="form-progress-track" aria-hidden="true"><span data-form-progress></span></div>
+
+        <fieldset data-form-step>
+          <legend>Contatti</legend>
+          <p class="fieldset-intro">Come possiamo ricontattarti?</p>
+          <div class="field-grid field-grid--two">
+            <label>Nome e cognome *<input name="nome" type="text" autocomplete="name" required /></label>
+            <label>Email *<input name="email" type="email" autocomplete="email" required /></label>
+            <label>Telefono <span class="label-note">facoltativo</span><input name="telefono" type="tel" autocomplete="tel" /></label>
+          </div>
+        </fieldset>
+
+        <fieldset data-form-step hidden>
+          <legend>La tua attività</legend>
+          <p class="fieldset-intro">Dove e per chi lavori?</p>
+          <div class="field-grid field-grid--two">
+            <label>Attività o professione *<input name="attivita" type="text" placeholder="Es. idraulico, studio tecnico…" required /></label>
+            <label>Città e zona servita *<input name="zona" type="text" placeholder="Es. Monza e provincia" required /></label>
+            <label class="field-span-two">Sito attuale <span class="label-note">facoltativo</span><input name="sito-attuale" type="url" placeholder="https://" /></label>
+            <label class="field-span-two">Quali servizi vuoi presentare? *<textarea name="servizi" rows="4" required></textarea></label>
+          </div>
+        </fieldset>
+
+        <fieldset data-form-step hidden>
+          <legend>Contenuti e preferenze</legend>
+          <p class="fieldset-intro">Quello che ci aiuta a rendere il sito specifico.</p>
+          <div class="field-grid field-grid--two">
+            <label class="field-span-two">Descrivi brevemente l'attività e il cliente che vuoi raggiungere. *<textarea name="descrizione" rows="5" required></textarea></label>
+            <label>Hai già un logo? *<select name="logo" required><option value="" disabled selected>Scegli…</option><option>Sì</option><option>No</option></select></label>
+            <label>Hai foto dei tuoi lavori? *<select name="foto" required><option value="" disabled selected>Scegli…</option><option>Sì</option><option>No</option></select></label>
+            <label>Vuoi un pulsante WhatsApp? *<select name="whatsapp" required><option value="" disabled selected>Scegli…</option><option>Sì</option><option>No</option></select></label>
+            <label>Preferenze colori <span class="label-note">facoltative</span><input name="colori" type="text" placeholder="Es. blu scuro, nessuna preferenza…" /></label>
+            <label class="field-span-two">Siti di riferimento <span class="label-note">facoltativi</span><input name="riferimenti" type="text" placeholder="Uno o più link, separati da virgola" /></label>
+          </div>
+        </fieldset>
+
+        <fieldset data-form-step hidden>
+          <legend>Ultime note</legend>
+          <p class="fieldset-intro">C'è qualche dettaglio che vuoi aggiungere?</p>
+          <div class="field-grid">
+            <label>Note <span class="label-note">facoltative</span><textarea name="note" rows="6" placeholder="Esigenze particolari, pagine indispensabili, dubbi…"></textarea></label>
+            <label class="checkbox-label"><input name="consenso-contatto" type="checkbox" required /> <span>Acconsento a essere ricontattato per valutare questa richiesta. *</span></label>
+          </div>
+          <p class="privacy-note">Demo tecnica: il modulo non invia né salva dati. TODO: sostituire questo testo con un'informativa privacy professionale prima di attivare un invio reale.</p>
+        </fieldset>
+
+        <div class="form-status" data-form-status role="status" aria-live="polite" hidden></div>
+        <div class="form-actions">
+          <button class="button button--quiet" type="button" data-form-previous hidden>← Indietro</button>
+          <div class="form-actions-right"><button class="button button--dark" type="button" data-form-next>Continua <span aria-hidden="true">→</span></button><button class="button button--primary" type="submit" data-form-submit hidden>Invia la richiesta <span aria-hidden="true">→</span></button></div>
+        </div>
+      </form>
+    </div>
+  </section>
+</BaseLayout>
+
+<script src="../../scripts/request-form.ts"></script>

@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Come funziona il sito web a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Il processo per richiedere e costruire il tuo sito web da 399 €: informazioni, prima versione, revisioni consolidate e pubblicazione.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="container narrow-content">
+      <p class="eyebrow">Un processo asincrono</p>
+      <h1 id="page-title">Poche decisioni, raccolte nel momento giusto.</h1>
+      <p class="page-lead">Puoi raccontare la tua attività senza fissare una serie di riunioni. Il lavoro procede soprattutto via email, con un perimetro leggibile.</p>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="steps-title">
+    <div class="container">
+      <div class="section-heading section-heading--light">
+        <p class="eyebrow">Il percorso</p>
+        <h2 id="steps-title">Dalla prima richiesta alla pubblicazione.</h2>
+      </div>
+      <ol class="large-process-list">
+        <li><span>01</span><div><h3>Ci racconti l'attività</h3><p>Compili il modulo con servizi, zona, contatti, materiali disponibili e riferimenti visivi. Non serve conoscere il linguaggio tecnico.</p></div></li>
+        <li><span>02</span><div><h3>Definiamo il perimetro</h3><p>Verifichiamo che la richiesta rientri nel sito da 399 € e chiarifichiamo struttura, contenuti necessari e prossimi passaggi.</p></div></li>
+        <li><span>03</span><div><h3>Prepariamo la prima versione</h3><p>Organizziamo le informazioni in un sito coerente con il mestiere e con le domande dei tuoi clienti.</p></div></li>
+        <li><span>04</span><div><h3>Raccogliamo le revisioni</h3><p>Hai fino a 3 cicli di revisione. Ogni volta invii una richiesta unica e completa, non una serie infinita di messaggi separati.</p></div></li>
+        <li><span>05</span><div><h3>Prepariamo la pubblicazione</h3><p>Colleghiamo il dominio, controlliamo la resa responsive e consegniamo una base pronta per essere usata.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="ready-title">
+    <div class="container two-column-content">
+      <div>
+        <p class="eyebrow">Cosa preparare</p>
+        <h2 id="ready-title">Più informazioni concrete ci dai, più il sito parlerà davvero del tuo lavoro.</h2>
+      </div>
+      <div>
+        <ul class="plain-list">
+          <li>un elenco dei servizi che vuoi presentare;</li>
+          <li>la zona in cui lavori e come vuoi essere contattato;</li>
+          <li>logo e foto, se li hai già;</li>
+          <li>eventuali siti che apprezzi come riferimento;</li>
+          <li>le domande che i clienti ti fanno più spesso.</li>
+        </ul>
+        <p class="muted-note">Non hai ancora tutto pronto? Va bene: il modulo serve anche a capire cosa manca.</p>
+        <a class="button button--dark" href="/richiedi-sito/">Racconta la tua attività <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="not-fit-title">
+    <div class="container two-column-content two-column-content--accent">
+      <div><p class="eyebrow">Quando non basta</p><h2 id="not-fit-title">Ecommerce, gestionali o funzioni su misura richiedono un altro perimetro.</h2></div>
+      <div><p>Non forziamo un progetto complesso dentro l'offerta base. Se il tuo caso è diverso, possiamo raccogliere la richiesta per il percorso avanzato.</p><a class="text-link" href="/faq/">Leggi le domande frequenti <span aria-hidden="true">→</span></a></div>
+    </div>
+  </section>
+</BaseLayout>
