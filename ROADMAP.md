@@ -116,6 +116,7 @@ Non avviare prima di Phase 8.
 
 ## Phase 10 — Ottimizzazione continuativa
 
+- [x] Correggere le sovrapposizioni tipografiche dei titoli su mobile e desktop
 - [ ] Audit performance
 - [ ] Audit internal linking
 - [ ] Audit contenuti thin
