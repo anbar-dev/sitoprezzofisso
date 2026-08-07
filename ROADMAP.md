@@ -32,11 +32,11 @@
 - [x] Form asincrono
 - [x] Invio email reale verso Andrea con filtro antispam di base
 - [ ] Tracking eventi predisposto
-- [x] Privacy base predisposta con consenso esplicito e TODO per informativa definitiva
+- [x] Privacy base predisposta con consenso esplicito
 - [x] Chiarire homepage, limiti dell'offerta e percorso avanzato
 - [x] Creare `/chi-siamo/` con presentazione del developer e del modo di lavorare
 
-Nota: il form dell'offerta base invia tramite FormSubmit verso `andrea.baragiola@outlook.it`. Al primo invio può essere richiesta una conferma dell'indirizzo; l'informativa privacy definitiva resta da validare professionalmente.
+Nota: il form dell'offerta base invia tramite FormSubmit verso `andrea.baragiola@outlook.it`. Al primo invio può essere richiesta una conferma dell'indirizzo; il testo privacy del modulo descrive il flusso e va mantenuto coerente con il trattamento effettivo dei dati. I form base e avanzato usano un unico pulsante di avanzamento, che nell'ultimo passaggio diventa invio.
 
 ## Phase 3 — Funnel progetto avanzato
 

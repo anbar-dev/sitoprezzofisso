@@ -10,7 +10,6 @@ export function setupProgressiveForm(
   const status = form.querySelector<HTMLElement>('[data-form-status]');
   const previousButton = form.querySelector<HTMLButtonElement>('[data-form-previous]');
   const nextButton = form.querySelector<HTMLButtonElement>('[data-form-next]');
-  const submitButton = form.querySelector<HTMLButtonElement>('[data-form-submit]');
   const startedField = form.querySelector<HTMLInputElement>('[data-form-started]');
   let currentStep = 0;
 
@@ -28,8 +27,10 @@ export function setupProgressiveForm(
     if (progress) progress.style.width = `${percentage}%`;
     if (progressLabel) progressLabel.textContent = `Passaggio ${currentStep + 1} di ${steps.length}`;
     if (previousButton) previousButton.hidden = currentStep === 0;
-    if (nextButton) nextButton.hidden = isLastStep;
-    if (submitButton) submitButton.hidden = !isLastStep;
+    if (nextButton) {
+      nextButton.type = isLastStep ? 'submit' : 'button';
+      nextButton.textContent = isLastStep ? 'Invia' : 'Avanti →';
+    }
 
     const firstField = steps[currentStep]?.querySelector<HTMLElement>('input, textarea, select');
     firstField?.focus();
@@ -55,7 +56,13 @@ export function setupProgressiveForm(
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
-    if (!validateCurrentStep() || !status || !submitButton) return;
+
+    if (currentStep < steps.length - 1) {
+      if (validateCurrentStep()) updateStep(currentStep + 1);
+      return;
+    }
+
+    if (!validateCurrentStep() || !status || !nextButton) return;
 
     const startedAt = Number(startedField?.value ?? Date.now());
     if (Date.now() - startedAt < 2500) {
@@ -65,8 +72,8 @@ export function setupProgressiveForm(
       return;
     }
 
-    submitButton.disabled = true;
-    submitButton.textContent = 'Invio in corso…';
+    nextButton.disabled = true;
+    nextButton.textContent = 'Invio in corso…';
     status.hidden = true;
 
     const request = Object.fromEntries(new FormData(form).entries());
@@ -75,12 +82,12 @@ export function setupProgressiveForm(
     status.textContent = result.message;
     status.dataset.state = result.ok ? 'success' : 'error';
     status.hidden = false;
-    submitButton.disabled = false;
-    submitButton.textContent = 'Invia la richiesta';
+    nextButton.disabled = false;
+    nextButton.textContent = 'Invia';
 
     if (result.ok) {
       form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>('input, textarea, select, button').forEach((field) => {
-        if (field !== submitButton) field.disabled = true;
+        field.disabled = true;
       });
     }
   });

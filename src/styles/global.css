@@ -2950,6 +2950,7 @@ h1 strong {
 .price-card-carousel .carousel-arrow {
   width: 3.2rem;
   height: 3.2rem;
+  padding: 0;
   border: 2px solid var(--color-accent);
   border-radius: 50%;
   color: var(--color-ink);
@@ -2958,6 +2959,11 @@ h1 strong {
   font-size: 1.55rem;
   font-weight: 900;
   line-height: 1;
+}
+
+.price-card-carousel .carousel-arrow > span {
+  display: block;
+  transform: translateY(-0.06em);
 }
 
 .price-card-carousel .carousel-arrow:hover,
@@ -3609,6 +3615,17 @@ h1 strong {
   color: var(--demo-muted);
   font-size: 0.86rem;
   line-height: 1.6;
+}
+
+.demo-page .demo-contact-preview a {
+  display: block;
+  width: fit-content;
+  margin-top: 0.45rem;
+  color: var(--demo-blue);
+  font-size: 0.86rem;
+  font-weight: 800;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
 
 .demo-page .demo-contact-card small {

@@ -105,13 +105,13 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
             <p>I dati non verranno utilizzati per finalità diverse da questa richiesta. L’invio a eventuali partner non è automatico e richiede una valutazione separata.</p>
           </div>
           <label class="checkbox-label"><input name="consenso-partner" type="checkbox" required /> <span>Acconsento esplicitamente alla trasmissione dei dati necessari a un massimo di 2 professionisti partner per ricevere preventivi. *</span></label>
-          <p class="privacy-note">Il modulo invia la richiesta ad Andrea tramite un servizio esterno di ricezione email, con filtro antispam automatico; al primo invio il servizio potrebbe chiedere di confermare l’indirizzo. TODO: sostituire questo testo con informativa privacy e condizioni del servizio validate professionalmente.</p>
+          <p class="privacy-note">La richiesta viene inviata ad Andrea tramite FormSubmit, un servizio esterno di ricezione email. Il filtro antispam è attivo e, al primo invio, il servizio potrebbe chiedere di confermare l’indirizzo. I dati vengono usati per rispondere alla richiesta; l’eventuale invio ai partner richiede il consenso selezionato qui sopra.</p>
         </fieldset>
 
         <div class="form-status" data-form-status role="status" aria-live="polite" hidden></div>
         <div class="form-actions">
           <button class="button button--quiet" type="button" data-form-previous hidden>← Indietro</button>
-          <div class="form-actions-right"><button class="button button--dark" type="button" data-form-next>Continua <span aria-hidden="true">→</span></button><button class="button button--primary" type="submit" data-form-submit hidden>Invia la richiesta <span aria-hidden="true">→</span></button></div>
+          <button class="button button--primary" type="button" data-form-next>Avanti →</button>
         </div>
       </form>
     </div>
