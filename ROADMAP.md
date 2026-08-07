@@ -81,6 +81,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] Demo elettricista
 - [x] Demo giardiniere
 - [x] Revisione editoriale in italiano naturale delle 4 verticali e delle 4 demo
+- [x] Rifinitura finale di titoli e CTA nelle demo
 - [ ] Demo impresa edile
 - [ ] Demo serramentista
 

@@ -15,6 +15,10 @@ Prima di scrivere codice, chiarisci:
 
 La pagina deve avere un intento riconoscibile. Se una nuova pagina non aggiunge esigenze, contenuti, CTA e FAQ specifiche, non va creata.
 
+### Italiano e tono
+
+I testi devono essere scritti direttamente in italiano corretto, naturale e idiomatico. Non tradurre alla lettera dall’inglese e non lasciare costruzioni che suonano come una traduzione automatica: in italiano ordine delle parole, verbi, preposizioni e tono devono essere quelli che userebbe davvero un professionista italiano. Prima di considerare una pagina pronta, rileggi ogni frase ad alta voce e riscrivi le formule poco chiare, innaturali o generiche. Meglio una frase semplice e concreta che uno slogan elegante ma privo di senso.
+
 ## 2. Struttura della sales page
 
 La sales page deve spiegare l’offerta in modo rapido e accompagnare alla richiesta.
