@@ -33,6 +33,8 @@
 - [x] Adapter/mock per submit
 - [ ] Tracking eventi predisposto
 - [x] Privacy base predisposta con consenso esplicito e TODO per informativa definitiva
+- [x] Chiarire homepage, limiti dell'offerta e percorso avanzato
+- [x] Creare `/chi-siamo/` con presentazione del developer e del modo di lavorare
 
 Nota: il form dell'offerta base usa un adapter locale di sviluppo; non invia né salva dati finché non viene collegato un servizio di ricezione.
 

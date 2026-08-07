@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Chi c’è dietro Sito Prezzo Fisso | Sviluppatore web';
+const description = 'Conosci il developer web dietro Sito Prezzo Fisso: un modo semplice e trasparente per realizzare siti vetrina professionali.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="container narrow-content">
+      <p class="eyebrow">Chi c’è dietro</p>
+      <h1 id="page-title">Un developer web per siti semplici e fatti bene.</h1>
+      <p class="page-lead">Sito Prezzo Fisso nasce da un modo diretto di lavorare: capire l’attività, costruire una presenza online chiara e tenere il progetto dentro un perimetro comprensibile.</p>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="about-intro-title">
+    <div class="container two-column-content">
+      <div>
+        <p class="eyebrow">Il mio lavoro</p>
+        <h2 id="about-intro-title">Mi occupo direttamente del sito.</h2>
+      </div>
+      <div>
+        <p>Sono uno sviluppatore di siti web. Lavoro soprattutto su siti vetrina statici, veloci e responsive per attività che hanno bisogno di presentarsi bene senza acquistare un progetto più grande del necessario.</p>
+        <p>Il servizio è pensato per essere gestito principalmente via email: meno riunioni, informazioni raccolte con ordine e decisioni chiare prima di iniziare.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="about-work-title">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Cosa faccio</p>
+        <h2 id="about-work-title">Dalla struttura alla pubblicazione.</h2>
+        <p>Non devi conoscere il linguaggio tecnico per capire cosa succede: ogni passaggio viene spiegato in modo concreto.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-icon" aria-hidden="true">01</span><h3>Ordino le informazioni</h3><p>Servizi, zona, contatti e contenuti vengono organizzati secondo le domande dei tuoi clienti.</p></article>
+        <article class="feature-card"><span class="feature-icon" aria-hidden="true">02</span><h3>Sviluppo il sito</h3><p>Costruisco un sito leggibile su smartphone e desktop, con una base tecnica semplice da mantenere.</p></article>
+        <article class="feature-card"><span class="feature-icon" aria-hidden="true">03</span><h3>Preparo la pubblicazione</h3><p>Collego il dominio, curo la SEO tecnica di base e raccolgo le revisioni in modo ordinato.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="about-principles-title">
+    <div class="container two-column-content two-column-content--dark">
+      <div>
+        <p class="eyebrow">Come lavoro</p>
+        <h2 id="about-principles-title">Il prezzo è chiaro perché anche il perimetro lo è.</h2>
+      </div>
+      <div>
+        <ul class="plain-list plain-list--light">
+          <li>l’offerta base è un sito vetrina fino a 3 pagine o one-page equivalente;</li>
+          <li>sono inclusi fino a 3 cicli di revisione, con richieste consolidate;</li>
+          <li>non prometto posizionamenti garantiti o funzioni che non rientrano nello scope;</li>
+          <li>se il progetto è più complesso, esiste un percorso separato fino a 2 preventivi.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="about-fit-title">
+    <div class="container decision-grid">
+      <article class="decision-card">
+        <span class="card-number">01</span>
+        <h3>Ti serve un sito vetrina?</h3>
+        <p>Parti dall’offerta base da 399 € e verifica subito cosa comprende.</p>
+        <a class="button button--dark" href="/prezzi/">Vedi cosa include <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="decision-card decision-card--advanced">
+        <span class="card-number">02</span>
+        <h3>Hai esigenze più ampie?</h3>
+        <p>Descrivi il progetto: puoi richiedere fino a 2 preventivi con consenso esplicito.</p>
+        <a class="button button--primary" href="/progetto-su-misura/">Vai al percorso avanzato <span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="about-closing-title">
+    <div class="container closing-inner">
+      <p class="eyebrow">Il prossimo passo</p>
+      <h2 id="about-closing-title">Se il modo di lavorare ti sembra adatto, raccontami la tua attività.</h2>
+      <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</BaseLayout>
