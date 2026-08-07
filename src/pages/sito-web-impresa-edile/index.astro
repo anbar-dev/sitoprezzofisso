@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Sito web per impresa edile a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Un sito web professionale per imprese edili: ristrutturazioni, opere murarie, manutenzioni, zona di lavoro e richiesta di sopralluogo, con un prezzo base di 399 €.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="vertical-hero" aria-labelledby="page-title">
+    <div class="container vertical-hero-grid">
+      <div>
+        <p class="eyebrow vertical-eyebrow">Modello per imprese edili</p>
+        <h1 id="page-title">Il sito web per la tua impresa edile. Lavori chiari prima del sopralluogo, 399 €.</h1>
+        <p class="vertical-lead">Ristrutturazioni, opere murarie, manutenzioni e finiture: il cliente capisce che cosa puoi valutare, dove lavori e quali informazioni inviarti.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link vertical-light-link" href="/demo/impresa-edile/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/prezzi/">Vedi cosa comprende</a></p>
+      </div>
+      <aside class="vertical-hero-card" aria-label="Esempio di struttura per il sito di un'impresa edile">
+        <span class="vertical-demo-badge">Struttura esempio</span>
+        <div class="vertical-hero-card-head"><span>RISTRUTTURAZIONI E OPERE</span><span aria-hidden="true">01</span></div>
+        <strong>Fai capire il lavoro.<br />Poi raccogli la richiesta.</strong>
+        <ul class="mini-check-list">
+          <li>Servizi separati</li>
+          <li>Zona di lavoro visibile</li>
+          <li>Richiesta di sopralluogo</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
+    <div class="container vertical-intro-grid"><span><b>01</b> Che lavori esegui</span><span><b>02</b> Che cosa coordini</span><span><b>03</b> Che cosa inviare</span></div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="why-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">Il cliente deve distinguere una ristrutturazione da un piccolo intervento.</h2></div>
+      <div class="vertical-copy"><p>Chi cerca un'impresa edile può avere un bagno da rifare, una parete da spostare, una facciata da manutenere o un appartamento da rinnovare.</p><p>Un sito utile non promette un prezzo a distanza: presenta le lavorazioni, indica la zona e raccoglie le informazioni necessarie per capire se serve un sopralluogo.</p></div>
+    </div>
+    <div class="container vertical-problem-grid">
+      <article class="vertical-card"><span>01</span><h3>Richieste troppo generiche</h3><p>Tipo di immobile, lavorazioni desiderate e stato dei lavori aiutano a ricevere un primo messaggio più utile.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Servizi mischiati</h3><p>Separare ristrutturazioni, opere murarie e finiture evita che ogni richiesta sembri uguale alla precedente.</p></article>
+      <article class="vertical-card"><span>03</span><h3>Zona non dichiarata</h3><p>Comuni e provincia realmente serviti riducono i contatti fuori area e rendono più chiaro il passo successivo.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="services-title">
+    <div class="container">
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Lavorazioni concrete, spiegate senza categorie vaghe.</h2><p>Una selezione dei lavori reali aiuta il cliente a capire se può inviare una richiesta pertinente.</p></div>
+      <div class="vertical-service-grid">
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Ristrutturazioni interne</h3><p>Bagni, cucine e appartamenti da rinnovare, con una descrizione del perimetro che puoi davvero seguire.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Opere murarie</h3><p>Demolizioni, tramezzi, aperture e ripristini da valutare in base all'immobile e alle condizioni esistenti.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Cartongesso e finiture</h3><p>Controsoffitti, pareti, rasature e preparazione degli ambienti, quando rientrano nella tua organizzazione di lavoro.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Facciate e manutenzioni</h3><p>Ripristini, manutenzione di parti esterne e interventi da programmare dopo una verifica sul posto.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Pavimenti e rivestimenti</h3><p>Posa o rifacimento di superfici, con indicazioni su materiali, metrature e stato del fondo già disponibili.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Sopralluogo e preventivo</h3><p>Raccogli immobile, zona, lavorazioni e fotografie prima di definire se il progetto è da approfondire.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="content-title">
+    <div class="container vertical-two-column vertical-two-column--dark">
+      <div class="vertical-heading"><p class="eyebrow">Contenuti che fanno chiarezza</p><h2 id="content-title">Una buona richiesta parte dallo stato del lavoro.</h2></div>
+      <div class="vertical-structure-list">
+        <div><span>01</span><p><strong>Immobile:</strong> appartamento, casa, negozio o condominio e dimensioni indicative.</p></div>
+        <div><span>02</span><p><strong>Lavorazioni:</strong> che cosa vuoi rifare, aggiungere, demolire o ripristinare.</p></div>
+        <div><span>03</span><p><strong>Stato:</strong> ambiente abitato, vuoto, già demolito o con lavori iniziati.</p></div>
+        <div><span>04</span><p><strong>Materiali:</strong> fotografie, planimetrie o capitolati già disponibili, senza trasformare il modulo in una perizia.</p></div>
+        <div><span>05</span><p><strong>Zona:</strong> comuni o provincia realmente coperti, senza dichiarare sedi inesistenti.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="structure-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Dal tipo di immobile alla richiesta di sopralluogo.</h2></div>
+      <div class="vertical-copy"><p>Per un'impresa edile il sito deve far capire il perimetro del lavoro senza fingere che una ristrutturazione complessa si possa quotare con due righe.</p><ul class="plain-list"><li>apertura con attività, zona e contatto;</li><li>lavorazioni distinte per interni, opere murarie e finiture;</li><li>foto reali con una breve descrizione del lavoro;</li><li>nota chiara su sopralluogo, materiali e preventivo.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="contact-title">
+    <div class="container vertical-contact-grid">
+      <div><p class="eyebrow">Contatto pensato per il mestiere</p><h2 id="contact-title">Raccogli il progetto, senza promettere un prezzo prima di vederlo.</h2></div>
+      <div><p>Il modulo può chiedere comune, tipo di immobile, lavorazioni desiderate, stato dei lavori, metratura indicativa e fotografie già disponibili. Il preventivo dipende sempre dalla valutazione reale del cantiere.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/progetto-su-misura/">Se il progetto è più ampio <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="value-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il valore per l'impresa edile</p><h2 id="value-title">Un punto ordinato per spiegare lavori, zona e modo di iniziare.</h2></div>
+      <div class="vertical-copy"><p>Il sito non sostituisce il sopralluogo, il capitolato o il coordinamento del cantiere. Aiuta però il cliente a capire se il servizio è pertinente e ad arrivare al contatto con una richiesta meno vaga.</p><ul class="plain-list"><li>separi lavori completi e interventi puntuali;</li><li>indichi prima la zona e il tipo di immobile;</li><li>mostri il metodo con contenuti e immagini reali;</li><li>raccogli dati utili senza chiedere una perizia tecnica online.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="vertical-faq-title">
+    <div class="container faq-layout vertical-faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="vertical-faq-title">Prima di chiedere il sito.</h2><p>Le risposte aiutano a preparare contenuti utili senza allargare l'offerta base oltre il sito vetrina.</p></div>
+      <div class="faq-list">
+        <details open><summary>Quali lavori dovrebbe mostrare un'impresa edile?</summary><p>Quelli che vuoi davvero ricevere: ristrutturazioni interne, opere murarie, cartongesso, finiture, facciate o manutenzioni. Meglio una selezione concreta che una voce generica come “lavori edili”.</p></details>
+        <details><summary>Il sito può mostrare ristrutturazioni complete?</summary><p>Sì, può spiegare il tuo perimetro di lavoro e il modo in cui valuti una richiesta. Non dovrebbe però promettere che ogni lavorazione o coordinamento sia sempre incluso.</p></details>
+        <details><summary>Posso pubblicare foto di cantieri già conclusi?</summary><p>Sì, se sono immagini tue e puoi pubblicarle. Accompagnale con una descrizione reale del lavoro, senza inserire clienti, risultati o autorizzazioni non verificabili.</p></details>
+        <details><summary>Devo indicare certificazioni e abilitazioni?</summary><p>Puoi inserire solo informazioni reali, aggiornate e pertinenti alla tua attività. Il sito non deve formulare dichiarazioni tecniche o legali non verificate.</p></details>
+        <details><summary>Quanto costa il modello per impresa edile?</summary><p>La pagina rientra nell'offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="vertical-closing-title">
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online lavorazioni, zona e modo di chiedere un sopralluogo.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per la tua impresa <span aria-hidden="true">→</span></a><a class="button button--dark" href="/demo/impresa-edile/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+</BaseLayout>

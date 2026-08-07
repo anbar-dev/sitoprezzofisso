@@ -66,7 +66,7 @@ Solo dopo approvazione della pagina idraulico:
 
 - [x] sito web per imbianchino
 - [x] sito web per elettricista
-- [ ] sito web per impresa edile
+- [x] sito web per impresa edile
 - [ ] sito web per serramentista
 - [ ] sito web per falegname
 - [x] sito web per giardiniere
@@ -83,7 +83,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] Revisione editoriale in italiano naturale delle 4 verticali e delle 4 demo
 - [x] Rifinitura finale di titoli e CTA nelle demo
 - [x] Creare hub `/demo/` e collegare gli esempi da navigazione, homepage e footer
-- [ ] Demo impresa edile
+- [x] Demo impresa edile
 - [ ] Demo serramentista
 
 ## Phase 7 — Contenuti commerciali SEO

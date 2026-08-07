@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = 'Sito dimostrativo per impresa edile | Sito Prezzo Fisso';
+const description = 'Sito dimostrativo per un’impresa edile: ristrutturazioni, opere murarie, finiture, zona indicativa, immagini e richiesta di sopralluogo.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical} noindex chrome={false}>
+  <div class="demo-page">
+    <nav class="demo-floating-actions" aria-label="Azioni principali del sito dimostrativo">
+      <a class="demo-floating-back" href="/sito-web-impresa-edile/"><span aria-hidden="true">←</span> Indietro</a>
+      <a class="demo-floating-contact" href="/richiedi-sito/">Ottieni il tuo sito <span aria-hidden="true">→</span></a>
+    </nav>
+    <div class="demo-banner">
+      <div class="container demo-banner-inner">
+        <strong>SITO DIMOSTRATIVO — esempio di progetto</strong>
+        <span>Nome, contatti, zona e disponibilità sono segnaposto. Le immagini sono generate per questo esempio.</span>
+        <a href="/sito-web-impresa-edile/">Torna alla pagina per imprese edili →</a>
+      </div>
+    </div>
+
+    <header class="demo-site-hero">
+      <div class="container demo-site-nav">
+        <a class="demo-brand" href="#demo-title" aria-label="Costruzioni Esempio, sito dimostrativo">
+          <span class="demo-brand-mark">CE</span>
+          <span>Costruzioni Esempio <small>SITO DIMOSTRATIVO</small></span>
+        </a>
+        <nav aria-label="Navigazione sito dimostrativo">
+          <a href="#servizi-demo">Lavori</a>
+          <a href="#come-lavoriamo-demo">Metodo</a>
+          <a href="#zone-demo">Zona</a>
+          <a href="#lavori-demo">Interventi</a>
+          <a href="#contatti-demo">Contatti</a>
+        </nav>
+        <a class="demo-nav-cta" href="#contatti-demo">Richiedi un sopralluogo</a>
+      </div>
+
+      <div class="container demo-hero-grid">
+        <div class="demo-hero-copy">
+          <p class="demo-eyebrow">RISTRUTTURAZIONI · BOLOGNA E PROVINCIA · SITO DIMOSTRATIVO</p>
+          <h1 id="demo-title">Un punto di partenza chiaro per rinnovare casa.</h1>
+          <p>Ristrutturazioni interne, opere murarie e finiture da valutare con attenzione. Qui trovi i lavori che possiamo prendere in considerazione, la zona indicativa e le informazioni utili per il primo contatto.</p>
+          <div class="demo-button-row">
+            <a class="demo-button demo-button--solid" href="#contatti-demo">Racconta il tuo progetto</a>
+            <a class="demo-button demo-button--outline" href="#servizi-demo">Vedi le lavorazioni</a>
+          </div>
+          <div class="demo-hero-meta">
+            <span><b>01</b> Bologna</span>
+            <span><b>02</b> Ristrutturazioni</span>
+            <span><b>03</b> Sopralluogo</span>
+          </div>
+        </div>
+        <figure class="demo-hero-art">
+          <img src="/images/demo-impresa-edile/impresa-edile-hero.webp" alt="Operaio con casco che controlla una parete durante una ristrutturazione" fetchpriority="high" />
+          <figcaption>Immagine generata per il sito dimostrativo · nessun cantiere reale</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <section class="demo-intro-strip" aria-label="Ambiti di lavoro">
+      <div class="container demo-intro-grid">
+        <span>Ristrutturazioni interne</span>
+        <span>Opere murarie</span>
+        <span>Finiture e cartongesso</span>
+        <span>Manutenzioni da valutare</span>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--light" id="servizi-demo" aria-labelledby="demo-services-title">
+      <div class="container">
+        <div class="demo-section-heading"><div><p class="demo-eyebrow">Lavorazioni</p><h2 id="demo-services-title">I lavori più comuni, spiegati senza promesse generiche.</h2></div></div>
+        <div class="demo-service-grid demo-service-grid--detailed">
+          <article><span>01</span><h3>Ristrutturazioni interne</h3><p>Rinnovo di appartamenti, bagni e cucine, con un primo confronto su ambienti, lavorazioni e stato attuale.</p><ul><li>demolizioni e ripristini;</li><li>redistribuzione degli spazi;</li><li>finiture da definire.</li></ul></article>
+          <article><span>02</span><h3>Opere murarie</h3><p>Tramezzi, aperture e chiusure da valutare in base alla struttura e alle condizioni dell'immobile.</p><ul><li>pareti e divisori;</li><li>intonaci e ripristini;</li><li>verifica sul posto.</li></ul></article>
+          <article><span>03</span><h3>Cartongesso e finiture</h3><p>Controsoffitti, pareti e preparazione delle superfici quando il lavoro rientra nel progetto.</p><ul><li>strutture in cartongesso;</li><li>rasature e preparazione;</li><li>finiture da concordare.</li></ul></article>
+          <article><span>04</span><h3>Pavimenti e rivestimenti</h3><p>Rifacimento o posa di superfici, partendo da metrature e stato del fondo già disponibili.</p><ul><li>bagni e cucine;</li><li>superfici interne;</li><li>materiali da scegliere.</li></ul></article>
+          <article><span>05</span><h3>Facciate e manutenzione</h3><p>Interventi esterni e ripristini da programmare dopo aver compreso accessi, superfici e priorità.</p><ul><li>parti ammalorate;</li><li>intonaci e tinteggiature;</li><li>valutazione del contesto.</li></ul></article>
+          <article><span>06</span><h3>Sopralluogo e preventivo</h3><p>Raccogliamo zona, tipo di immobile, lavorazioni e fotografie prima di definire il passo successivo.</p><ul><li>comune e accessibilità;</li><li>stato dei lavori;</li><li>esigenza principale.</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--blue" id="come-lavoriamo-demo" aria-labelledby="demo-process-title">
+      <div class="container"><div class="demo-section-heading"><p class="demo-eyebrow">Come lavoriamo</p><h2 id="demo-process-title">Prima capiamo il progetto. Poi valutiamo il cantiere.</h2></div>
+        <ol class="demo-process-grid"><li><span>01</span><h3>Racconta l'immobile</h3><p>Indica che tipo di spazio vuoi rinnovare, in quale comune si trova e se è abitato o già libero.</p></li><li><span>02</span><h3>Descrivi le lavorazioni</h3><p>Scrivi che cosa vuoi cambiare e allega solo fotografie, planimetrie o documenti già disponibili.</p></li><li><span>03</span><h3>Valutiamo il da farsi</h3><p>In base alle informazioni ricevute si capisce se servono un sopralluogo, altri dettagli o un progetto più ampio.</p></li></ol>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--white" aria-labelledby="demo-brief-title">
+      <div class="container demo-feature-grid"><figure class="demo-feature-image"><img src="/images/demo-impresa-edile/muratura.webp" alt="Mani protette da guanti che posano un mattone con malta" loading="lazy" /><figcaption>Le immagini possono aiutare a raccontare lavorazioni e materiali.</figcaption></figure><div class="demo-feature-copy"><p class="demo-eyebrow">Prima del sopralluogo</p><h2 id="demo-brief-title">Più dettagli ci dai, meglio inquadriamo il lavoro.</h2><p>Per una prima valutazione è utile sapere quali ambienti sono coinvolti, che cosa vuoi rifare, se i lavori sono già iniziati e quali fotografie o planimetrie hai a disposizione.</p><ul class="demo-check-list"><li>tipo di immobile e comune;</li><li>ambienti e lavorazioni desiderate;</li><li>stato attuale dei lavori;</li><li>foto o documenti già disponibili.</li></ul><a class="demo-inline-link" href="#contatti-demo">Racconta il tuo progetto →</a></div></div>
+    </section>
+
+    <section class="demo-section demo-section--sand" id="zone-demo" aria-labelledby="demo-zone-title">
+      <div class="container demo-zone-layout"><div><p class="demo-eyebrow">Zona di intervento</p><h2 id="demo-zone-title">Bologna e comuni della provincia.</h2><p>I comuni qui sotto mostrano solo come può essere presentata una zona di lavoro. Nella richiesta indica il tuo comune, così sarà possibile verificare la disponibilità.</p></div><div class="demo-area-list"><span>Bologna</span><span>Casalecchio di Reno</span><span>San Lazzaro di Savena</span><span>Zola Predosa</span><span>Castel Maggiore</span><span>Ozzano dell'Emilia</span><span>Granarolo dell'Emilia</span><span>Valsamoggia</span><small>Esempio di area coperta</small></div></div>
+    </section>
+
+    <section class="demo-section demo-section--light" id="lavori-demo" aria-labelledby="demo-work-title">
+      <div class="container"><div class="demo-section-heading"><div><p class="demo-eyebrow">Interventi</p><h2 id="demo-work-title">Alcuni esempi di lavorazione.</h2></div></div><div class="demo-work-grid demo-work-grid--gallery"><figure class="demo-work-card demo-work-card--wide"><img src="/images/demo-impresa-edile/interno-finito.webp" alt="Interno rinnovato con pareti chiare e pavimento in legno" loading="lazy" /><figcaption>Interno dopo una ristrutturazione</figcaption></figure><figure class="demo-work-card"><img src="/images/demo-impresa-edile/muratura.webp" alt="Posa di un mattone durante un lavoro di muratura" loading="lazy" /><figcaption>Opere murarie</figcaption></figure><figure class="demo-work-card"><img src="/images/demo-impresa-edile/posa-porta.webp" alt="Operaio che misura un telaio per una porta interna" loading="lazy" /><figcaption>Misurazione di un infisso</figcaption></figure><figure class="demo-work-card"><img src="/images/demo-impresa-edile/impresa-edile-hero.webp" alt="Controllo della planarità di una parete in ristrutturazione" loading="lazy" /><figcaption>Controllo delle superfici</figcaption></figure></div><p class="demo-small-note">Immagini generate con OpenAI ImageGen per questo esempio: non rappresentano lavori, clienti o cantieri reali.</p></div>
+    </section>
+
+    <section class="demo-section demo-section--white" aria-labelledby="demo-faq-title"><div class="container demo-faq-layout"><div class="demo-section-heading"><p class="demo-eyebrow">Domande frequenti</p><h2 id="demo-faq-title">Prima di chiedere un sopralluogo.</h2></div><div class="demo-faq-list"><details open><summary>Che cosa devo scrivere nella richiesta?</summary><p>Indica il comune, il tipo di immobile, gli ambienti coinvolti e che cosa vuoi cambiare. Se puoi, aggiungi fotografie già disponibili.</p></details><details><summary>Valutate anche piccoli interventi?</summary><p>La disponibilità va verificata caso per caso. La pagina può distinguere lavori puntuali e ristrutturazioni più ampie.</p></details><details><summary>Posso chiedere un preventivo online?</summary><p>Il primo contatto serve a capire se il progetto è pertinente. Il preventivo richiede le informazioni e le verifiche necessarie per il lavoro reale.</p></details><details><summary>In quali comuni lavorate?</summary><p>La zona deve essere sempre aggiornata e reale. In questo esempio mostriamo Bologna e alcuni comuni della provincia solo per illustrare la struttura.</p></details></div></div></section>
+
+    <section class="demo-contact-section" id="contatti-demo" aria-labelledby="demo-contact-title"><div class="container demo-contact-grid"><div><p class="demo-eyebrow">Richiesta di contatto</p><h2 id="demo-contact-title">Racconta che cosa vuoi rinnovare.</h2><p>Indica dove si trova l'immobile, quali lavori immagini e che cosa hai già a disposizione: così possiamo capire se serve un sopralluogo.</p></div><div class="demo-contact-card"><div class="demo-contact-preview"><span>CONTATTI</span><strong>Costruzioni Esempio</strong><p>Bologna e provincia. Descrivi l'immobile e le lavorazioni da valutare.</p><a href="tel:+390510000000">051 000 0000</a><a href="mailto:contatti@costruzioniesempio.example">contatti@costruzioniesempio.example</a></div><a class="demo-button demo-button--solid" href="mailto:contatti@costruzioniesempio.example">Scrivici</a><a class="demo-button demo-button--light" href="tel:+390510000000">Chiama 051 000 0000</a><small>Recapiti di esempio: questa è una pagina dimostrativa e non rappresenta un'attività reale.</small></div></div></section>
+
+    <footer class="demo-footer"><div class="container demo-footer-inner"><span>Costruzioni Esempio · sito dimostrativo</span><div><a href="/richiedi-sito/">Vuoi un sito simile? Richiedi il tuo →</a><small>Immagini generate per questo esempio · nessun cantiere reale</small></div></div></footer>
+  </div>
+</BaseLayout>

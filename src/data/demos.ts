@@ -45,4 +45,13 @@ export const demoSites: DemoSite[] = [
     verticalPath: '/sito-web-giardiniere/',
     verticalLabel: 'Scopri il modello per giardinieri',
   },
+  {
+    slug: 'impresa-edile',
+    title: 'Impresa edile',
+    summary: 'Ristrutturazioni, opere murarie, finiture e sopralluoghi.',
+    image: '/images/demo-impresa-edile/impresa-edile-hero.webp',
+    imageAlt: 'Operaio con casco che controlla una parete durante una ristrutturazione',
+    verticalPath: '/sito-web-impresa-edile/',
+    verticalLabel: 'Scopri il modello per imprese edili',
+  },
 ];
