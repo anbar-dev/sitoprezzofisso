@@ -81,4 +81,13 @@ export const demoSites: DemoSite[] = [
     verticalPath: '/sito-web-geometra/',
     verticalLabel: 'Scopri il modello per geometri',
   },
+  {
+    slug: 'termoidraulico',
+    title: 'Termoidraulico',
+    summary: 'Caldaie, pompe di calore, riscaldamento e manutenzione programmata.',
+    image: '/images/demo-termoidraulico/termoidraulico-hero.png',
+    imageAlt: 'Impianto termico con caldaia, tubazioni in rame e strumenti di controllo',
+    verticalPath: '/sito-web-termoidraulico/',
+    verticalLabel: 'Scopri il modello per termoidraulici',
+  },
 ];

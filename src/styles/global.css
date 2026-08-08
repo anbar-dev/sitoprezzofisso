@@ -4648,3 +4648,130 @@ h1 strong {
     text-align: center;
   }
 }
+
+/* Thermohydraulic demo: a technical midnight, copper and ice identity. */
+.demo-page.demo-thermohydraulic {
+  --demo-navy: #163541;
+  --demo-blue: #177d87;
+  --demo-blue-light: #e2f0ef;
+  --demo-orange: #c66d3d;
+  --demo-paper: #f4f6f4;
+  --demo-ink: #1e3037;
+  --demo-muted: #69777b;
+  --demo-line: #d7e0de;
+}
+
+.demo-page.demo-thermohydraulic .demo-banner-inner strong,
+.demo-page.demo-thermohydraulic .demo-eyebrow,
+.demo-page.demo-thermohydraulic .demo-hero-meta b,
+.demo-page.demo-thermohydraulic .demo-process-grid li > span {
+  color: #f0bc7e;
+}
+
+.demo-page.demo-thermohydraulic .demo-site-hero,
+.demo-page.demo-thermohydraulic .demo-contact-section {
+  background: var(--demo-navy);
+}
+
+.demo-page.demo-thermohydraulic .demo-brand-mark {
+  color: var(--demo-navy);
+  background: #f0bc7e;
+}
+
+.demo-page.demo-thermohydraulic .demo-brand small {
+  color: #f0bc7e;
+}
+
+.demo-page.demo-thermohydraulic .demo-banner-inner {
+  padding-right: 16rem;
+}
+
+.demo-page.demo-thermohydraulic .demo-site-nav nav a:hover,
+.demo-page.demo-thermohydraulic .demo-site-nav nav a:focus-visible,
+.demo-page.demo-thermohydraulic .demo-nav-cta:hover,
+.demo-page.demo-thermohydraulic .demo-nav-cta:focus-visible {
+  color: #f0bc7e;
+}
+
+.demo-page.demo-thermohydraulic .demo-nav-cta {
+  border-color: #f0bc7e;
+  color: #f0bc7e;
+}
+
+.demo-page.demo-thermohydraulic .demo-button--solid {
+  color: var(--demo-navy);
+  background: #f0bc7e;
+}
+
+.demo-page.demo-thermohydraulic .demo-button--solid:hover,
+.demo-page.demo-thermohydraulic .demo-button--solid:focus-visible {
+  background: #f7d49f;
+}
+
+.demo-page.demo-thermohydraulic .demo-button--outline:hover,
+.demo-page.demo-thermohydraulic .demo-button--outline:focus-visible,
+.demo-page.demo-thermohydraulic .demo-button--light {
+  color: var(--demo-navy);
+  background: #f0bc7e;
+}
+
+.demo-page.demo-thermohydraulic .demo-button--outline:hover,
+.demo-page.demo-thermohydraulic .demo-button--outline:focus-visible {
+  border-color: #f0bc7e;
+}
+
+.demo-page.demo-thermohydraulic .demo-area-list span {
+  border-color: #acd5d4;
+  color: var(--demo-blue);
+  background: var(--demo-blue-light);
+}
+
+.demo-page.demo-thermohydraulic .demo-contact-card {
+  border-top-color: var(--demo-orange);
+  box-shadow: 0.8rem 0.8rem 0 #f0bc7e;
+}
+
+.demo-page.demo-thermohydraulic .demo-contact-preview a,
+.demo-page.demo-thermohydraulic .demo-inline-link {
+  color: var(--demo-blue);
+}
+
+.demo-page.demo-thermohydraulic .demo-floating-actions a {
+  border-color: #f0bc7e;
+  background: #102832;
+}
+
+.demo-page.demo-thermohydraulic .demo-floating-actions a:hover,
+.demo-page.demo-thermohydraulic .demo-floating-actions a:focus-visible {
+  color: var(--demo-navy);
+  background: #f0bc7e;
+}
+
+.demo-page.demo-thermohydraulic .demo-floating-actions .demo-floating-contact {
+  border-color: var(--demo-orange);
+  background: var(--demo-orange);
+}
+
+.demo-page.demo-thermohydraulic .demo-floating-actions .demo-floating-contact:hover,
+.demo-page.demo-thermohydraulic .demo-floating-actions .demo-floating-contact:focus-visible {
+  color: var(--demo-white);
+  background: #aa5b35;
+}
+
+@media (max-width: 38rem) {
+  .demo-page.demo-thermohydraulic .demo-banner-inner {
+    padding-right: 0;
+  }
+
+  .demo-page.demo-thermohydraulic .demo-banner {
+    padding-top: 4.3rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .demo-page.demo-thermohydraulic .demo-nav-cta {
+    flex: 1 0 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}

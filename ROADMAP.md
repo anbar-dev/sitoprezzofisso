@@ -87,6 +87,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] Demo serramentista
 - [x] Demo falegname
 - [x] Demo geometra
+- [x] Demo termoidraulico
 
 ## Phase 7 — Contenuti commerciali SEO
 
