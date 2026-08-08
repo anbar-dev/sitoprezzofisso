@@ -71,7 +71,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] sito web per falegname
 - [x] sito web per giardiniere
 - [x] sito web per geometra
-- [ ] sito web per termoidraulico
+- [x] sito web per termoidraulico
 - [ ] sito web per impresa pulizie
 
 ## Phase 6 — Demo
