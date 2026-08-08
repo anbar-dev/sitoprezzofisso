@@ -72,7 +72,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] sito web per giardiniere
 - [x] sito web per geometra
 - [x] sito web per termoidraulico
-- [ ] sito web per impresa pulizie
+- [x] sito web per impresa pulizie
 
 ## Phase 6 — Demo
 
