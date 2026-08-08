@@ -90,4 +90,13 @@ export const demoSites: DemoSite[] = [
     verticalPath: '/sito-web-termoidraulico/',
     verticalLabel: 'Scopri il modello per termoidraulici',
   },
+  {
+    slug: 'impresa-pulizie',
+    title: 'Impresa di pulizie',
+    summary: 'Uffici, condomini, fine cantiere, vetri e servizi periodici.',
+    image: '/images/demo-impresa-pulizie/impresa-pulizie-hero.png',
+    imageAlt: 'Carrello con attrezzatura per la pulizia in una reception',
+    verticalPath: '/sito-web-impresa-pulizie/',
+    verticalLabel: 'Scopri il modello per imprese di pulizie',
+  },
 ];

@@ -4775,3 +4775,130 @@ h1 strong {
     text-align: center;
   }
 }
+
+/* Cleaning company demo: a fresh sage, stone and terracotta identity. */
+.demo-page.demo-cleaning-company {
+  --demo-navy: #24443f;
+  --demo-blue: #4f8179;
+  --demo-blue-light: #e3efeb;
+  --demo-orange: #c77850;
+  --demo-paper: #f5f5ef;
+  --demo-ink: #293a36;
+  --demo-muted: #6c7973;
+  --demo-line: #d8e0da;
+}
+
+.demo-page.demo-cleaning-company .demo-banner-inner strong,
+.demo-page.demo-cleaning-company .demo-eyebrow,
+.demo-page.demo-cleaning-company .demo-hero-meta b,
+.demo-page.demo-cleaning-company .demo-process-grid li > span {
+  color: #e7c47f;
+}
+
+.demo-page.demo-cleaning-company .demo-site-hero,
+.demo-page.demo-cleaning-company .demo-contact-section {
+  background: var(--demo-navy);
+}
+
+.demo-page.demo-cleaning-company .demo-brand-mark {
+  color: var(--demo-navy);
+  background: #e7c47f;
+}
+
+.demo-page.demo-cleaning-company .demo-brand small {
+  color: #e7c47f;
+}
+
+.demo-page.demo-cleaning-company .demo-banner-inner {
+  padding-right: 16rem;
+}
+
+.demo-page.demo-cleaning-company .demo-site-nav nav a:hover,
+.demo-page.demo-cleaning-company .demo-site-nav nav a:focus-visible,
+.demo-page.demo-cleaning-company .demo-nav-cta:hover,
+.demo-page.demo-cleaning-company .demo-nav-cta:focus-visible {
+  color: #e7c47f;
+}
+
+.demo-page.demo-cleaning-company .demo-nav-cta {
+  border-color: #e7c47f;
+  color: #e7c47f;
+}
+
+.demo-page.demo-cleaning-company .demo-button--solid {
+  color: var(--demo-navy);
+  background: #e7c47f;
+}
+
+.demo-page.demo-cleaning-company .demo-button--solid:hover,
+.demo-page.demo-cleaning-company .demo-button--solid:focus-visible {
+  background: #f2d99f;
+}
+
+.demo-page.demo-cleaning-company .demo-button--outline:hover,
+.demo-page.demo-cleaning-company .demo-button--outline:focus-visible,
+.demo-page.demo-cleaning-company .demo-button--light {
+  color: var(--demo-navy);
+  background: #e7c47f;
+}
+
+.demo-page.demo-cleaning-company .demo-button--outline:hover,
+.demo-page.demo-cleaning-company .demo-button--outline:focus-visible {
+  border-color: #e7c47f;
+}
+
+.demo-page.demo-cleaning-company .demo-area-list span {
+  border-color: #b9d5cb;
+  color: var(--demo-blue);
+  background: var(--demo-blue-light);
+}
+
+.demo-page.demo-cleaning-company .demo-contact-card {
+  border-top-color: var(--demo-orange);
+  box-shadow: 0.8rem 0.8rem 0 #e7c47f;
+}
+
+.demo-page.demo-cleaning-company .demo-contact-preview a,
+.demo-page.demo-cleaning-company .demo-inline-link {
+  color: var(--demo-blue);
+}
+
+.demo-page.demo-cleaning-company .demo-floating-actions a {
+  border-color: #e7c47f;
+  background: #193530;
+}
+
+.demo-page.demo-cleaning-company .demo-floating-actions a:hover,
+.demo-page.demo-cleaning-company .demo-floating-actions a:focus-visible {
+  color: var(--demo-navy);
+  background: #e7c47f;
+}
+
+.demo-page.demo-cleaning-company .demo-floating-actions .demo-floating-contact {
+  border-color: var(--demo-orange);
+  background: var(--demo-orange);
+}
+
+.demo-page.demo-cleaning-company .demo-floating-actions .demo-floating-contact:hover,
+.demo-page.demo-cleaning-company .demo-floating-actions .demo-floating-contact:focus-visible {
+  color: var(--demo-white);
+  background: #a85f3e;
+}
+
+@media (max-width: 38rem) {
+  .demo-page.demo-cleaning-company .demo-banner-inner {
+    padding-right: 0;
+  }
+
+  .demo-page.demo-cleaning-company .demo-banner {
+    padding-top: 4.3rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .demo-page.demo-cleaning-company .demo-nav-cta {
+    flex: 1 0 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}

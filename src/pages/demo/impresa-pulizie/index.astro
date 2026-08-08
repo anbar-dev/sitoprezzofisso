@@ -1,0 +1,147 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = 'Sito dimostrativo per impresa di pulizie | Sito Prezzo Fisso';
+const description = 'Esempio di sito per un’impresa di pulizie: uffici, condomini, fine cantiere, vetri e richiesta di sopralluogo.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical} noindex chrome={false}>
+  <div class="demo-page demo-cleaning-company">
+    <nav class="demo-floating-actions" aria-label="Azioni principali del sito dimostrativo">
+      <a class="demo-floating-back" href="/sito-web-impresa-pulizie/"><span aria-hidden="true">←</span> Indietro</a>
+      <a class="demo-floating-contact" href="/richiedi-sito/">Ottieni il tuo sito <span aria-hidden="true">→</span></a>
+    </nav>
+
+    <div class="demo-banner">
+      <div class="container demo-banner-inner">
+        <strong>SITO DIMOSTRATIVO — esempio di progetto</strong>
+        <span>Nome, contatti e disponibilità sono segnaposto. Le immagini sono state create per questo esempio.</span>
+        <a href="/sito-web-impresa-pulizie/">Torna alla pagina per imprese di pulizie →</a>
+      </div>
+    </div>
+
+    <header class="demo-site-hero">
+      <div class="container demo-site-nav">
+        <a class="demo-brand" href="#demo-title" aria-label="Ordine Quotidiano, sito dimostrativo">
+          <span class="demo-brand-mark">OQ</span>
+          <span>Ordine Quotidiano <small>SITO DIMOSTRATIVO</small></span>
+        </a>
+        <nav aria-label="Navigazione sito dimostrativo">
+          <a href="#servizi-demo">Servizi</a>
+          <a href="#come-lavoriamo-demo">Metodo</a>
+          <a href="#zone-demo">Zone</a>
+          <a href="#lavori-demo">Ambienti</a>
+          <a href="#contatti-demo">Contatti</a>
+        </nav>
+        <a class="demo-nav-cta" href="#contatti-demo">Chiedi una valutazione</a>
+      </div>
+
+      <div class="container demo-hero-grid">
+        <div class="demo-hero-copy">
+          <p class="demo-eyebrow">SERVIZI DI PULIZIA · MILANO E PROVINCIA · SITO DIMOSTRATIVO</p>
+          <h1>Ogni spazio richiede il modo giusto di prendersene cura.</h1>
+          <p>Uffici, condomini, fine cantiere e interventi periodici. Racconta l'ambiente, la frequenza e ciò che serve: il primo contatto parte da informazioni concrete.</p>
+          <div class="demo-button-row">
+            <a class="demo-button demo-button--solid" href="#contatti-demo">Chiedi una valutazione</a>
+            <a class="demo-button demo-button--outline" href="#servizi-demo">Vedi i servizi</a>
+          </div>
+          <div class="demo-hero-meta">
+            <span><b>01</b> Uffici</span>
+            <span><b>02</b> Condomini</span>
+            <span><b>03</b> Richiesta online</span>
+          </div>
+        </div>
+        <figure class="demo-hero-art">
+          <img src="/images/demo-impresa-pulizie/impresa-pulizie-hero.png" alt="Carrello con attrezzatura per la pulizia in una reception luminosa" fetchpriority="high" />
+          <figcaption>Immagine illustrativa creata per questo sito dimostrativo.</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <section class="demo-intro-strip" aria-label="Ambiti di intervento">
+      <div class="container demo-intro-grid">
+        <span>Uffici e attività</span>
+        <span>Condomini e scale</span>
+        <span>Fine cantiere</span>
+        <span>Vetri e superfici</span>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--light" id="servizi-demo" aria-labelledby="demo-services-title">
+      <div class="container">
+        <div class="demo-section-heading"><div><p class="demo-eyebrow">Servizi</p><h2 id="demo-services-title">Il lavoro cambia insieme allo spazio.</h2></div></div>
+        <div class="demo-service-grid demo-service-grid--detailed">
+          <article><span>01</span><h3>Uffici e attività</h3><p>Pulizie periodiche per ambienti di lavoro e piccoli spazi commerciali, con frequenza da definire.</p><ul><li>giorni desiderati;</li><li>ambienti coinvolti;</li><li>orari di accesso.</li></ul></article>
+          <article><span>02</span><h3>Condomini e parti comuni</h3><p>Scale, ingressi, corridoi e aree condivise da valutare in base a dimensioni e utilizzo dell'edificio.</p><ul><li>numero di piani;</li><li>frequenza;</li><li>presenza di ascensore.</li></ul></article>
+          <article><span>03</span><h3>Fine cantiere</h3><p>Pulizia finale dopo lavori o ristrutturazioni, con sopralluogo prima di definire attività e materiali.</p><ul><li>stato dei locali;</li><li>superficie indicativa;</li><li>data desiderata.</li></ul></article>
+          <article><span>04</span><h3>Vetri e superfici</h3><p>Finestre, vetrine e superfici da includere quando accesso, altezza e attrezzatura sono gestibili.</p><ul><li>tipo di vetro;</li><li>altezza;</li><li>accessibilità.</li></ul></article>
+          <article><span>05</span><h3>Pulizie straordinarie</h3><p>Interventi su ambienti trascurati, traslochi o situazioni particolari da descrivere prima della valutazione.</p><ul><li>stato dell'ambiente;</li><li>stanze coinvolte;</li><li>fotografie disponibili.</li></ul></article>
+          <article><span>06</span><h3>Servizio periodico</h3><p>Una richiesta ordinata aiuta a capire frequenza, accessi, attività incluse e dimensioni dello spazio.</p><ul><li>una tantum o ricorrente;</li><li>comune;</li><li>orari possibili.</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--blue" id="come-lavoriamo-demo" aria-labelledby="demo-process-title">
+      <div class="container">
+        <div class="demo-section-heading"><p class="demo-eyebrow">Come iniziare</p><h2 id="demo-process-title">Prima conosciamo lo spazio. Poi definiamo il servizio.</h2></div>
+        <ol class="demo-process-grid">
+          <li><span>01</span><h3>Descrivi l'ambiente</h3><p>Indica se è un ufficio, un condominio, un'attività, un'abitazione o uno spazio dopo i lavori.</p></li>
+          <li><span>02</span><h3>Racconta la frequenza</h3><p>Spiega se cerchi una pulizia singola, un servizio periodico o una valutazione da programmare.</p></li>
+          <li><span>03</span><h3>Condividi ciò che hai</h3><p>Comune, superficie indicativa, accessi e fotografie aiutano a capire il passo successivo.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--white" aria-labelledby="demo-brief-title">
+      <div class="container demo-feature-grid">
+        <figure class="demo-feature-image"><img src="/images/demo-impresa-pulizie/pulizia-vetri.png" alt="Mano con guanto che pulisce una parete vetrata in un ufficio" loading="lazy" /><figcaption>Il dettaglio del lavoro si vede anche nelle superfici.</figcaption></figure>
+        <div class="demo-feature-copy">
+          <p class="demo-eyebrow">Prima del servizio</p>
+          <h2 id="demo-brief-title">Non devi sapere già quanto tempo servirà.</h2>
+          <p>Per il primo contatto basta raccontare che cosa deve essere pulito, con quale frequenza e quali vincoli di accesso esistono. La valutazione dipende dallo spazio reale.</p>
+          <ul class="demo-check-list"><li>tipo di ambiente e superficie indicativa;</li><li>frequenza desiderata;</li><li>orari, chiavi o accessi da coordinare;</li><li>fotografie già disponibili.</li></ul>
+          <a class="demo-inline-link" href="#contatti-demo">Invia una richiesta →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--sand" id="zone-demo" aria-labelledby="demo-zone-title">
+      <div class="container demo-zone-layout">
+        <div><p class="demo-eyebrow">Zona di intervento</p><h2 id="demo-zone-title">Milano e comuni della provincia.</h2><p>I comuni qui sotto mostrano solo come può essere presentata una zona di lavoro. Nella richiesta indica il tuo comune, così sarà possibile verificare la disponibilità.</p></div>
+        <div class="demo-area-list"><span>Milano</span><span>Monza</span><span>Sesto San Giovanni</span><span>Cinisello Balsamo</span><span>Rho</span><span>Corsico</span><span>Cologno Monzese</span><span>Rozzano</span><small>Esempio di area coperta, non sede reale.</small></div>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--light" id="lavori-demo" aria-labelledby="demo-work-title">
+      <div class="container">
+        <div class="demo-section-heading"><div><p class="demo-eyebrow">Ambienti e dettagli</p><h2 id="demo-work-title">Un ambiente ordinato si riconosce dai dettagli.</h2></div></div>
+        <div class="demo-work-grid demo-work-grid--gallery">
+          <figure class="demo-work-card demo-work-card--wide"><img src="/images/demo-impresa-pulizie/fine-cantiere.png" alt="Ambiente vuoto e pulito dopo una ristrutturazione" loading="lazy" /><figcaption>Pulizia finale prima di restituire lo spazio</figcaption></figure>
+          <figure class="demo-work-card"><img src="/images/demo-impresa-pulizie/pulizia-vetri.png" alt="Pulizia di una parete vetrata in un ufficio" loading="lazy" /><figcaption>Vetri e superfici trasparenti</figcaption></figure>
+          <figure class="demo-work-card"><img src="/images/demo-impresa-pulizie/parti-comuni.png" alt="Ingresso e scala di un condominio mantenuti in ordine" loading="lazy" /><figcaption>Parti comuni del condominio</figcaption></figure>
+          <figure class="demo-work-card"><img src="/images/demo-impresa-pulizie/impresa-pulizie-hero.png" alt="Attrezzatura per la pulizia organizzata in una reception" loading="lazy" /><figcaption>Attrezzatura pronta per il servizio</figcaption></figure>
+        </div>
+        <p class="demo-small-note">Immagini illustrative generate per questo sito dimostrativo: non rappresentano lavori, clienti o una sede reale.</p>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--white" aria-labelledby="demo-faq-title">
+      <div class="container demo-faq-layout"><div class="demo-section-heading"><p class="demo-eyebrow">Domande frequenti</p><h2 id="demo-faq-title">Prima di chiedere una valutazione.</h2></div><div class="demo-faq-list">
+        <details open><summary>Che cosa devo scrivere nella richiesta?</summary><p>Indica comune, tipo di ambiente, superficie indicativa, frequenza desiderata e fotografie disponibili. Se ci sono vincoli di accesso, aggiungili.</p></details>
+        <details><summary>Posso chiedere una pulizia una tantum?</summary><p>Sì, puoi indicare se cerchi un intervento singolo, per esempio dopo un trasloco o una ristrutturazione, oppure un servizio ricorrente.</p></details>
+        <details><summary>Devo sapere già quali prodotti usare?</summary><p>No. Per il primo contatto basta descrivere superfici e ambiente. Prodotti, attrezzatura e modalità vanno valutati in base al lavoro concreto.</p></details>
+        <details><summary>In quali comuni lavorate?</summary><p>La zona deve essere aggiornata e reale. In questo esempio mostriamo Milano e alcuni comuni della provincia solo per illustrare la struttura.</p></details>
+      </div></div>
+    </section>
+
+    <section class="demo-contact-section" id="contatti-demo" aria-labelledby="demo-contact-title">
+      <div class="container demo-contact-grid">
+        <div><p class="demo-eyebrow">Richiesta di contatto</p><h2 id="demo-contact-title">Racconta lo spazio da rimettere in ordine.</h2><p>Indica zona, ambiente, frequenza e fotografie disponibili: così il primo contatto può partire da informazioni concrete.</p></div>
+        <div class="demo-contact-card"><div class="demo-contact-preview"><span>CONTATTI</span><strong>Ordine Quotidiano</strong><p>Milano e comuni della provincia. Racconta lo spazio e il tipo di servizio che stai cercando.</p><a href="tel:+390200000000">02 0000 0000</a><a href="mailto:contatti@ordinequotidiano.example">contatti@ordinequotidiano.example</a></div><a class="demo-button demo-button--solid" href="mailto:contatti@ordinequotidiano.example">Scrivici</a><a class="demo-button demo-button--light" href="tel:+390200000000">Chiama 02 0000 0000</a><small>Recapiti di esempio: questa è una pagina dimostrativa e non rappresenta un'attività reale.</small></div>
+      </div>
+    </section>
+
+    <footer class="demo-footer"><div class="container demo-footer-inner"><span>Ordine Quotidiano · sito dimostrativo</span><div><a href="/richiedi-sito/">Vuoi un sito simile? Richiedi il tuo →</a><small>Immagini illustrative create per questo esempio</small></div></div></footer>
+  </div>
+</BaseLayout>
