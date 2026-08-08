@@ -1,0 +1,147 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = 'Sito dimostrativo per geometra | Sito Prezzo Fisso';
+const description = 'Esempio di sito per uno studio tecnico: rilievi, pratiche, planimetrie, documentazione, zona servita e richiesta di contatto.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical} noindex chrome={false}>
+  <div class="demo-page demo-geometra">
+    <nav class="demo-floating-actions" aria-label="Azioni principali del sito dimostrativo">
+      <a class="demo-floating-back" href="/sito-web-geometra/"><span aria-hidden="true">←</span> Indietro</a>
+      <a class="demo-floating-contact" href="/richiedi-sito/">Ottieni il tuo sito <span aria-hidden="true">→</span></a>
+    </nav>
+
+    <div class="demo-banner">
+      <div class="container demo-banner-inner">
+        <strong>SITO DIMOSTRATIVO — esempio di progetto</strong>
+        <span>Nome, contatti e disponibilità sono segnaposto. Le immagini sono state create per questo esempio.</span>
+        <a href="/sito-web-geometra/">Torna alla pagina per geometri →</a>
+      </div>
+    </div>
+
+    <header class="demo-site-hero">
+      <div class="container demo-site-nav">
+        <a class="demo-brand" href="#demo-title" aria-label="Linea Quota, sito dimostrativo">
+          <span class="demo-brand-mark">LQ</span>
+          <span>Linea Quota <small>SITO DIMOSTRATIVO</small></span>
+        </a>
+        <nav aria-label="Navigazione sito dimostrativo">
+          <a href="#servizi-demo">Servizi</a>
+          <a href="#come-lavoriamo-demo">Metodo</a>
+          <a href="#zone-demo">Zone</a>
+          <a href="#lavori-demo">Lavori</a>
+          <a href="#contatti-demo">Contatti</a>
+        </nav>
+        <a class="demo-nav-cta" href="#contatti-demo">Racconta il tuo caso</a>
+      </div>
+
+      <div class="container demo-hero-grid">
+        <div class="demo-hero-copy">
+          <p class="demo-eyebrow">STUDIO TECNICO · MILANO E PROVINCIA · SITO DIMOSTRATIVO</p>
+          <h1 id="demo-title">Quando la situazione è chiara, il prossimo passo è più semplice.</h1>
+          <p>Rilievi, planimetrie, pratiche e documentazione per immobili residenziali e piccoli interventi. Racconta il contesto: verifichiamo quali informazioni servono per iniziare.</p>
+          <div class="demo-button-row">
+            <a class="demo-button demo-button--solid" href="#contatti-demo">Racconta il tuo caso</a>
+            <a class="demo-button demo-button--outline" href="#servizi-demo">Vedi i servizi</a>
+          </div>
+          <div class="demo-hero-meta">
+            <span><b>01</b> Rilievi</span>
+            <span><b>02</b> Documenti</span>
+            <span><b>03</b> Richiesta online</span>
+          </div>
+        </div>
+        <figure class="demo-hero-art">
+          <img src="/images/demo-geometra/geometra-hero.png" alt="Tavolo di lavoro con planimetrie, tablet e strumenti per un rilievo" fetchpriority="high" />
+          <figcaption>Immagine illustrativa creata per questo sito dimostrativo.</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <section class="demo-intro-strip" aria-label="Ambiti di intervento">
+      <div class="container demo-intro-grid">
+        <span>Rilievi e planimetrie</span>
+        <span>Pratiche edilizie</span>
+        <span>Catasto e documenti</span>
+        <span>Consulenza tecnica</span>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--light" id="servizi-demo" aria-labelledby="demo-services-title">
+      <div class="container">
+        <div class="demo-section-heading"><div><p class="demo-eyebrow">Servizi</p><h2 id="demo-services-title">Ogni incarico parte da un contesto diverso.</h2></div></div>
+        <div class="demo-service-grid demo-service-grid--detailed">
+          <article><span>01</span><h3>Rilievi e planimetrie</h3><p>Misurazioni e restituzioni grafiche da impostare in base all'immobile e allo scopo del rilievo.</p><ul><li>tipo di immobile;</li><li>superficie indicativa;</li><li>documenti disponibili.</li></ul></article>
+          <article><span>02</span><h3>Pratiche edilizie</h3><p>Una prima richiesta chiara aiuta a capire quale pratica può essere valutata e quali dati mancano.</p><ul><li>intervento previsto;</li><li>comune dell'immobile;</li><li>stato dei lavori.</li></ul></article>
+          <article><span>03</span><h3>Catasto e documentazione</h3><p>Visure, planimetrie e verifiche da esaminare insieme alla situazione reale dell'immobile.</p><ul><li>documenti già in possesso;</li><li>indirizzo dell'immobile;</li><li>esigenza specifica.</li></ul></article>
+          <article><span>04</span><h3>Consulenza tecnica</h3><p>Un confronto iniziale per inquadrare il problema prima di decidere il lavoro necessario.</p><ul><li>domanda principale;</li><li>vincoli conosciuti;</li><li>passo desiderato.</li></ul></article>
+          <article><span>05</span><h3>Stime e valutazioni</h3><p>Il tipo di valutazione e il livello di approfondimento vanno chiariti prima di parlare di tempi.</p><ul><li>finalità della stima;</li><li>immobile coinvolto;</li><li>materiale disponibile.</li></ul></article>
+          <article><span>06</span><h3>Sopralluogo</h3><p>Zona, accesso, fotografie e motivo della richiesta preparano un contatto più utile.</p><ul><li>comune;</li><li>accessibilità;</li><li>fotografie disponibili.</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--blue" id="come-lavoriamo-demo" aria-labelledby="demo-process-title">
+      <div class="container">
+        <div class="demo-section-heading"><p class="demo-eyebrow">Come lavoriamo</p><h2 id="demo-process-title">Prima inquadriamo il caso. Poi definiamo il rilievo.</h2></div>
+        <ol class="demo-process-grid">
+          <li><span>01</span><h3>Racconta l'immobile</h3><p>Indica se si tratta di un'abitazione, un locale, un terreno o un altro tipo di proprietà.</p></li>
+          <li><span>02</span><h3>Condividi ciò che hai</h3><p>Comune, fotografie, planimetrie e documenti disponibili aiutano a capire il punto di partenza.</p></li>
+          <li><span>03</span><h3>Valutiamo il passo successivo</h3><p>Si chiarisce se servono un sopralluogo, un rilievo, una verifica o un approfondimento.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--white" aria-labelledby="demo-brief-title">
+      <div class="container demo-feature-grid">
+        <figure class="demo-feature-image"><img src="/images/demo-geometra/rilievo-laser.png" alt="Strumento laser usato per verificare una parete e una porta interna" loading="lazy" /><figcaption>Un rilievo parte dalle misure reali dell'immobile.</figcaption></figure>
+        <div class="demo-feature-copy">
+          <p class="demo-eyebrow">Prima dell'incarico</p>
+          <h2 id="demo-brief-title">Non devi conoscere già il nome della pratica.</h2>
+          <p>Per il primo contatto basta spiegare che cosa vuoi fare, dove si trova l'immobile e quali documenti hai già. Il sopralluogo o la verifica servono a definire il lavoro corretto.</p>
+          <ul class="demo-check-list"><li>tipo di immobile e comune;</li><li>intervento desiderato o problema osservato;</li><li>planimetrie, visure o fotografie disponibili;</li><li>eventuali scadenze da tenere presenti.</li></ul>
+          <a class="demo-inline-link" href="#contatti-demo">Invia una richiesta →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--sand" id="zone-demo" aria-labelledby="demo-zone-title">
+      <div class="container demo-zone-layout">
+        <div><p class="demo-eyebrow">Zona di intervento</p><h2 id="demo-zone-title">Milano e comuni della provincia.</h2><p>I comuni qui sotto mostrano solo come può essere presentata una zona di lavoro. Nella richiesta indica il tuo comune, così sarà possibile verificare la disponibilità.</p></div>
+        <div class="demo-area-list"><span>Milano</span><span>Monza</span><span>Sesto San Giovanni</span><span>Cinisello Balsamo</span><span>Rho</span><span>Corsico</span><span>Cologno Monzese</span><span>Rozzano</span><small>Esempio di area coperta, non sede reale.</small></div>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--light" id="lavori-demo" aria-labelledby="demo-work-title">
+      <div class="container">
+        <div class="demo-section-heading"><div><p class="demo-eyebrow">Lavori e dettagli</p><h2 id="demo-work-title">Precisione significa anche documentare bene.</h2></div></div>
+        <div class="demo-work-grid demo-work-grid--gallery">
+          <figure class="demo-work-card demo-work-card--wide"><img src="/images/demo-geometra/documentazione.png" alt="Planimetria, taccuino e strumenti per documentare un immobile" loading="lazy" /><figcaption>Documenti e misure nello stesso punto di lavoro</figcaption></figure>
+          <figure class="demo-work-card"><img src="/images/demo-geometra/rilievo-laser.png" alt="Rilievo laser di una parete interna" loading="lazy" /><figcaption>Verifica delle misure</figcaption></figure>
+          <figure class="demo-work-card"><img src="/images/demo-geometra/dettaglio-finitura.png" alt="Dettaglio di un raccordo tra finestra, parete e davanzale" loading="lazy" /><figcaption>Lettura dei dettagli dell'immobile</figcaption></figure>
+          <figure class="demo-work-card"><img src="/images/demo-geometra/geometra-hero.png" alt="Planimetrie e strumenti su un tavolo di lavoro" loading="lazy" /><figcaption>Organizzazione del sopralluogo</figcaption></figure>
+        </div>
+        <p class="demo-small-note">Immagini illustrative generate per questo sito dimostrativo: non rappresentano lavori, clienti o una sede reale.</p>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--white" aria-labelledby="demo-faq-title">
+      <div class="container demo-faq-layout"><div class="demo-section-heading"><p class="demo-eyebrow">Domande frequenti</p><h2 id="demo-faq-title">Prima di chiedere un contatto.</h2></div><div class="demo-faq-list">
+        <details open><summary>Che cosa devo scrivere nella richiesta?</summary><p>Indica il comune, il tipo di immobile, il motivo della richiesta e i documenti o le fotografie che hai già. Non serve conoscere in anticipo il nome esatto della pratica.</p></details>
+        <details><summary>Devo avere già una planimetria?</summary><p>No. Se ce l'hai puoi allegarla o descriverla; se non la trovi, indica comunque il problema e il tipo di immobile.</p></details>
+        <details><summary>È possibile sapere subito il costo?</summary><p>Il primo contatto serve a capire il caso. Tempi e costi dipendono dal lavoro necessario, dai documenti e dalla verifica dell'immobile.</p></details>
+        <details><summary>In quali comuni lavorate?</summary><p>La zona deve essere aggiornata e reale. In questo esempio mostriamo Milano e alcuni comuni della provincia solo per illustrare la struttura.</p></details>
+      </div></div>
+    </section>
+
+    <section class="demo-contact-section" id="contatti-demo" aria-labelledby="demo-contact-title">
+      <div class="container demo-contact-grid">
+        <div><p class="demo-eyebrow">Richiesta di contatto</p><h2 id="demo-contact-title">Racconta l'immobile e il punto da chiarire.</h2><p>Indica la zona, il tipo di richiesta e i documenti che hai già: così il primo contatto può partire da informazioni concrete.</p></div>
+        <div class="demo-contact-card"><div class="demo-contact-preview"><span>CONTATTI</span><strong>Linea Quota</strong><p>Milano e comuni della provincia. Racconta il caso e il tipo di supporto che stai cercando.</p><a href="tel:+390200000000">02 0000 0000</a><a href="mailto:studio@lineaquota.example">studio@lineaquota.example</a></div><a class="demo-button demo-button--solid" href="mailto:studio@lineaquota.example">Scrivici</a><a class="demo-button demo-button--light" href="tel:+390200000000">Chiama 02 0000 0000</a><small>Recapiti di esempio: questa è una pagina dimostrativa e non rappresenta un'attività reale.</small></div>
+      </div>
+    </section>
+
+    <footer class="demo-footer"><div class="container demo-footer-inner"><span>Linea Quota · sito dimostrativo</span><div><a href="/richiedi-sito/">Vuoi un sito simile? Richiedi il tuo →</a><small>Immagini illustrative create per questo esempio</small></div></div></footer>
+  </div>
+</BaseLayout>

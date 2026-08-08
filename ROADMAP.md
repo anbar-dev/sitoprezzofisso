@@ -70,7 +70,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] sito web per serramentista
 - [x] sito web per falegname
 - [x] sito web per giardiniere
-- [ ] sito web per geometra
+- [x] sito web per geometra
 - [ ] sito web per termoidraulico
 - [ ] sito web per impresa pulizie
 
@@ -86,6 +86,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] Demo impresa edile
 - [x] Demo serramentista
 - [x] Demo falegname
+- [x] Demo geometra
 
 ## Phase 7 — Contenuti commerciali SEO
 

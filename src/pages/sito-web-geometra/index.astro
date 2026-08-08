@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Sito web per geometra a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Un sito web professionale per geometri: rilievi, pratiche, planimetrie, catasto e richiesta di sopralluogo, con un prezzo base di 399 €.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="vertical-hero" aria-labelledby="page-title">
+    <div class="container vertical-hero-grid">
+      <div>
+        <p class="eyebrow vertical-eyebrow">Modello per geometri</p>
+        <h1 id="page-title">Il sito web per il tuo studio tecnico. Chiaro, professionale, 399 €.</h1>
+        <p class="vertical-lead">Rilievi, planimetrie, pratiche e consulenze: il cliente capisce di che cosa ti occupi, in quale zona lavori e quali informazioni preparare.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link vertical-light-link" href="/demo/geometra/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/prezzi/">Vedi cosa comprende</a></p>
+      </div>
+      <aside class="vertical-hero-card" aria-label="Esempio di struttura per il sito di un geometra">
+        <span class="vertical-demo-badge">Struttura esempio</span>
+        <div class="vertical-hero-card-head"><span>STUDIO TECNICO</span><span aria-hidden="true">01</span></div>
+        <strong>Dal rilievo<br />alla richiesta utile.</strong>
+        <ul class="mini-check-list">
+          <li>Servizi tecnici distinti</li>
+          <li>Zona servita in evidenza</li>
+          <li>Documenti e contatto</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
+    <div class="container vertical-intro-grid"><span><b>01</b> Che pratica segui</span><span><b>02</b> Che rilievo esegui</span><span><b>03</b> Che cosa inviare</span></div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="why-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">Chi cerca un geometra deve capire subito quale pratica può affrontare.</h2></div>
+      <div class="vertical-copy"><p>Una richiesta può riguardare un rilievo per una ristrutturazione, una planimetria, una pratica edilizia, una verifica catastale o una consulenza tecnica.</p><p>Un sito utile non promette di risolvere ogni caso: spiega le attività svolte, chiarisce la zona e raccoglie i dati necessari per valutare il primo contatto.</p></div>
+    </div>
+    <div class="container vertical-problem-grid">
+      <article class="vertical-card"><span>01</span><h3>Servizi scritti in modo generico</h3><p>Distinguere rilievi, pratiche, catasto e consulenze aiuta il visitatore a riconoscere il problema per cui sta cercando supporto.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Documenti mancanti</h3><p>Una prima richiesta più utile indica quali planimetrie, fotografie o riferimenti catastali sono già disponibili.</p></article>
+      <article class="vertical-card"><span>03</span><h3>Zona poco chiara</h3><p>Comuni e provincia realmente serviti evitano richieste fuori area e rendono più semplice capire se contattarti.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="services-title">
+    <div class="container">
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Servizi tecnici riconoscibili, con il giusto livello di dettaglio.</h2><p>La pagina deve aiutare il cliente a scegliere il motivo del contatto, senza trasformarsi in un tariffario o in una consulenza a distanza.</p></div>
+      <div class="vertical-service-grid">
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Rilievi e planimetrie</h3><p>Misurazioni e restituzioni grafiche da descrivere in base al tipo di immobile e all'obiettivo del lavoro.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Pratiche edilizie</h3><p>Presentazione e gestione delle pratiche effettivamente offerte dallo studio, con indicazioni chiare sul primo passo.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Catasto e documentazione</h3><p>Visure, planimetrie e verifiche da valutare partendo dai documenti già disponibili e dalla situazione dell'immobile.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Consulenza tecnica</h3><p>Un primo confronto per capire quali informazioni servono e se il caso rientra nelle competenze dello studio.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Stime e valutazioni</h3><p>Descrivi il tipo di valutazione trattata, senza presentare una cifra automatica prima di conoscere l'immobile.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Sopralluogo e richiesta</h3><p>Raccogli comune, tipo di immobile, motivo della richiesta e documenti già disponibili prima di fissare il contatto.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="structure-title">
+    <div class="container vertical-two-column vertical-two-column--dark">
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Dal problema dell'immobile alla richiesta di contatto.</h2></div>
+      <div class="vertical-structure-list">
+        <div><span>01</span><p><strong>Attività:</strong> rilievi, pratiche, catasto o consulenze spiegati senza un elenco indistinto.</p></div>
+        <div><span>02</span><p><strong>Immobile:</strong> abitazione, locale commerciale, terreno o altro ambito realmente seguito.</p></div>
+        <div><span>03</span><p><strong>Documenti:</strong> planimetrie, visure, fotografie e riferimenti già disponibili.</p></div>
+        <div><span>04</span><p><strong>Zona:</strong> comuni o provincia coperti, senza dichiarare una sede che non esiste.</p></div>
+        <div><span>05</span><p><strong>Contatto:</strong> una richiesta ordinata, con una nota chiara su cosa succede dopo.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="content-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Contenuti che fanno chiarezza</p><h2 id="content-title">La fiducia nasce da metodo, documenti e limiti spiegati bene.</h2></div>
+      <div class="vertical-copy"><p>Le immagini possono mostrare rilievi, tavoli di lavoro e dettagli tecnici. Devono essere reali oppure dichiarate come illustrative, senza attribuire pratiche o risultati a clienti inesistenti.</p><ul class="plain-list"><li>fotografie di strumenti, rilievi o dettagli dell'immobile;</li><li>esempi di documenti solo se puoi pubblicarli e senza dati personali;</li><li>zona indicativa e tipo di incarichi seguiti;</li><li>nota chiara su ciò che va verificato prima di un preventivo.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="contact-title">
+    <div class="container vertical-contact-grid">
+      <div><p class="eyebrow">Contatto pensato per lo studio tecnico</p><h2 id="contact-title">Raccogli il contesto prima di parlare di tempi e costi.</h2></div>
+      <div><p>Il modulo può chiedere comune, tipo di immobile, motivo della richiesta, stato dei documenti e fotografie già disponibili. La valutazione dipende sempre dal caso concreto e dalle competenze effettivamente offerte.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/progetto-su-misura/">Se il progetto è più ampio <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="value-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il valore per il geometra</p><h2 id="value-title">Un punto ordinato per spiegare il tuo lavoro tecnico.</h2></div>
+      <div class="vertical-copy"><p>Il sito non sostituisce il sopralluogo, i documenti o il rapporto professionale. Aiuta però il potenziale cliente a capire se il servizio è pertinente e ad arrivare al contatto con una richiesta meno vaga.</p><ul class="plain-list"><li>separi i servizi per problema e tipo di immobile;</li><li>mostri la zona senza creare una sede fittizia;</li><li>spieghi quali informazioni preparare;</li><li>mantieni il prezzo del sito chiaro, senza confonderlo con il tuo onorario.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="vertical-faq-title">
+    <div class="container faq-layout vertical-faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="vertical-faq-title">Prima di chiedere il sito.</h2><p>Le risposte aiutano a capire quali contenuti preparare e quando l'offerta base è sufficiente.</p></div>
+      <div class="faq-list">
+        <details open><summary>Quali servizi dovrebbe mostrare un geometra?</summary><p>Quelli che vuoi davvero ricevere: rilievi, planimetrie, pratiche edilizie, catasto, consulenze, stime o altri servizi coerenti con le tue competenze e abilitazioni.</p></details>
+        <details><summary>Devo pubblicare esempi di pratiche?</summary><p>Puoi mostrare il tipo di lavoro e il metodo, ma pubblica documenti o immagini solo se puoi farlo senza esporre dati personali o informazioni riservate.</p></details>
+        <details><summary>Il sito può dare un preventivo automatico?</summary><p>No. Può raccogliere una richiesta ordinata e i documenti già disponibili; tempi e costi vanno valutati sul caso concreto.</p></details>
+        <details><summary>Posso inserire un pulsante WhatsApp?</summary><p>Sì, se è un canale che vuoi gestire davvero. Va presentato come contatto, senza promettere disponibilità immediata o risposta in un tempo prefissato.</p></details>
+        <details><summary>Quanto costa il modello per geometra?</summary><p>La pagina rientra nell'offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="vertical-closing-title">
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online servizi tecnici, zona e modo di iniziare.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per il tuo studio <span aria-hidden="true">→</span></a><a class="button button--dark" href="/demo/geometra/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+</BaseLayout>

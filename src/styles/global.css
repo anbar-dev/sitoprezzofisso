@@ -4521,3 +4521,130 @@ h1 strong {
     text-align: center;
   }
 }
+
+/* Surveyor demo: a measured graphite, clay and paper identity. */
+.demo-page.demo-geometra {
+  --demo-navy: #26343a;
+  --demo-blue: #a35d43;
+  --demo-blue-light: #f1e5dd;
+  --demo-orange: #c7764e;
+  --demo-paper: #f6f3ee;
+  --demo-ink: #283238;
+  --demo-muted: #687176;
+  --demo-line: #d9d7d1;
+}
+
+.demo-page.demo-geometra .demo-banner-inner strong,
+.demo-page.demo-geometra .demo-eyebrow,
+.demo-page.demo-geometra .demo-hero-meta b,
+.demo-page.demo-geometra .demo-process-grid li > span {
+  color: #e2b17f;
+}
+
+.demo-page.demo-geometra .demo-site-hero,
+.demo-page.demo-geometra .demo-contact-section {
+  background: var(--demo-navy);
+}
+
+.demo-page.demo-geometra .demo-brand-mark {
+  color: var(--demo-navy);
+  background: #e2b17f;
+}
+
+.demo-page.demo-geometra .demo-brand small {
+  color: #e2b17f;
+}
+
+.demo-page.demo-geometra .demo-banner-inner {
+  padding-right: 16rem;
+}
+
+.demo-page.demo-geometra .demo-site-nav nav a:hover,
+.demo-page.demo-geometra .demo-site-nav nav a:focus-visible,
+.demo-page.demo-geometra .demo-nav-cta:hover,
+.demo-page.demo-geometra .demo-nav-cta:focus-visible {
+  color: #e2b17f;
+}
+
+.demo-page.demo-geometra .demo-nav-cta {
+  border-color: #e2b17f;
+  color: #e2b17f;
+}
+
+.demo-page.demo-geometra .demo-button--solid {
+  color: var(--demo-navy);
+  background: #e2b17f;
+}
+
+.demo-page.demo-geometra .demo-button--solid:hover,
+.demo-page.demo-geometra .demo-button--solid:focus-visible {
+  background: #f0cda9;
+}
+
+.demo-page.demo-geometra .demo-button--outline:hover,
+.demo-page.demo-geometra .demo-button--outline:focus-visible,
+.demo-page.demo-geometra .demo-button--light {
+  color: var(--demo-navy);
+  background: #e2b17f;
+}
+
+.demo-page.demo-geometra .demo-button--outline:hover,
+.demo-page.demo-geometra .demo-button--outline:focus-visible {
+  border-color: #e2b17f;
+}
+
+.demo-page.demo-geometra .demo-area-list span {
+  border-color: #d8b6a3;
+  color: var(--demo-blue);
+  background: var(--demo-blue-light);
+}
+
+.demo-page.demo-geometra .demo-contact-card {
+  border-top-color: var(--demo-orange);
+  box-shadow: 0.8rem 0.8rem 0 #e2b17f;
+}
+
+.demo-page.demo-geometra .demo-contact-preview a,
+.demo-page.demo-geometra .demo-inline-link {
+  color: var(--demo-blue);
+}
+
+.demo-page.demo-geometra .demo-floating-actions a {
+  border-color: #e2b17f;
+  background: #1d292e;
+}
+
+.demo-page.demo-geometra .demo-floating-actions a:hover,
+.demo-page.demo-geometra .demo-floating-actions a:focus-visible {
+  color: var(--demo-navy);
+  background: #e2b17f;
+}
+
+.demo-page.demo-geometra .demo-floating-actions .demo-floating-contact {
+  border-color: var(--demo-orange);
+  background: var(--demo-orange);
+}
+
+.demo-page.demo-geometra .demo-floating-actions .demo-floating-contact:hover,
+.demo-page.demo-geometra .demo-floating-actions .demo-floating-contact:focus-visible {
+  color: var(--demo-white);
+  background: #a85e3e;
+}
+
+@media (max-width: 38rem) {
+  .demo-page.demo-geometra .demo-banner-inner {
+    padding-right: 0;
+  }
+
+  .demo-page.demo-geometra .demo-banner {
+    padding-top: 4.3rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .demo-page.demo-geometra .demo-nav-cta {
+    flex: 1 0 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}

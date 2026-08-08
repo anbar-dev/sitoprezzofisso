@@ -72,4 +72,13 @@ export const demoSites: DemoSite[] = [
     verticalPath: '/sito-web-falegname/',
     verticalLabel: 'Scopri il modello per falegnami',
   },
+  {
+    slug: 'geometra',
+    title: 'Geometra',
+    summary: 'Rilievi, pratiche, planimetrie, documenti e richiesta di contatto.',
+    image: '/images/demo-geometra/geometra-hero.png',
+    imageAlt: 'Planimetrie e strumenti per un rilievo tecnico',
+    verticalPath: '/sito-web-geometra/',
+    verticalLabel: 'Scopri il modello per geometri',
+  },
 ];
