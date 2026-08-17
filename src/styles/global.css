@@ -3224,6 +3224,36 @@ h1 strong {
   background: #e4b28c;
 }
 
+/* Piastrellista demo: a tactile, warm identity built around surfaces and materials. */
+.demo-page.demo-tiler {
+  --demo-navy: #34312c;
+  --demo-blue: #64705e;
+  --demo-blue-light: #edf0e8;
+  --demo-orange: #c47a54;
+  --demo-paper: #f6f2ec;
+  --demo-ink: #37332e;
+  --demo-muted: #70685f;
+  --demo-line: #ddd4c8;
+}
+
+.demo-page.demo-tiler .demo-banner-inner strong,
+.demo-page.demo-tiler .demo-brand small,
+.demo-page.demo-tiler .demo-eyebrow,
+.demo-page.demo-tiler .demo-hero-meta b {
+  color: #efbd91;
+}
+
+.demo-page.demo-tiler .demo-nav-cta {
+  border-color: #efbd91;
+  color: #efbd91;
+}
+
+.demo-page.demo-tiler .demo-nav-cta:hover,
+.demo-page.demo-tiler .demo-nav-cta:focus-visible {
+  color: var(--demo-navy);
+  background: #efbd91;
+}
+
 .demo-page h1,
 .demo-page h2,
 .demo-page h3,

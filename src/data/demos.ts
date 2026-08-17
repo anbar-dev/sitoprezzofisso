@@ -108,4 +108,13 @@ export const demoSites: DemoSite[] = [
     verticalPath: '/sito-web-fabbro/',
     verticalLabel: 'Scopri il modello per fabbri',
   },
+  {
+    slug: 'piastrellista',
+    title: 'Piastrellista',
+    summary: 'Pavimenti, rivestimenti, bagni, terrazzi e richiesta di valutazione della posa.',
+    image: '/images/demo-piastrellista/piastrellista-hero.png',
+    imageAlt: 'Posa di piastrelle di grande formato in un bagno in ristrutturazione',
+    verticalPath: '/sito-web-piastrellista/',
+    verticalLabel: 'Scopri il modello per piastrellisti',
+  },
 ];
