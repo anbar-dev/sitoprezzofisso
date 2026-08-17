@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Sito web per fabbro a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Un sito web professionale per fabbri: cancelli, ringhiere, parapetti, lavorazioni in ferro e richieste di sopralluogo, con un prezzo base di 399 €.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="vertical-hero" aria-labelledby="page-title">
+    <div class="container vertical-hero-grid">
+      <div>
+        <p class="eyebrow vertical-eyebrow">Modello per fabbri e carpenterie leggere</p>
+        <h1 id="page-title">Il sito web per il tuo lavoro in ferro. Servizi chiari, 399 €.</h1>
+        <p class="vertical-lead">Cancelli, ringhiere, parapetti e lavorazioni su misura: chi cerca un fabbro capisce che cosa realizzi, dove lavori e quali informazioni servono per chiedere un sopralluogo.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link vertical-light-link" href="/demo/fabbro/">Guarda la demo <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/prezzi/">Vedi cosa comprende</a></p>
+      </div>
+      <aside class="vertical-hero-card" aria-label="Esempio di struttura per il sito di un fabbro">
+        <span class="vertical-demo-badge">Struttura esempio</span>
+        <div class="vertical-hero-card-head"><span>LAVORAZIONI IN FERRO</span><span aria-hidden="true">01</span></div>
+        <strong>Misure precise.<br />Finiture leggibili.</strong>
+        <ul class="mini-check-list">
+          <li>Servizi divisi per lavorazione</li>
+          <li>Materiali e finiture da scegliere</li>
+          <li>Richiesta di sopralluogo</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
+    <div class="container vertical-intro-grid"><span><b>01</b> Che cosa realizzi</span><span><b>02</b> Dove intervieni</span><span><b>03</b> Che cosa inviare</span></div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="why-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">Un fabbro non vende soltanto “lavori in ferro”.</h2></div>
+      <div class="vertical-copy"><p>Chi cerca un intervento può avere bisogno di un cancello, una ringhiera, un parapetto o una riparazione. Se il sito li presenta come un unico servizio, diventa difficile capire se l'artigiano può seguire proprio quel lavoro.</p><p>Una pagina ordinata aiuta a distinguere lavorazioni, materiali, finiture e zona. Il primo contatto arriva così con misure, fotografie e vincoli più utili.</p></div>
+    </div>
+    <div class="container vertical-problem-grid">
+      <article class="vertical-card"><span>01</span><h3>Il servizio resta generico</h3><p>Separare cancelli, ringhiere, parapetti, inferriate e manutenzioni permette al visitatore di riconoscere il proprio bisogno.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Le misure cambiano il lavoro</h3><p>Foto, dimensioni indicative, accesso e supporto esistente sono informazioni più concrete di una richiesta generica di preventivo.</p></article>
+      <article class="vertical-card"><span>03</span><h3>La finitura va spiegata</h3><p>Materiale, colore, verniciatura, zincatura o ripristino possono cambiare l'aspetto e la valutazione dell'intervento.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="services-title">
+    <div class="container">
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Lavorazioni concrete, non una lista indistinta.</h2><p>Una selezione di servizi pertinenti fa capire subito quale tipo di lavoro può essere valutato e quali dettagli preparare.</p></div>
+      <div class="vertical-service-grid">
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Cancelli e accessi</h3><p>Cancelli pedonali o carrabili, telai, chiusure e adattamenti da valutare in base a spazio e supporti esistenti.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Ringhiere e parapetti</h3><p>Elementi per scale, balconi e terrazzi, con attenzione a misure, fissaggi, uso dello spazio e finitura.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Inferriate e protezioni</h3><p>Lavorazioni metalliche per finestre e aperture, da descrivere senza promesse generiche sulla sicurezza.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Carpenteria leggera</h3><p>Telai, supporti, mensole e strutture semplici realizzate su misura per un ambiente o un progetto specifico.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Ripristini e manutenzione</h3><p>Ritocchi, sostituzione di parti, riallineamenti e interventi su elementi esistenti da verificare sul posto.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Sopralluogo e valutazione</h3><p>Raccogli zona, fotografie, misure indicative, accessibilità, supporto esistente e risultato desiderato.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="structure-title">
+    <div class="container vertical-two-column vertical-two-column--dark">
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Dalla lavorazione alla richiesta di sopralluogo.</h2></div>
+      <div class="vertical-structure-list">
+        <div><span>01</span><p><strong>Esigenza:</strong> nuovo cancello, ringhiera, parapetto, protezione o ripristino.</p></div>
+        <div><span>02</span><p><strong>Contesto:</strong> balcone, scala, cortile, ingresso o spazio interno con fotografie pertinenti.</p></div>
+        <div><span>03</span><p><strong>Materiale e finitura:</strong> ferro, acciaio, colore o trattamento da definire in base al progetto.</p></div>
+        <div><span>04</span><p><strong>Misure:</strong> larghezza, altezza, supporto, accesso e qualsiasi vincolo già noto.</p></div>
+        <div><span>05</span><p><strong>Zona:</strong> comuni realmente coperti, senza dichiarare una sede o una reperibilità continua.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="content-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Contenuti che fanno chiarezza</p><h2 id="content-title">Mostra il metallo, il dettaglio e il modo di lavorare.</h2></div>
+      <div class="vertical-copy"><p>Le immagini possono mostrare giunti, finiture, posa e contesto dell'intervento. Pubblica fotografie reali solo se puoi usarle e non inserire clienti, indirizzi o lavori riconoscibili senza autorizzazione.</p><ul class="plain-list"><li>lavorazione e ambiente in cui viene realizzata;</li><li>dettagli di saldatura, verniciatura o fissaggio quando sono pertinenti;</li><li>misure indicative e vincoli che incidono sulla valutazione;</li><li>nota chiara su sopralluogo, materiali e definizione del preventivo.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="contact-title">
+    <div class="container vertical-contact-grid">
+      <div><p class="eyebrow">Contatto pensato per il lavoro</p><h2 id="contact-title">Raccogli il contesto prima di parlare di prezzo.</h2></div>
+      <div><p>Il modulo può chiedere comune, tipo di lavorazione, misure indicative, materiale desiderato, accesso e fotografie disponibili. Il preventivo dipende sempre dal sopralluogo o dalle informazioni effettive.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/progetto-su-misura/">Se il progetto è più ampio <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="value-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il valore per il fabbro</p><h2 id="value-title">Un punto ordinato per far capire la qualità del lavoro.</h2></div>
+      <div class="vertical-copy"><p>Il sito non sostituisce rilievo, verifica dei supporti o scelta della finitura. Aiuta però il cliente a capire se la lavorazione è pertinente e a inviare una richiesta meno vaga.</p><ul class="plain-list"><li>separi le lavorazioni su misura dagli interventi di manutenzione;</li><li>mostri esempi di finiture e contesti senza inventare lavori;</li><li>indichi le informazioni utili per organizzare un sopralluogo;</li><li>mantieni separato il prezzo del sito dal preventivo della lavorazione.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="vertical-faq-title">
+    <div class="container faq-layout vertical-faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="vertical-faq-title">Prima di chiedere il sito.</h2><p>Le risposte aiutano a capire quali contenuti preparare e quando l'offerta base è sufficiente.</p></div>
+      <div class="faq-list">
+        <details open><summary>Quali servizi dovrebbe mostrare un fabbro?</summary><p>Quelli che vuoi davvero ricevere: cancelli, ringhiere, parapetti, inferriate, carpenteria leggera, ripristini o manutenzione.</p></details>
+        <details><summary>Devo avere già le misure precise?</summary><p>No. È utile fornire dimensioni indicative e fotografie, ma le misure definitive e i supporti vanno verificati durante il sopralluogo.</p></details>
+        <details><summary>Posso pubblicare fotografie di cancelli già realizzati?</summary><p>Sì, se puoi usarle e non mostrano indirizzi, persone o dettagli riconoscibili senza autorizzazione. Le immagini della demo sono illustrative.</p></details>
+        <details><summary>Posso inserire un pulsante WhatsApp?</summary><p>Sì, se è un canale che controlli. Presentalo come alternativa per inviare una richiesta, senza promettere risposta immediata o disponibilità continua.</p></details>
+        <details><summary>Quanto costa il modello per fabbro?</summary><p>La pagina rientra nell'offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="vertical-closing-title">
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online lavorazioni, finiture e modo di iniziare.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per il tuo lavoro <span aria-hidden="true">→</span></a><a class="button button--dark" href="/demo/fabbro/">Guarda la demo <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+</BaseLayout>

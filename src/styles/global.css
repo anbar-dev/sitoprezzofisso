@@ -3194,6 +3194,36 @@ h1 strong {
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
+/* Fabbro demo: a warmer, material-led identity distinct from the other examples. */
+.demo-page.demo-metalwork {
+  --demo-navy: #2b2924;
+  --demo-blue: #73503d;
+  --demo-blue-light: #f1e9e2;
+  --demo-orange: #bd7047;
+  --demo-paper: #f6f3ef;
+  --demo-ink: #302d28;
+  --demo-muted: #6b625a;
+  --demo-line: #ddd2c8;
+}
+
+.demo-page.demo-metalwork .demo-banner-inner strong,
+.demo-page.demo-metalwork .demo-brand small,
+.demo-page.demo-metalwork .demo-eyebrow,
+.demo-page.demo-metalwork .demo-hero-meta b {
+  color: #e4b28c;
+}
+
+.demo-page.demo-metalwork .demo-nav-cta {
+  border-color: #e4b28c;
+  color: #e4b28c;
+}
+
+.demo-page.demo-metalwork .demo-nav-cta:hover,
+.demo-page.demo-metalwork .demo-nav-cta:focus-visible {
+  color: var(--demo-navy);
+  background: #e4b28c;
+}
+
 .demo-page h1,
 .demo-page h2,
 .demo-page h3,

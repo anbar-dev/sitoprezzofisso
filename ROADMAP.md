@@ -73,6 +73,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] sito web per geometra
 - [x] sito web per termoidraulico
 - [x] sito web per impresa pulizie
+- [x] sito web per fabbro
 
 ## Phase 6 — Demo
 
@@ -89,6 +90,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] Demo geometra
 - [x] Demo termoidraulico
 - [x] Demo impresa di pulizie
+- [x] Demo fabbro
 
 ## Phase 7 — Contenuti commerciali SEO
 

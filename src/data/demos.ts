@@ -99,4 +99,13 @@ export const demoSites: DemoSite[] = [
     verticalPath: '/sito-web-impresa-pulizie/',
     verticalLabel: 'Scopri il modello per imprese di pulizie',
   },
+  {
+    slug: 'fabbro',
+    title: 'Fabbro',
+    summary: 'Cancelli, ringhiere, parapetti, lavorazioni in ferro e richieste di sopralluogo.',
+    image: '/images/demo-fabbro/fabbro-hero.png',
+    imageAlt: 'Artigiano che misura un cancello in ferro all’ingresso di un cortile',
+    verticalPath: '/sito-web-fabbro/',
+    verticalLabel: 'Scopri il modello per fabbri',
+  },
 ];
