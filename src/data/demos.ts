@@ -117,4 +117,13 @@ export const demoSites: DemoSite[] = [
     verticalPath: '/sito-web-piastrellista/',
     verticalLabel: 'Scopri il modello per piastrellisti',
   },
+  {
+    slug: 'lattoniere',
+    title: 'Lattoniere',
+    summary: 'Grondaie, pluviali, scossaline, coperture metalliche e richieste di sopralluogo.',
+    image: '/images/demo-lattoniere/lattoniere-hero.png',
+    imageAlt: 'Artigiano che installa una grondaia sul bordo di una casa',
+    verticalPath: '/sito-web-lattoniere/',
+    verticalLabel: 'Scopri il modello per lattonieri',
+  },
 ];

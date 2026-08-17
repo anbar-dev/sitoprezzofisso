@@ -3254,6 +3254,36 @@ h1 strong {
   background: #efbd91;
 }
 
+/* Lattoniere demo: a grounded identity built around roof edges, metal and water flow. */
+.demo-page.demo-sheetmetal {
+  --demo-navy: #27343a;
+  --demo-blue: #526d70;
+  --demo-blue-light: #e8efed;
+  --demo-orange: #c57b4c;
+  --demo-paper: #f2f4f1;
+  --demo-ink: #2c3638;
+  --demo-muted: #647174;
+  --demo-line: #d2dddb;
+}
+
+.demo-page.demo-sheetmetal .demo-banner-inner strong,
+.demo-page.demo-sheetmetal .demo-brand small,
+.demo-page.demo-sheetmetal .demo-eyebrow,
+.demo-page.demo-sheetmetal .demo-hero-meta b {
+  color: #a9ded5;
+}
+
+.demo-page.demo-sheetmetal .demo-nav-cta {
+  border-color: #a9ded5;
+  color: #a9ded5;
+}
+
+.demo-page.demo-sheetmetal .demo-nav-cta:hover,
+.demo-page.demo-sheetmetal .demo-nav-cta:focus-visible {
+  color: var(--demo-navy);
+  background: #a9ded5;
+}
+
 .demo-page h1,
 .demo-page h2,
 .demo-page h3,
