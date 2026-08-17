@@ -75,6 +75,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] sito web per impresa pulizie
 - [x] sito web per fabbro
 - [x] sito web per piastrellista
+- [x] sito web per lattoniere
 
 ## Phase 6 — Demo
 

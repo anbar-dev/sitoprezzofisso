@@ -24,7 +24,8 @@ Cluster iniziale:
 - sito web per termoidraulico;
 - sito web per impresa pulizie;
 - sito web per fabbro;
-- sito web per piastrellista.
+- sito web per piastrellista;
+- sito web per lattoniere.
 
 Ogni pagina deve essere veramente specifica per quella professione.
 
