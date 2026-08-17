@@ -22,8 +22,9 @@ Cluster iniziale:
 - sito web per giardiniere;
 - sito web per geometra;
 - sito web per termoidraulico;
-- sito web per impresa pulizie.
-- sito web per fabbro.
+- sito web per impresa pulizie;
+- sito web per fabbro;
+- sito web per piastrellista.
 
 Ogni pagina deve essere veramente specifica per quella professione.
 

@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Sito web per piastrellista a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Un sito web professionale per piastrellisti: posa di pavimenti, rivestimenti, bagni e materiali, con richiesta di sopralluogo e prezzo base di 399 €.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="vertical-hero" aria-labelledby="page-title">
+    <div class="container vertical-hero-grid">
+      <div>
+        <p class="eyebrow vertical-eyebrow">Modello per piastrellisti e posatori</p>
+        <h1 id="page-title">Il sito web per il tuo lavoro di posa. Superfici chiare, 399 €.</h1>
+        <p class="vertical-lead">Pavimenti, rivestimenti, bagni e finiture: chi cerca un piastrellista capisce quali ambienti puoi seguire, che tipo di posa offri e quali informazioni servono per valutare il lavoro.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link vertical-light-link" href="/demo/">Guarda gli esempi di siti <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/prezzi/">Vedi cosa comprende</a></p>
+      </div>
+      <aside class="vertical-hero-card" aria-label="Esempio di struttura per il sito di un piastrellista">
+        <span class="vertical-demo-badge">Struttura esempio</span>
+        <div class="vertical-hero-card-head"><span>POSA E RIVESTIMENTI</span><span aria-hidden="true">01</span></div>
+        <strong>Superfici curate.<br />Richieste più precise.</strong>
+        <ul class="mini-check-list">
+          <li>Ambienti e lavorazioni distinte</li>
+          <li>Materiali da valutare insieme</li>
+          <li>Richiesta di sopralluogo</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
+    <div class="container vertical-intro-grid"><span><b>01</b> Che cosa posi</span><span><b>02</b> Quale ambiente segui</span><span><b>03</b> Che cosa inviare</span></div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="why-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">“Piastrellista” non basta a spiegare il lavoro.</h2></div>
+      <div class="vertical-copy"><p>Chi cerca una posa può avere bisogno di un bagno, una cucina, un terrazzo o un pavimento per un ambiente più grande. Può anche avere già acquistato il materiale oppure chiedere aiuto nella scelta.</p><p>Un sito utile non promette un prezzo al metro quadro senza contesto: distingue gli ambienti, chiarisce che cosa comprende la posa e raccoglie fotografie, misure e informazioni sul fondo esistente.</p></div>
+    </div>
+    <div class="container vertical-problem-grid">
+      <article class="vertical-card"><span>01</span><h3>La posa resta generica</h3><p>Separare pavimenti, rivestimenti, bagni, cucine ed esterni aiuta il visitatore a riconoscere il proprio lavoro.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Il materiale cambia la richiesta</h3><p>Formato, superficie, fughe, schema di posa e materiale già disponibile incidono sulla valutazione dell'intervento.</p></article>
+      <article class="vertical-card"><span>03</span><h3>Il fondo non si vede online</h3><p>Foto e informazioni sul pavimento o rivestimento esistente rendono più utile il primo contatto, senza sostituire la verifica sul posto.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="services-title">
+    <div class="container">
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Lavorazioni leggibili per ambienti diversi.</h2><p>Una selezione concreta aiuta il cliente a capire se il lavoro è pertinente e quali dettagli preparare prima del sopralluogo.</p></div>
+      <div class="vertical-service-grid">
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Pavimenti interni</h3><p>Posa di piastrelle, gres o altri materiali per ingressi, soggiorni e ambienti abitativi, con fondo da valutare.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Rivestimenti di bagno e cucina</h3><p>Pareti, nicchie, paraschizzi e superfici verticali con attenzione a tagli, fughe e dettagli intorno agli impianti.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Terrazzi e spazi esterni</h3><p>Posa in esterno da valutare insieme a supporto, pendenze, esposizione e materiale scelto.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Formati e schemi di posa</h3><p>Grandi formati, mosaici, decori o disposizioni particolari da definire in base alla superficie e all'effetto desiderato.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Ripristini e sostituzioni</h3><p>Sostituzione di piastrelle danneggiate, rifacimento di una zona o interventi su superfici già esistenti da verificare.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Sopralluogo e valutazione</h3><p>Raccogli ambiente, superficie indicativa, materiale, stato del fondo, accesso e fotografie disponibili.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="structure-title">
+    <div class="container vertical-two-column vertical-two-column--dark">
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Dall'ambiente da rifinire alla richiesta di valutazione.</h2></div>
+      <div class="vertical-structure-list">
+        <div><span>01</span><p><strong>Ambiente:</strong> bagno, cucina, soggiorno, ingresso, terrazzo o altro spazio da descrivere.</p></div>
+        <div><span>02</span><p><strong>Lavorazione:</strong> pavimento, rivestimento, ripristino, grande formato o schema di posa particolare.</p></div>
+        <div><span>03</span><p><strong>Materiale:</strong> piastrelle già acquistate, materiale da scegliere o riferimento ancora da definire.</p></div>
+        <div><span>04</span><p><strong>Superficie:</strong> metri quadrati indicativi, fondo esistente, dislivelli e vincoli già conosciuti.</p></div>
+        <div><span>05</span><p><strong>Zona:</strong> comuni realmente coperti, senza promettere disponibilità o tempi non verificati.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="content-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Contenuti che fanno chiarezza</p><h2 id="content-title">Mostra superfici, dettagli e condizioni reali.</h2></div>
+      <div class="vertical-copy"><p>Le immagini possono mostrare fughe, tagli, bordi, materiali e ambienti prima della posa. Pubblica fotografie reali solo se puoi usarle e non inserire abitazioni, clienti o indirizzi riconoscibili senza autorizzazione.</p><ul class="plain-list"><li>tipo di materiale e formato quando sono già noti;</li><li>ambienti e dettagli della posa, senza usare un catalogo generico;</li><li>fondo esistente, accessi e vincoli da verificare;</li><li>nota chiara su sopralluogo, preparazione e preventivo.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="contact-title">
+    <div class="container vertical-contact-grid">
+      <div><p class="eyebrow">Contatto pensato per la posa</p><h2 id="contact-title">Raccogli la superficie prima di parlare di prezzo.</h2></div>
+      <div><p>Il modulo può chiedere comune, ambiente, superficie indicativa, tipo di materiale, stato del fondo, accesso e fotografie disponibili. Il preventivo dipende sempre dal sopralluogo e dalle condizioni effettive.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/progetto-su-misura/">Se il progetto è più ampio <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="value-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il valore per il piastrellista</p><h2 id="value-title">Un punto ordinato per far capire precisione e metodo.</h2></div>
+      <div class="vertical-copy"><p>Il sito non sostituisce la verifica del fondo, la scelta del materiale o la valutazione dei tagli e dei dettagli. Aiuta però il cliente a capire se la lavorazione è pertinente e a inviare una richiesta meno vaga.</p><ul class="plain-list"><li>separi posa nuova, rivestimenti e ripristini;</li><li>indichi gli ambienti e i materiali che vuoi davvero seguire;</li><li>mostri dettagli reali senza inventare lavori o risultati;</li><li>mantieni separato il prezzo del sito dal preventivo della posa.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="vertical-faq-title">
+    <div class="container faq-layout vertical-faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="vertical-faq-title">Prima di chiedere il sito.</h2><p>Le risposte aiutano a preparare contenuti utili senza trasformare la pagina in un preventivo automatico.</p></div>
+      <div class="faq-list">
+        <details open><summary>Quali servizi dovrebbe mostrare un piastrellista?</summary><p>Quelli che vuoi davvero ricevere: pavimenti, rivestimenti, bagni, cucine, esterni, grandi formati, ripristini o schemi di posa particolari.</p></details>
+        <details><summary>Posso indicare un prezzo al metro quadro?</summary><p>Solo se condizioni e lavorazioni sono davvero stabili. In molti casi è più corretto raccogliere ambiente, fondo, formato e accessibilità prima della valutazione.</p></details>
+        <details><summary>Il cliente deve aver già comprato le piastrelle?</summary><p>No. Il sito può spiegare se lavori con materiali già scelti, se aiuti a valutarli o se preferisci definire ogni progetto durante il sopralluogo.</p></details>
+        <details><summary>Posso pubblicare foto di bagni già realizzati?</summary><p>Sì, se puoi usarle e non mostrano indirizzi, persone o abitazioni riconoscibili senza autorizzazione. Descrivi solo lavorazioni realmente svolte.</p></details>
+        <details><summary>Quanto costa il modello per piastrellista?</summary><p>La pagina rientra nell'offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="vertical-closing-title">
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online ambienti, materiali e modo di chiedere una valutazione.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per la tua attività <span aria-hidden="true">→</span></a><a class="button button--dark" href="/demo/">Guarda gli esempi di siti <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+</BaseLayout>
