@@ -135,4 +135,13 @@ export const demoSites: DemoSite[] = [
     verticalPath: '/sito-web-fotografo/',
     verticalLabel: 'Scopri il modello per fotografi',
   },
+  {
+    slug: 'tappezziere',
+    title: 'Tappezziere',
+    summary: 'Imbottiti, tessuti, restauro, finiture e richiesta di valutazione.',
+    image: '/images/demo-tappezziere/tappezziere-hero.png',
+    imageAlt: 'Tappezziere al lavoro su una poltrona in un laboratorio con campioni di tessuto',
+    verticalPath: '/sito-web-tappezziere/',
+    verticalLabel: 'Scopri il modello per tappezzieri',
+  },
 ];

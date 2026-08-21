@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Sito web per tappezziere a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Un sito web professionale per tappezzieri: imbottiti, restauro, tessuti, finiture e richiesta di sopralluogo, con un prezzo base di 399 €.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="vertical-hero" aria-labelledby="page-title">
+    <div class="container vertical-hero-grid">
+      <div>
+        <p class="eyebrow vertical-eyebrow">Modello per tappezzieri e laboratori artigiani</p>
+        <h1 id="page-title">Il sito web per il tuo laboratorio. Tessuti chiari, 399 €.</h1>
+        <p class="vertical-lead">Poltrone, sedie, divani e imbottiti: chi cerca un tappezziere capisce quali lavori segui, come scegliete tessuti e finiture e quali informazioni servono per valutare il pezzo.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link vertical-light-link" href="/demo/tappezziere/">Guarda la demo <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/prezzi/">Vedi cosa comprende</a></p>
+      </div>
+      <aside class="vertical-hero-card" aria-label="Esempio di struttura per il sito di un tappezziere">
+        <span class="vertical-demo-badge">Struttura esempio</span>
+        <div class="vertical-hero-card-head"><span>IMBOTTITI E TESSUTI</span><span aria-hidden="true">01</span></div>
+        <strong>Dettagli visibili.<br />Richieste più utili.</strong>
+        <ul class="mini-check-list">
+          <li>Lavori divisi per tipologia</li>
+          <li>Tessuti e finiture da valutare</li>
+          <li>Richiesta di sopralluogo</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
+    <div class="container vertical-intro-grid"><span><b>01</b> Che cosa recuperi</span><span><b>02</b> Come lo rifinisci</span><span><b>03</b> Che cosa inviare</span></div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="why-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">“Tappezziere” non spiega da solo il lavoro.</h2></div>
+      <div class="vertical-copy"><p>Chi cerca un intervento può avere una poltrona da rifare, sedie da rivestire, un divano da recuperare o un pezzo da adattare. Può anche non sapere se il mobile è adatto al restauro.</p><p>Un sito concreto presenta lavorazioni, tessuti, finiture e informazioni da inviare. Il primo contatto parte così da fotografie e misure indicative, senza promettere un prezzo prima di aver visto il pezzo.</p></div>
+    </div>
+    <div class="container vertical-problem-grid">
+      <article class="vertical-card"><span>01</span><h3>Il lavoro resta generico</h3><p>Separare sedute, imbottiti, testiere e restauro aiuta il visitatore a riconoscere il proprio oggetto.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Il tessuto cambia il risultato</h3><p>Uso, colore, resistenza, trama e quantità incidono sulla valutazione più di una descrizione generica.</p></article>
+      <article class="vertical-card"><span>03</span><h3>Il pezzo va visto</h3><p>Fotografie, dimensioni, stato dell'imbottitura e accessibilità rendono più utile la prima richiesta.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="services-title">
+    <div class="container">
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Lavorazioni concrete per oggetti diversi.</h2><p>Una selezione chiara dei servizi fa capire quale tipo di pezzo puoi valutare e quali dettagli preparare.</p></div>
+      <div class="vertical-service-grid">
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Poltrone e sedute</h3><p>Rivestimento, rifacimento o ripristino di poltrone e sedute, con stato della struttura e imbottitura da verificare.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Divani e cuscini</h3><p>Interventi su divani, cuscini e componenti imbottiti, da valutare in base a dimensioni, uso e condizioni.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Sedie e panche</h3><p>Rivestimenti per sedie, panche e sedute coordinate, con tessuti e finiture da scegliere per l'ambiente.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Testiere e pannelli</h3><p>Elementi imbottiti per camere, pareti o arredi, con misure, fissaggi e materiale da definire prima del lavoro.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Restauro e finiture</h3><p>Recupero di imbottiti e dettagli, con eventuali cuciture, bordini, passamanerie o finiture da concordare.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Tessuti e sopralluogo</h3><p>Raccogli fotografie, misure indicative, uso del pezzo, tessuto desiderato e accesso per la valutazione.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="structure-title">
+    <div class="container vertical-two-column vertical-two-column--dark">
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Dal pezzo da recuperare alla richiesta di valutazione.</h2></div>
+      <div class="vertical-structure-list">
+        <div><span>01</span><p><strong>Oggetto:</strong> poltrona, divano, sedia, testiera, pannello o altro elemento imbottito.</p></div>
+        <div><span>02</span><p><strong>Condizioni:</strong> rivestimento, imbottitura, struttura e parti da riparare quando sono visibili.</p></div>
+        <div><span>03</span><p><strong>Misure:</strong> larghezza, altezza, profondità e quantità di elementi da trattare.</p></div>
+        <div><span>04</span><p><strong>Tessuto:</strong> materiale già scelto, riferimento visivo, colore e uso previsto.</p></div>
+        <div><span>05</span><p><strong>Zona e accesso:</strong> comune, ritiro, consegna o sopralluogo da verificare caso per caso.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="content-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Contenuti che fanno chiarezza</p><h2 id="content-title">Mostra materia, cuciture e risultato.</h2></div>
+      <div class="vertical-copy"><p>Le immagini possono raccontare il prima, un dettaglio della lavorazione e il pezzo finito. Pubblica fotografie reali solo se puoi usarle e non mostrare abitazioni o clienti riconoscibili senza autorizzazione.</p><ul class="plain-list"><li>dettagli di tessuti, bordini, cuciture e finiture;</li><li>oggetti prima e dopo il lavoro, quando documentati e autorizzati;</li><li>indicazioni su scelta del materiale e uso dell'imbottito;</li><li>nota chiara su misure, ritiro, consegna e valutazione.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="contact-title">
+    <div class="container vertical-contact-grid">
+      <div><p class="eyebrow">Contatto pensato per il laboratorio</p><h2 id="contact-title">Raccogli il contesto prima di parlare di prezzo.</h2></div>
+      <div><p>Il modulo può chiedere comune, tipo di oggetto, dimensioni, fotografie, stato dell'imbottitura, tessuto desiderato e modalità di consegna. La valutazione dipende sempre dal pezzo reale.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/progetto-su-misura/">Se il progetto è più ampio <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="value-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il valore per il tappezziere</p><h2 id="value-title">Un punto ordinato per far capire la cura del lavoro.</h2></div>
+      <div class="vertical-copy"><p>Il sito non sostituisce la verifica del mobile, la scelta definitiva del tessuto o la preparazione del preventivo. Aiuta però il cliente a capire se il laboratorio segue il suo tipo di richiesta.</p><ul class="plain-list"><li>separi restauro, rivestimento e realizzazione di elementi imbottiti;</li><li>mostri dettagli di materia e finitura senza inventare lavori;</li><li>indichi quali fotografie e misure preparare;</li><li>mantieni separato il prezzo del sito dal preventivo del lavoro artigianale.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="vertical-faq-title">
+    <div class="container faq-layout vertical-faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="vertical-faq-title">Prima di chiedere il sito.</h2><p>Le risposte aiutano a capire quali contenuti preparare e quando l'offerta base è sufficiente.</p></div>
+      <div class="faq-list">
+        <details open><summary>Quali lavori dovrebbe mostrare un tappezziere?</summary><p>Quelli che vuoi davvero ricevere: sedute, divani, poltrone, testiere, pannelli, restauro o altri imbottiti pertinenti.</p></details>
+        <details><summary>Devo conoscere già il tessuto?</summary><p>No. Puoi indicare colore, trama, uso e riferimenti. La scelta definitiva dipende dal pezzo, dall'ambiente e dalla disponibilità dei materiali.</p></details>
+        <details><summary>Posso pubblicare fotografie di lavori già fatti?</summary><p>Sì, se puoi usarle e non mostrano interni, persone o dettagli riconoscibili senza autorizzazione. Le immagini della demo sono illustrative.</p></details>
+        <details><summary>Il sito può raccogliere fotografie del mobile?</summary><p>Sì. Può invitare il visitatore a inviare immagini, misure indicative, comune e modalità di consegna, senza sostituire la valutazione del pezzo.</p></details>
+        <details><summary>Quanto costa il modello per tappezziere?</summary><p>La pagina rientra nell'offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="vertical-closing-title">
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online lavorazioni, materia e modo di iniziare.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per il tuo laboratorio <span aria-hidden="true">→</span></a><a class="button button--dark" href="/demo/tappezziere/">Guarda la demo <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+</BaseLayout>

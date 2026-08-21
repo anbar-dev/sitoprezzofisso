@@ -3314,6 +3314,36 @@ h1 strong {
   background: #efb18d;
 }
 
+/* Tappezziere demo: a tactile identity built around fabric, restoration and warm craft. */
+.demo-page.demo-upholsterer {
+  --demo-navy: #28342f;
+  --demo-blue: #61756a;
+  --demo-blue-light: #e9efea;
+  --demo-orange: #bd7450;
+  --demo-paper: #f5f0e8;
+  --demo-ink: #34342f;
+  --demo-muted: #716d64;
+  --demo-line: #ddd5c9;
+}
+
+.demo-page.demo-upholsterer .demo-banner-inner strong,
+.demo-page.demo-upholsterer .demo-brand small,
+.demo-page.demo-upholsterer .demo-eyebrow,
+.demo-page.demo-upholsterer .demo-hero-meta b {
+  color: #eab795;
+}
+
+.demo-page.demo-upholsterer .demo-nav-cta {
+  border-color: #eab795;
+  color: #eab795;
+}
+
+.demo-page.demo-upholsterer .demo-nav-cta:hover,
+.demo-page.demo-upholsterer .demo-nav-cta:focus-visible {
+  color: var(--demo-navy);
+  background: #eab795;
+}
+
 .demo-page h1,
 .demo-page h2,
 .demo-page h3,
