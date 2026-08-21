@@ -3284,6 +3284,36 @@ h1 strong {
   background: #a9ded5;
 }
 
+/* Fotografo demo: a quiet editorial identity for images, portraits and small projects. */
+.demo-page.demo-photographer {
+  --demo-navy: #252b31;
+  --demo-blue: #5c6d78;
+  --demo-blue-light: #edf0f1;
+  --demo-orange: #c67b58;
+  --demo-paper: #f5f1ec;
+  --demo-ink: #30343a;
+  --demo-muted: #6d7074;
+  --demo-line: #ddd8d1;
+}
+
+.demo-page.demo-photographer .demo-banner-inner strong,
+.demo-page.demo-photographer .demo-brand small,
+.demo-page.demo-photographer .demo-eyebrow,
+.demo-page.demo-photographer .demo-hero-meta b {
+  color: #efb18d;
+}
+
+.demo-page.demo-photographer .demo-nav-cta {
+  border-color: #efb18d;
+  color: #efb18d;
+}
+
+.demo-page.demo-photographer .demo-nav-cta:hover,
+.demo-page.demo-photographer .demo-nav-cta:focus-visible {
+  color: var(--demo-navy);
+  background: #efb18d;
+}
+
 .demo-page h1,
 .demo-page h2,
 .demo-page h3,

@@ -76,6 +76,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] sito web per fabbro
 - [x] sito web per piastrellista
 - [x] sito web per lattoniere
+- [x] sito web per fotografo
 
 ## Phase 6 — Demo
 
@@ -95,6 +96,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] Demo fabbro
 - [x] Demo piastrellista
 - [x] Demo lattoniere
+- [x] Demo fotografo
 
 ## Phase 7 — Contenuti commerciali SEO
 

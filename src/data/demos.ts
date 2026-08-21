@@ -126,4 +126,13 @@ export const demoSites: DemoSite[] = [
     verticalPath: '/sito-web-lattoniere/',
     verticalLabel: 'Scopri il modello per lattonieri',
   },
+  {
+    slug: 'fotografo',
+    title: 'Fotografo',
+    summary: 'Portfolio, servizi fotografici, zona di lavoro e richiesta di disponibilità.',
+    image: '/images/demo-fotografo/fotografo-hero.png',
+    imageAlt: 'Fotografo che prepara una macchina fotografica e una luce in studio',
+    verticalPath: '/sito-web-fotografo/',
+    verticalLabel: 'Scopri il modello per fotografi',
+  },
 ];
