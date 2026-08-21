@@ -3344,6 +3344,36 @@ h1 strong {
   background: #eab795;
 }
 
+/* Parrucchiere demo: a calm salon identity for cut, colour and consultation. */
+.demo-page.demo-hairdresser {
+  --demo-navy: #283338;
+  --demo-blue: #687d7d;
+  --demo-blue-light: #e9efed;
+  --demo-orange: #c2765b;
+  --demo-paper: #f6f1eb;
+  --demo-ink: #303638;
+  --demo-muted: #6f716f;
+  --demo-line: #ddd7cf;
+}
+
+.demo-page.demo-hairdresser .demo-banner-inner strong,
+.demo-page.demo-hairdresser .demo-brand small,
+.demo-page.demo-hairdresser .demo-eyebrow,
+.demo-page.demo-hairdresser .demo-hero-meta b {
+  color: #efb295;
+}
+
+.demo-page.demo-hairdresser .demo-nav-cta {
+  border-color: #efb295;
+  color: #efb295;
+}
+
+.demo-page.demo-hairdresser .demo-nav-cta:hover,
+.demo-page.demo-hairdresser .demo-nav-cta:focus-visible {
+  color: var(--demo-navy);
+  background: #efb295;
+}
+
 .demo-page h1,
 .demo-page h2,
 .demo-page h3,

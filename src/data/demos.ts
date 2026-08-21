@@ -144,4 +144,13 @@ export const demoSites: DemoSite[] = [
     verticalPath: '/sito-web-tappezziere/',
     verticalLabel: 'Scopri il modello per tappezzieri',
   },
+  {
+    slug: 'parrucchiere',
+    title: 'Parrucchiere',
+    summary: 'Taglio, colore, piega, trattamenti e richiesta di appuntamento.',
+    image: '/images/demo-parrucchiere/parrucchiere-hero.png',
+    imageAlt: 'Parrucchiera che prepara una postazione in un salone luminoso',
+    verticalPath: '/sito-web-parrucchiere/',
+    verticalLabel: 'Scopri il modello per parrucchieri',
+  },
 ];

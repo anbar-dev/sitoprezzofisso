@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Sito web per parrucchiere a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Un sito web professionale per parrucchieri: taglio, colore, piega, trattamenti e richiesta di appuntamento, con un prezzo base di 399 €.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="vertical-hero" aria-labelledby="page-title">
+    <div class="container vertical-hero-grid">
+      <div>
+        <p class="eyebrow vertical-eyebrow">Modello per parrucchieri e saloni indipendenti</p>
+        <h1 id="page-title">Il sito web per il tuo salone. Servizi chiari, 399 €.</h1>
+        <p class="vertical-lead">Taglio, colore, piega e trattamenti: chi cerca un parrucchiere capisce che tipo di servizio offri, dove ti trovi e come chiedere un appuntamento senza navigare tra informazioni confuse.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link vertical-light-link" href="/demo/parrucchiere/">Guarda la demo <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/prezzi/">Vedi cosa comprende</a></p>
+      </div>
+      <aside class="vertical-hero-card" aria-label="Esempio di struttura per il sito di un parrucchiere">
+        <span class="vertical-demo-badge">Struttura esempio</span>
+        <div class="vertical-hero-card-head"><span>TAGLIO E COLORE</span><span aria-hidden="true">01</span></div>
+        <strong>Servizi leggibili.<br />Richieste più pertinenti.</strong>
+        <ul class="mini-check-list">
+          <li>Servizi divisi per esigenza</li>
+          <li>Stile e metodo raccontati</li>
+          <li>Richiesta di appuntamento</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
+    <div class="container vertical-intro-grid"><span><b>01</b> Che cosa proponi</span><span><b>02</b> Che esperienza offri</span><span><b>03</b> Come contattarti</span></div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="why-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">Un salone non si presenta soltanto con qualche foto.</h2></div>
+      <div class="vertical-copy"><p>Chi cerca un parrucchiere può volere un taglio, un cambio colore, una piega per un'occasione o un trattamento per una necessità precisa. Vuole capire se il tuo stile e il tuo modo di lavorare fanno al caso suo.</p><p>Un sito utile distingue servizi, zona e modalità di contatto. Il visitatore arriva così alla richiesta con un'idea più chiara, senza confondere il sito con un sistema di prenotazione complesso.</p></div>
+    </div>
+    <div class="container vertical-problem-grid">
+      <article class="vertical-card"><span>01</span><h3>L'offerta resta indistinta</h3><p>Separare taglio, colore, piega e trattamenti aiuta a riconoscere subito il servizio desiderato.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Il risultato va contestualizzato</h3><p>Tipo di capello, lunghezza, riferimenti e obiettivo sono più utili di una promessa generica sul risultato.</p></article>
+      <article class="vertical-card"><span>03</span><h3>L'appuntamento arriva vago</h3><p>Un contatto può raccogliere servizio, periodo preferito, comune e riferimenti senza promettere disponibilità automatica.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="services-title">
+    <div class="container">
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Servizi che fanno capire subito il tuo salone.</h2><p>Una selezione concreta aiuta il visitatore a riconoscere il proprio bisogno e a preparare una richiesta sensata.</p></div>
+      <div class="vertical-service-grid">
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Taglio e forma</h3><p>Tagli, scalature, forme e consulenza sulla lunghezza da descrivere in base allo stile e alla manutenzione desiderata.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Colore e schiariture</h3><p>Colorazioni, riflessi o cambi di tono da valutare insieme a base di partenza, riferimenti e risultato possibile.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Piega e styling</h3><p>Piega, asciugatura e styling per il quotidiano o per un'occasione, con indicazioni su durata e tipo di capello.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Trattamenti</h3><p>Servizi per cura, idratazione o disciplina del capello, da presentare senza promesse assolute o risultati garantiti.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Acconciature</h3><p>Acconciature per eventi e occasioni speciali, con data, lunghezza, riferimenti e tempo necessario da concordare.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Consulenza iniziale</h3><p>Raccogli tipo di servizio, lunghezza, colore attuale, riferimenti visivi, zona e periodo preferito.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="structure-title">
+    <div class="container vertical-two-column vertical-two-column--dark">
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Dal servizio che cerchi alla richiesta di appuntamento.</h2></div>
+      <div class="vertical-structure-list">
+        <div><span>01</span><p><strong>Esigenza:</strong> taglio, colore, piega, trattamento o acconciatura per un'occasione.</p></div>
+        <div><span>02</span><p><strong>Punto di partenza:</strong> lunghezza, colore attuale, tipo di capello e riferimenti disponibili.</p></div>
+        <div><span>03</span><p><strong>Risultato desiderato:</strong> stile, manutenzione, cambiamento o effetto da valutare.</p></div>
+        <div><span>04</span><p><strong>Periodo:</strong> data o finestra temporale, senza mostrare un calendario di prenotazione complesso.</p></div>
+        <div><span>05</span><p><strong>Zona e contatto:</strong> comune, canale preferito e informazioni utili per rispondere.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="content-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Contenuti che fanno chiarezza</p><h2 id="content-title">Mostra stile, ambiente e modo di consigliare.</h2></div>
+      <div class="vertical-copy"><p>Le immagini possono mostrare dettagli di taglio, colore, ambiente e strumenti. Pubblica fotografie reali solo se puoi usarle e non inserire clienti riconoscibili senza autorizzazione.</p><ul class="plain-list"><li>servizi organizzati per esigenza, non solo per nome;</li><li>immagini coerenti con il tipo di risultato che vuoi proporre;</li><li>una breve nota su consulenza, prodotti e manutenzione;</li><li>indicazioni pratiche su zona, contatto e richiesta di appuntamento.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="contact-title">
+    <div class="container vertical-contact-grid">
+      <div><p class="eyebrow">Contatto pensato per il salone</p><h2 id="contact-title">Raccogli il servizio prima di fissare un appuntamento.</h2></div>
+      <div><p>Il modulo può chiedere servizio, lunghezza e colore attuali, data o periodo, comune e riferimenti visivi. La disponibilità va sempre confermata dal salone.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/progetto-su-misura/">Se il progetto è più ampio <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="value-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il valore per il parrucchiere</p><h2 id="value-title">Un punto ordinato per far capire lo stile prima del contatto.</h2></div>
+      <div class="vertical-copy"><p>Il sito non sostituisce il confronto sul capello, la valutazione del colore o la gestione dell'agenda. Aiuta però il visitatore a capire se il servizio è pertinente e come iniziare la conversazione.</p><ul class="plain-list"><li>separi i servizi senza trasformare il sito in un listino infinito;</li><li>mostri immagini utilizzabili e coerenti con il tuo lavoro;</li><li>indichi quali informazioni preparare prima di scrivere;</li><li>mantieni separato il prezzo del sito dal prezzo dei servizi del salone.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="vertical-faq-title">
+    <div class="container faq-layout vertical-faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="vertical-faq-title">Prima di chiedere il sito.</h2><p>Le risposte aiutano a capire quali contenuti preparare e quando l'offerta base è sufficiente.</p></div>
+      <div class="faq-list">
+        <details open><summary>Quali servizi dovrebbe mostrare un parrucchiere?</summary><p>Quelli che vuoi davvero ricevere: taglio, colore, piega, trattamenti, acconciature o consulenze specifiche.</p></details>
+        <details><summary>Posso inserire un listino prezzi?</summary><p>Sì, se i prezzi sono pubblici e aggiornati. In alternativa puoi usare il sito per raccogliere una richiesta prima di dare una valutazione.</p></details>
+        <details><summary>Posso inserire un sistema di prenotazione?</summary><p>L'offerta base comprende un sito vetrina e un contatto semplice. Un calendario o gestionale di prenotazione complesso richiede una valutazione separata.</p></details>
+        <details><summary>Posso pubblicare foto di tagli e colori?</summary><p>Sì, se puoi usarle e non mostrano persone riconoscibili senza autorizzazione. Le immagini della demo sono illustrative.</p></details>
+        <details><summary>Quanto costa il modello per parrucchiere?</summary><p>La pagina rientra nell'offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="vertical-closing-title">
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online servizi, stile e modo di iniziare.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per il tuo salone <span aria-hidden="true">→</span></a><a class="button button--dark" href="/demo/parrucchiere/">Guarda la demo <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+</BaseLayout>
