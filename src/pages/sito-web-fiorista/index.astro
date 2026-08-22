@@ -1,0 +1,127 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Sito web per fiorista a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Un sito web professionale per fioristi: bouquet, composizioni per eventi, piante, consegna e richiesta di disponibilità, con un prezzo base di 399 €.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="vertical-hero" aria-labelledby="page-title">
+    <div class="container vertical-hero-grid">
+      <div>
+        <p class="eyebrow vertical-eyebrow">Modello per fioristi</p>
+        <h1 id="page-title">Il sito web per il tuo negozio di fiori. Fai vedere le composizioni, 399 €.</h1>
+        <p class="vertical-lead">Bouquet, piante, allestimenti e occasioni speciali: chi cerca un fiorista capisce che cosa proponi, dove lavori e come chiederti una disponibilità.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link vertical-light-link" href="/demo/fiorista/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/prezzi/">Vedi cosa comprende</a></p>
+      </div>
+      <aside class="vertical-hero-card" aria-label="Esempio di struttura per il sito di un fiorista">
+        <span class="vertical-demo-badge">Struttura esempio</span>
+        <div class="vertical-hero-card-head"><span>FIORI E COMPOSIZIONI</span><span aria-hidden="true">01</span></div>
+        <strong>Fai vedere lo stile.<br />Raccogli l'occasione.</strong>
+        <ul class="mini-check-list">
+          <li>Servizi per occasione</li>
+          <li>Zona e modalità di ritiro</li>
+          <li>Richiesta di disponibilità</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
+    <div class="container vertical-intro-grid"><span><b>01</b> Che cosa componi</span><span><b>02</b> Per quale occasione</span><span><b>03</b> Come richiedere</span></div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="why-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">Chi cerca un fiorista vuole capire subito se puoi creare quello che ha in mente.</h2></div>
+      <div class="vertical-copy"><p>La richiesta può partire da un bouquet per un regalo, da un allestimento per una cerimonia o da una pianta da portare a casa.</p><p>Un sito utile non deve mostrare tutto il catalogo del negozio: deve rendere visibili stile, occasioni, zona e modo di chiedere una composizione o una disponibilità.</p></div>
+    </div>
+    <div class="container vertical-problem-grid">
+      <article class="vertical-card"><span>01</span><h3>Richieste senza occasione</h3><p>Compleanno, cerimonia, condoglianze o semplice regalo cambiano misura, tono e tempi della composizione.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Foto senza contesto</h3><p>Un'immagine di riferimento aiuta, ma il sito deve chiarire che disponibilità, stagione e budget vanno verificati.</p></article>
+      <article class="vertical-card"><span>03</span><h3>Ritiro o consegna poco chiari</h3><p>Indicare le modalità realmente disponibili evita richieste confuse e promesse che il negozio non può mantenere.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="services-title">
+    <div class="container">
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Servizi organizzati per occasione e tipo di richiesta.</h2><p>Il cliente riconosce più facilmente il servizio quando trova esempi concreti, non una voce generica come “fiori per ogni evento”.</p></div>
+      <div class="vertical-service-grid">
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Bouquet regalo</h3><p>Composizioni stagionali e personalizzate, con colori, stile e occasione da raccontare prima della richiesta.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Fiori per cerimonie</h3><p>Centrotavola, piccoli allestimenti e composizioni da valutare insieme a luogo, data e dimensioni.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Piante e vasi</h3><p>Proposte per casa, ufficio o regalo, scegliendo in base a ambiente, luce e manutenzione richiesta.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Composizioni stagionali</h3><p>Una sezione per mostrare materiali e colori del periodo senza promettere fiori sempre disponibili.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Consegna o ritiro</h3><p>Spiega dove consegni, quando è possibile il ritiro e quali informazioni servono per verificare la richiesta.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Richiesta di disponibilità</h3><p>Raccogli occasione, data, zona, fascia di spesa indicativa e riferimenti prima di confermare il lavoro.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="content-title">
+    <div class="container vertical-two-column vertical-two-column--dark">
+      <div class="vertical-heading"><p class="eyebrow">Contenuti che fanno chiarezza</p><h2 id="content-title">Una composizione parte dalle informazioni giuste.</h2></div>
+      <div class="vertical-structure-list">
+        <div><span>01</span><p><strong>Occasione:</strong> regalo, cerimonia, ricorrenza o richiesta personale.</p></div>
+        <div><span>02</span><p><strong>Stile:</strong> colori, forme, atmosfera e riferimenti già disponibili.</p></div>
+        <div><span>03</span><p><strong>Data:</strong> quando servono i fiori e se esiste un orario da rispettare.</p></div>
+        <div><span>04</span><p><strong>Destinazione:</strong> ritiro in negozio o consegna, se realmente disponibile.</p></div>
+        <div><span>05</span><p><strong>Budget:</strong> una fascia indicativa aiuta a proporre una soluzione realistica.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="structure-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Un sito che presenta lo stile e porta alla richiesta giusta.</h2></div>
+      <div class="vertical-copy"><p>Per un fiorista il sito deve essere bello da vedere, ma soprattutto semplice da usare dal telefono quando qualcuno deve ordinare o chiedere una disponibilità.</p><ul class="plain-list"><li>apertura con tipo di negozio, zona e contatto;</li><li>servizi separati per regalo, cerimonia, piante e consegna;</li><li>foto delle composizioni con stagione e contesto;</li><li>nota chiara su disponibilità, ritiro e consegna.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="vertical-section-heading vertical-section-heading--split"><div><p class="eyebrow">Immagini del sito dimostrativo</p><h2 id="gallery-title">Guarda come possono essere raccontati fiori e lavorazioni.</h2></div><a class="button button--dark" href="/demo/fiorista/">Apri il sito dimostrativo <span aria-hidden="true">↗</span></a></div>
+      <div class="vertical-gallery-grid">
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-fiorista/fiorista-hero.png" alt="Fiorista che prepara una composizione su un tavolo da lavoro" loading="lazy" /></div><p>Preparazione della composizione</p></article>
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-fiorista/bouquet-stagionale.png" alt="Bouquet stagionale avvolto in carta kraft" loading="lazy" /></div><p>Bouquet pronto per il ritiro</p></article>
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-fiorista/composizione-evento.png" alt="Fiorista che prepara piccoli vasi per un allestimento" loading="lazy" /></div><p>Composizione per un evento</p></article>
+      </div>
+      <p class="gallery-note">Le immagini fanno parte del sito dimostrativo e sono illustrative: non rappresentano un negozio, lavori o clienti reali.</p>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="contact-title">
+    <div class="container vertical-contact-grid">
+      <div><p class="eyebrow">Contatto pensato per il mestiere</p><h2 id="contact-title">Raccogli l'occasione, non solo il numero di fiori.</h2></div>
+      <div><p>Il modulo può chiedere occasione, data, zona, colori preferiti e una fascia di spesa indicativa. Per consegne e allestimenti, lascia che sia il negozio a verificare disponibilità e fattibilità.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/progetto-su-misura/">Se il progetto è più ampio <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="value-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il valore per il fiorista</p><h2 id="value-title">Un punto ordinato per mostrare il tuo stile, anche fuori dal negozio.</h2></div>
+      <div class="vertical-copy"><p>Chi arriva da un passaparola, da Instagram o da una ricerca locale può vedere in autonomia che cosa proponi e capire come iniziare.</p><ul class="plain-list"><li>mostri composizioni e occasioni senza affidarti a un catalogo infinito;</li><li>riduci le domande ripetute su ritiro, consegna e zona;</li><li>ricevi richieste più utili prima di telefonare o preparare un ordine.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="vertical-faq-title">
+    <div class="container faq-layout vertical-faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="vertical-faq-title">Prima di chiedere il sito.</h2><p>Le risposte aiutano a progettare una pagina credibile, senza trasformarla in un catalogo o in una promessa sulla disponibilità dei fiori.</p></div>
+      <div class="faq-list">
+        <details open><summary>Quali servizi dovrebbe mostrare un fiorista?</summary><p>Quelli che vuoi davvero ricevere: bouquet, piante, composizioni per cerimonie, consegne o ritiro. Meglio separare le occasioni e spiegare che cosa si può valutare.</p></details>
+        <details><summary>Devo pubblicare un catalogo con tutti i fiori?</summary><p>No. La disponibilità cambia con stagione e forniture. Puoi mostrare categorie, stile e fotografie, indicando che composizione e materiali vanno verificati.</p></details>
+        <details><summary>Il sito può gestire ordini online?</summary><p>L'offerta base è un sito vetrina con richiesta di contatto. Un ecommerce o un sistema ordini completo richiederebbe un progetto diverso.</p></details>
+        <details><summary>Posso indicare consegna e ritiro?</summary><p>Sì, se descrivi modalità e zona reali. Il sito deve aiutare a fare una richiesta, non promettere una consegna prima di aver verificato indirizzo e tempi.</p></details>
+        <details><summary>Quanto costa il modello per fiorista?</summary><p>La pagina rientra nell'offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="vertical-closing-title">
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online stile, occasioni e modo di chiedere una composizione.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per la tua attività <span aria-hidden="true">→</span></a><a class="button button--dark" href="/demo/fiorista/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+</BaseLayout>

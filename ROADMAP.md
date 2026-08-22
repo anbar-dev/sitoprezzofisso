@@ -79,6 +79,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] sito web per fotografo
 - [x] sito web per tappezziere
 - [x] sito web per parrucchiere
+- [x] sito web per fiorista
 
 ## Phase 6 — Demo
 
@@ -101,6 +102,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] Demo fotografo
 - [x] Demo tappezziere
 - [x] Demo parrucchiere
+- [x] Demo fiorista
 
 ## Phase 7 — Contenuti commerciali SEO
 

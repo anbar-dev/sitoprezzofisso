@@ -153,4 +153,13 @@ export const demoSites: DemoSite[] = [
     verticalPath: '/sito-web-parrucchiere/',
     verticalLabel: 'Scopri il modello per parrucchieri',
   },
+  {
+    slug: 'fiorista',
+    title: 'Fiorista',
+    summary: 'Bouquet, composizioni per eventi, piante e richiesta di disponibilità.',
+    image: '/images/demo-fiorista/fiorista-hero.png',
+    imageAlt: 'Fiorista che prepara una composizione floreale su un tavolo da lavoro',
+    verticalPath: '/sito-web-fiorista/',
+    verticalLabel: 'Scopri il modello per fioristi',
+  },
 ];
