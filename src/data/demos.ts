@@ -171,4 +171,13 @@ export const demoSites: DemoSite[] = [
     verticalPath: '/sito-web-commercialista/',
     verticalLabel: 'Scopri il modello per commercialisti',
   },
+  {
+    slug: 'meccanico',
+    title: 'Meccanico',
+    summary: 'Manutenzione, diagnosi, freni, pneumatici e richiesta di appuntamento.',
+    image: '/images/demo-meccanico/meccanico-hero.png',
+    imageAlt: "Meccanico che controlla un'auto in un'officina ordinata",
+    verticalPath: '/sito-web-meccanico/',
+    verticalLabel: 'Scopri il modello per meccanici',
+  },
 ];

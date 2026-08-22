@@ -81,6 +81,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] sito web per parrucchiere
 - [x] sito web per fiorista
 - [x] sito web per commercialista
+- [x] sito web per meccanico
 
 ## Phase 6 — Demo
 
@@ -105,6 +106,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] Demo parrucchiere
 - [x] Demo fiorista
 - [x] Demo commercialista
+- [x] Demo meccanico
 
 ## Phase 7 — Contenuti commerciali SEO
 
