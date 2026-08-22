@@ -162,4 +162,13 @@ export const demoSites: DemoSite[] = [
     verticalPath: '/sito-web-fiorista/',
     verticalLabel: 'Scopri il modello per fioristi',
   },
+  {
+    slug: 'commercialista',
+    title: 'Commercialista',
+    summary: 'Contabilità, dichiarazioni, nuove attività e richiesta di confronto.',
+    image: '/images/demo-commercialista/commercialista-hero.png',
+    imageAlt: 'Professionista che esamina documenti in un ufficio ordinato',
+    verticalPath: '/sito-web-commercialista/',
+    verticalLabel: 'Scopri il modello per commercialisti',
+  },
 ];

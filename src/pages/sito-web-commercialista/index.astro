@@ -1,0 +1,127 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Sito web per commercialista a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Un sito web professionale per commercialisti: contabilità, dichiarazioni, nuove attività, scadenze e richiesta di contatto, con un prezzo base di 399 €.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="vertical-hero" aria-labelledby="page-title">
+    <div class="container vertical-hero-grid">
+      <div>
+        <p class="eyebrow vertical-eyebrow">Modello per commercialisti</p>
+        <h1 id="page-title">Il sito web per il tuo studio. Fai capire a chi puoi essere utile, 399 €.</h1>
+        <p class="vertical-lead">Contabilità, dichiarazioni, nuove attività e confronto professionale: chi arriva sul sito capisce i servizi, i destinatari e come chiedere un primo contatto.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link vertical-light-link" href="/demo/commercialista/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/prezzi/">Vedi cosa comprende</a></p>
+      </div>
+      <aside class="vertical-hero-card" aria-label="Esempio di struttura per il sito di un commercialista">
+        <span class="vertical-demo-badge">Struttura esempio</span>
+        <div class="vertical-hero-card-head"><span>STUDIO E SERVIZI</span><span aria-hidden="true">01</span></div>
+        <strong>Spiega il tuo metodo.<br />Raccogli il caso giusto.</strong>
+        <ul class="mini-check-list">
+          <li>Servizi per destinatario</li>
+          <li>Primo contatto ordinato</li>
+          <li>Informazioni essenziali</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
+    <div class="container vertical-intro-grid"><span><b>01</b> Per chi lavori</span><span><b>02</b> Che cosa segui</span><span><b>03</b> Come iniziare</span></div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="why-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">Chi cerca un commercialista vuole capire se conosci la sua situazione.</h2></div>
+      <div class="vertical-copy"><p>Una partita IVA appena aperta, una piccola impresa o un professionista già avviato non cercano esattamente lo stesso supporto.</p><p>Il sito non deve dare una risposta fiscale automatica: deve presentare le aree di lavoro, chiarire a chi si rivolge lo studio e rendere semplice chiedere un confronto.</p></div>
+    </div>
+    <div class="container vertical-problem-grid">
+      <article class="vertical-card"><span>01</span><h3>Servizi troppo generici</h3><p>“Consulenza a 360°” non aiuta a capire se lo studio segue contabilità, dichiarazioni o l'avvio di una nuova attività.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Destinatari poco chiari</h3><p>Indicare se lavori con professionisti, ditte individuali, società o privati rende il primo contatto più pertinente.</p></article>
+      <article class="vertical-card"><span>03</span><h3>Richieste senza contesto</h3><p>Attività, forma organizzativa, scadenza e bisogno principale aiutano a capire quale sia il passo successivo.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="services-title">
+    <div class="container">
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Aree di lavoro spiegate con parole concrete.</h2><p>Una selezione ordinata aiuta il visitatore a riconoscere il proprio caso, senza trasformare il sito in un manuale fiscale.</p></div>
+      <div class="vertical-service-grid">
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Contabilità</h3><p>Gestione contabile e documentale da descrivere in base ai tipi di attività che lo studio segue davvero.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Dichiarazioni</h3><p>Una sezione per spiegare quali adempimenti vengono gestiti e quali informazioni servono per inquadrare la richiesta.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Nuove attività</h3><p>Avvio di una partita IVA o di un'impresa: il sito può chiarire da dove partire per chiedere un confronto.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Bilanci e chiusure</h3><p>Servizi per imprese da presentare senza anticipare valutazioni o risultati prima di aver esaminato i dati.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Consulenza periodica</h3><p>Incontri e aggiornamenti da raccontare in modo semplice, indicando il tipo di rapporto che vuoi costruire.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Primo contatto</h3><p>Raccogli attività, dimensioni indicative, esigenza principale e tempi senza chiedere dati sensibili non necessari.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="content-title">
+    <div class="container vertical-two-column vertical-two-column--dark">
+      <div class="vertical-heading"><p class="eyebrow">Contenuti che fanno chiarezza</p><h2 id="content-title">Una richiesta utile parte dal contesto, non da una formula standard.</h2></div>
+      <div class="vertical-structure-list">
+        <div><span>01</span><p><strong>Attività:</strong> che cosa fai, da quanto tempo e con quale organizzazione.</p></div>
+        <div><span>02</span><p><strong>Esigenza:</strong> avvio, contabilità, dichiarazione, scadenza o confronto periodico.</p></div>
+        <div><span>03</span><p><strong>Situazione:</strong> nuova richiesta o passaggio da un altro professionista.</p></div>
+        <div><span>04</span><p><strong>Tempistiche:</strong> eventuale scadenza o periodo in cui desideri essere ricontattato.</p></div>
+        <div><span>05</span><p><strong>Dati:</strong> solo le informazioni iniziali necessarie; i documenti si condividono con modalità appropriate.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="structure-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Un sito sobrio che fa capire il modo di lavorare.</h2></div>
+      <div class="vertical-copy"><p>Per uno studio professionale contano chiarezza, affidabilità e facilità di contatto. Il sito deve essere leggibile anche da chi lo visita per la prima volta dal telefono.</p><ul class="plain-list"><li>apertura con studio, destinatari e area di lavoro;</li><li>servizi separati per imprese, professionisti e nuove attività;</li><li>indicazioni su cosa preparare per il primo contatto;</li><li>nota chiara su confronto professionale e trattamento dei documenti.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="vertical-section-heading vertical-section-heading--split"><div><p class="eyebrow">Immagini del sito dimostrativo</p><h2 id="gallery-title">Un'immagine può trasmettere ordine e attenzione.</h2></div><a class="button button--dark" href="/demo/commercialista/">Apri il sito dimostrativo <span aria-hidden="true">↗</span></a></div>
+      <div class="vertical-gallery-grid">
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-commercialista/commercialista-hero.png" alt="Professionista che esamina documenti in un ufficio ordinato" loading="lazy" /></div><p>Analisi della richiesta</p></article>
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-commercialista/documenti-organizzati.png" alt="Cartelle e strumenti organizzati su una scrivania" loading="lazy" /></div><p>Documenti organizzati</p></article>
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-commercialista/confronto-consulenza.png" alt="Confronto tra professionista e titolare di una piccola attività" loading="lazy" /></div><p>Primo confronto</p></article>
+      </div>
+      <p class="gallery-note">Le immagini fanno parte del sito dimostrativo e sono illustrative: non rappresentano uno studio, professionisti o clienti reali.</p>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="contact-title">
+    <div class="container vertical-contact-grid">
+      <div><p class="eyebrow">Contatto pensato per il mestiere</p><h2 id="contact-title">Raccogli il caso, senza chiedere documenti prima del necessario.</h2></div>
+      <div><p>Il modulo può chiedere attività, esigenza principale, comune e periodo preferito per il contatto. Evita di raccogliere in chiaro documenti fiscali o dati che non servono per una prima valutazione.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/progetto-su-misura/">Se il progetto è più ampio <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="value-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il valore per lo studio</p><h2 id="value-title">Un punto chiaro per spiegare a chi puoi essere utile.</h2></div>
+      <div class="vertical-copy"><p>Chi arriva da un passaparola o da una ricerca locale può capire in autonomia se lo studio segue il suo tipo di attività e come iniziare.</p><ul class="plain-list"><li>presenti le aree di lavoro senza formule vaghe;</li><li>riduci le richieste fuori ambito o senza contesto;</li><li>offri un riferimento da condividere prima del colloquio.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="vertical-faq-title">
+    <div class="container faq-layout vertical-faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="vertical-faq-title">Prima di chiedere il sito.</h2><p>Le risposte aiutano a costruire una pagina credibile, senza sostituire il confronto con il professionista.</p></div>
+      <div class="faq-list">
+        <details open><summary>Quali servizi dovrebbe mostrare un commercialista?</summary><p>Quelli che lo studio segue davvero: contabilità, dichiarazioni, nuove attività, bilanci o confronto periodico. Meglio indicare destinatari e perimetro con chiarezza.</p></details>
+        <details><summary>Posso scrivere che seguo ogni tipo di cliente?</summary><p>È preferibile indicare le attività e le situazioni che vuoi realmente prendere in carico. Una pagina più precisa prepara richieste migliori.</p></details>
+        <details><summary>Il sito può raccogliere documenti fiscali?</summary><p>L'offerta base è un sito vetrina con richiesta di contatto. Per upload protetti, area riservata o flussi documentali serve un progetto diverso e una valutazione specifica.</p></details>
+        <details><summary>Devo pubblicare informazioni fiscali aggiornate?</summary><p>Puoi pubblicare contenuti informativi verificati, ma la pagina commerciale non dovrebbe presentare risposte personalizzate o promesse valide per ogni situazione.</p></details>
+        <details><summary>Quanto costa il modello per commercialista?</summary><p>La pagina rientra nell'offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="vertical-closing-title">
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online servizi, destinatari e modo di iniziare.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per il tuo studio <span aria-hidden="true">→</span></a><a class="button button--dark" href="/demo/commercialista/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+</BaseLayout>

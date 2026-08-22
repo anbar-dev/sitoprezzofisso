@@ -25,8 +25,9 @@ Cluster iniziale:
 - sito web per impresa pulizie;
 - sito web per fabbro;
 - sito web per piastrellista;
-- sito web per lattoniere.
-- sito web per fiorista.
+- sito web per lattoniere;
+- sito web per fiorista;
+- sito web per commercialista.
 
 Ogni pagina deve essere veramente specifica per quella professione.
 
