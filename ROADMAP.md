@@ -83,6 +83,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] sito web per commercialista
 - [x] sito web per meccanico
 - [x] sito web per architetto
+- [x] sito web per avvocato
 
 ## Phase 6 — Demo
 
@@ -109,6 +110,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] Demo commercialista
 - [x] Demo meccanico
 - [x] Demo architetto
+- [x] Demo avvocato
 
 ## Phase 7 — Contenuti commerciali SEO
 

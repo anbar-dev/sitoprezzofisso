@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Sito web per avvocato a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Un sito web professionale per avvocati: aree di attività, metodo di contatto, informazioni utili e richiesta di primo confronto, con un prezzo base di 399 €.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="vertical-hero" aria-labelledby="page-title">
+    <div class="container vertical-hero-grid">
+      <div>
+        <p class="eyebrow vertical-eyebrow">Modello per professionisti</p>
+        <h1 id="page-title">Il sito web per il tuo studio legale. Spiega in cosa puoi aiutare, 399 €.</h1>
+        <p class="vertical-lead">Chi cerca un avvocato spesso parte da una situazione delicata e poco chiara. Il sito deve indicare le aree di attività, il modo di lavorare e come chiedere un primo contatto senza esporre informazioni riservate.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link vertical-light-link" href="/demo/avvocato/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/prezzi/">Vedi cosa comprende</a></p>
+      </div>
+      <aside class="vertical-hero-card" aria-label="Esempio di struttura per il sito di un avvocato">
+        <span class="vertical-demo-badge">Struttura esempio</span>
+        <div class="vertical-hero-card-head"><span>STUDIO LEGALE</span><span aria-hidden="true">01</span></div>
+        <strong>Capire il problema.<br />Trovare il primo passo.</strong>
+        <ul class="mini-check-list"><li>Aree di attività</li><li>Informazioni chiare</li><li>Richiesta di contatto</li></ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
+    <div class="container vertical-intro-grid"><span><b>01</b> Di cosa ti occupi</span><span><b>02</b> Come orienti la richiesta</span><span><b>03</b> Come contattarti</span></div>
+  </section>
+
+  <section class="section section--paper vertical-demo-promo" aria-labelledby="demo-promo-title">
+    <div class="container vertical-demo-promo-grid">
+      <div>
+        <p class="eyebrow">Sito dimostrativo</p>
+        <h2 id="demo-promo-title">Un esempio per presentare uno studio con misura.</h2>
+        <p>Abbiamo preparato un esempio completo per uno studio legale, con aree di attività, modalità di primo contatto, zona indicativa, FAQ e recapiti dichiaratamente fittizi.</p>
+        <a class="button button--dark" href="/demo/avvocato/">Apri il sito dimostrativo <span aria-hidden="true">↗</span></a>
+      </div>
+      <a class="vertical-demo-promo-image" href="/demo/avvocato/" aria-label="Apri il sito dimostrativo per avvocati">
+        <img src="/images/demo-avvocato/avvocato-01.webp" alt="Sala riunioni di uno studio legale mostrata nel sito dimostrativo" loading="lazy" />
+        <span>Apri il sito dimostrativo →</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="why-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">Una persona in difficoltà cerca prima di tutto un punto di orientamento.</h2></div>
+      <div class="vertical-copy"><p>La ricerca può partire da una parola generica, da un documento ricevuto o da un cambiamento personale. Non sempre chi visita il sito sa già quale professionista gli serve.</p><p>Una pagina ordinata aiuta a capire le aree trattate, cosa raccontare nel primo messaggio e quali informazioni è meglio condividere solo in un contesto riservato.</p></div>
+    </div>
+    <div class="container vertical-problem-grid">
+      <article class="vertical-card"><span>01</span><h3>Aree troppo generiche</h3><p>Distinguere famiglia, lavoro, contratti o contenzioso aiuta il visitatore a riconoscere il tipo di richiesta.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Informazioni sensibili</h3><p>Il sito può invitare a descrivere il contesto senza chiedere di pubblicare documenti o dettagli riservati.</p></article>
+      <article class="vertical-card"><span>03</span><h3>Primo contatto confuso</h3><p>Un modulo breve raccoglie zona, argomento e recapito, lasciando il merito della questione al confronto professionale.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="services-title">
+    <div class="container">
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Fai capire quali richieste puoi valutare.</h2><p>Non serve trasformare il sito in un manuale: bastano aree realmente trattate, spiegate con parole comprensibili e senza promesse sul risultato.</p></div>
+      <div class="vertical-service-grid">
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Diritto di famiglia</h3><p>Se rientra nella tua attività, presenta con tatto le questioni che possono richiedere un primo confronto.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Contratti e responsabilità</h3><p>Indica quali situazioni contrattuali o di responsabilità possono essere sottoposte alla tua valutazione.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Diritto del lavoro</h3><p>Spiega a chi ti rivolgi e quali informazioni iniziali possono aiutare a inquadrare il rapporto di lavoro.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Locazioni e immobili</h3><p>Una sezione distinta può raccogliere richieste su locazioni, accordi e documenti relativi a un immobile.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Contenzioso</h3><p>Se te ne occupi, indica in modo sobrio che cosa serve per capire se la questione è compatibile con il tuo studio.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Primo confronto</h3><p>Raccogli argomento, zona e recapito. La valutazione del caso resta un’attività professionale, non una promessa del sito.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="structure-title">
+    <div class="container vertical-two-column vertical-two-column--dark">
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Dalle aree di attività al primo messaggio, con informazioni essenziali.</h2></div>
+      <div class="vertical-structure-list">
+        <div><span>01</span><p><strong>In apertura:</strong> chi sei, di cosa ti occupi e in quale area lavori davvero.</p></div>
+        <div><span>02</span><p><strong>Aree:</strong> richieste spiegate con il linguaggio che una persona riconosce.</p></div>
+        <div><span>03</span><p><strong>Metodo:</strong> cosa succede dopo il primo messaggio, senza promettere esiti.</p></div>
+        <div><span>04</span><p><strong>Riservatezza:</strong> un invito chiaro a non inserire dettagli o documenti sensibili nel form.</p></div>
+        <div><span>05</span><p><strong>Contatti:</strong> telefono, email o modulo breve, secondo il modo in cui lavori.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="vertical-section-heading vertical-section-heading--split"><div><p class="eyebrow">Immagini del sito dimostrativo</p><h2 id="gallery-title">Un ambiente professionale comunica attenzione e riservatezza.</h2></div><a class="button button--dark" href="/demo/avvocato/">Apri il sito dimostrativo <span aria-hidden="true">↗</span></a></div>
+      <div class="vertical-gallery-grid">
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-avvocato/avvocato-01.webp" alt="Sala riunioni di uno studio legale con libreria e tavolo in legno" loading="lazy" /></div><p>Un luogo per il primo confronto</p></article>
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-avvocato/avvocato-02.webp" alt="Cartellina con documenti neutri e penna su una scrivania" loading="lazy" /></div><p>Documenti e informazioni da ordinare</p></article>
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-avvocato/avvocato-03.webp" alt="Colloquio in ufficio con documenti senza testo leggibile" loading="lazy" /></div><p>Ascolto prima della valutazione</p></article>
+      </div>
+      <p class="gallery-note">Le immagini fanno parte del sito dimostrativo e sono accompagnate da una nota chiara: non rappresentano uno studio, clienti o pratiche reali.</p>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="contact-title">
+    <div class="container vertical-contact-grid">
+      <div><p class="eyebrow">Contatto pensato per il mestiere</p><h2 id="contact-title">Rendi semplice spiegare perché ti stanno cercando.</h2></div>
+      <div><p>Il modulo può chiedere solo argomento, zona e recapito, con un promemoria a non inserire dati riservati. Il sito deve facilitare il primo contatto, non sostituire il colloquio con il professionista.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/prezzi/">Cosa comprende il prezzo <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="value-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il valore per lo studio</p><h2 id="value-title">Un sito chiaro protegge anche il tempo del primo contatto.</h2></div>
+      <div class="vertical-copy"><p>Chi arriva da un riferimento, da una ricerca o da un contatto già ricevuto può trovare in autonomia le informazioni di base prima di scrivere.</p><ul class="plain-list"><li>aree di attività presentate con ordine;</li><li>un riferimento da condividere senza spiegare tutto al telefono;</li><li>richieste iniziali più leggibili e meno dispersive.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="vertical-faq-title">
+    <div class="container faq-layout vertical-faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="vertical-faq-title">Prima di chiedere un preventivo.</h2><p>Il sito può informare con chiarezza senza pubblicare consulenza legale generica o promettere il risultato di una pratica.</p></div>
+      <div class="faq-list">
+        <details open><summary>Devo descrivere tutti i servizi dello studio?</summary><p>No. È meglio scegliere le aree che vuoi presentare e spiegare a quali richieste possono corrispondere, senza creare un elenco infinito.</p></details>
+        <details><summary>Posso pubblicare casi e risultati?</summary><p>Solo con contenuti verificati e nel rispetto degli obblighi professionali e della riservatezza. La demo non contiene clienti, testimonianze o risultati inventati.</p></details>
+        <details><summary>Il modulo può raccogliere i dettagli della pratica?</summary><p>Può raccogliere le informazioni minime per ricontattare la persona. È preferibile invitare a non inviare documenti o dati riservati tramite un modulo generico.</p></details>
+        <details><summary>Posso inserire testi informativi sulle aree trattate?</summary><p>Sì, ma i testi devono essere verificati e personalizzati dal professionista. Il sito non sostituisce una consulenza legale.</p></details>
+        <details><summary>Quanto costa il modello per avvocati?</summary><p>La pagina rientra nell’offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="vertical-closing-title">
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online aree di attività, metodo e primo contatto.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per il tuo studio <span aria-hidden="true">→</span></a><a class="button button--dark" href="/demo/avvocato/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+</BaseLayout>

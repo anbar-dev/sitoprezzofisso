@@ -10,6 +10,15 @@ export interface DemoSite {
 
 export const demoSites: DemoSite[] = [
   {
+    slug: 'avvocato',
+    title: 'Avvocato',
+    summary: 'Aree di attività, metodo di contatto, zona indicativa e primo confronto.',
+    image: '/images/demo-avvocato/avvocato-01.webp',
+    imageAlt: 'Sala riunioni di uno studio legale con libreria e tavolo in legno',
+    verticalPath: '/sito-web-avvocato/',
+    verticalLabel: 'Scopri il modello per avvocati',
+  },
+  {
     slug: 'architetto',
     title: 'Architetto',
     summary: 'Portfolio, ristrutturazioni d’interni, metodo e richiesta di primo contatto.',

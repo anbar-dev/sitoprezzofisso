@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = 'Sito dimostrativo per avvocato | Sito Prezzo Fisso';
+const description = 'Esempio di sito per uno studio legale: aree di attività, metodo, zona indicativa, FAQ e richiesta di primo contatto.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical} noindex chrome={false}>
+  <div class="demo-page demo-lawyer">
+    <nav class="demo-floating-actions" aria-label="Azioni principali del sito dimostrativo">
+      <a class="demo-floating-back" href="/sito-web-avvocato/"><span aria-hidden="true">←</span> Indietro</a>
+      <a class="demo-floating-contact" href="/richiedi-sito/">Ottieni il tuo sito <span aria-hidden="true">→</span></a>
+    </nav>
+
+    <div class="demo-banner"><div class="container demo-banner-inner"><strong>SITO DIMOSTRATIVO — esempio di progetto</strong><span>Nome, contatti, zona e disponibilità sono segnaposto. Le immagini sono state create per questo esempio.</span><a href="/sito-web-avvocato/">Torna alla pagina per avvocati →</a></div></div>
+
+    <header class="demo-site-hero">
+      <div class="container demo-site-nav">
+        <a class="demo-brand" href="#demo-title" aria-label="Studio Chiaro, sito dimostrativo"><span class="demo-brand-mark">SC</span><span>Studio Chiaro <small>SITO DIMOSTRATIVO</small></span></a>
+        <nav aria-label="Navigazione sito dimostrativo"><a href="#servizi-demo">Aree</a><a href="#come-lavoriamo-demo">Metodo</a><a href="#zone-demo">Zona</a><a href="#lavori-demo">Studio</a><a href="#contatti-demo">Contatti</a></nav>
+        <a class="demo-nav-cta" href="#contatti-demo">Racconta la tua situazione</a>
+      </div>
+      <div class="container demo-hero-grid">
+        <div class="demo-hero-copy">
+          <p class="demo-eyebrow">STUDIO LEGALE · ESEMPIO DI SITO</p>
+          <h1>Capire il problema è il primo passo per affrontarlo.</h1>
+          <p>Un primo orientamento sulle aree di attività dello studio, sulle informazioni utili e sul modo più semplice per chiedere un contatto. Il sito non sostituisce il confronto professionale.</p>
+          <div class="demo-button-row"><a class="demo-button demo-button--solid" href="#contatti-demo">Racconta la tua situazione</a><a class="demo-button demo-button--outline" href="#servizi-demo">Vedi le aree</a></div>
+          <div class="demo-hero-meta"><span><b>01</b> Aree chiare</span><span><b>02</b> Primo ascolto</span><span><b>03</b> Contatto riservato</span></div>
+        </div>
+        <figure class="demo-hero-art"><img src="/images/demo-avvocato/avvocato-01.webp" alt="Sala riunioni di uno studio legale con libreria e tavolo in legno" fetchpriority="high" /><figcaption>Immagine illustrativa creata per questo sito dimostrativo.</figcaption></figure>
+      </div>
+    </header>
+
+    <section class="demo-intro-strip" aria-label="Aree di attività"><div class="container demo-intro-grid"><span>Famiglia e persone</span><span>Contratti e responsabilità</span><span>Lavoro e locazioni</span><span>Primo confronto</span></div></section>
+
+    <section class="demo-section demo-section--light" id="servizi-demo" aria-labelledby="demo-services-title">
+      <div class="container"><div class="demo-section-heading"><div><p class="demo-eyebrow">Aree di attività</p><h2 id="demo-services-title">Una domanda chiara aiuta a trovare il punto di partenza.</h2></div></div>
+        <div class="demo-service-grid demo-service-grid--detailed">
+          <article><span>01</span><h3>Famiglia e persone</h3><p>Questioni personali da presentare con attenzione, contesto e rispetto della riservatezza.</p><ul><li>argomento generale;</li><li>urgenza percepita;</li><li>recapito per il contatto.</li></ul></article>
+          <article><span>02</span><h3>Contratti</h3><p>Accordi, clausole e responsabilità da inquadrare prima di decidere quale approfondimento serve.</p><ul><li>tipo di rapporto;</li><li>documenti disponibili;</li><li>domanda principale.</li></ul></article>
+          <article><span>03</span><h3>Lavoro</h3><p>Un primo messaggio ordinato per spiegare il rapporto, il momento della richiesta e il tema da valutare.</p><ul><li>ruolo e situazione;</li><li>comunicazioni ricevute;</li><li>obiettivo del contatto.</li></ul></article>
+          <article><span>04</span><h3>Locazioni</h3><p>Informazioni essenziali su contratto, immobile e problema riscontrato, senza caricare documenti riservati.</p><ul><li>tipo di locazione;</li><li>comune dell’immobile;</li><li>questione da chiarire.</li></ul></article>
+          <article><span>05</span><h3>Contenzioso</h3><p>Una descrizione iniziale consente di capire se la questione può essere sottoposta allo studio.</p><ul><li>stato della situazione;</li><li>scadenze note;</li><li>atti già ricevuti.</li></ul></article>
+          <article><span>06</span><h3>Primo contatto</h3><p>Telefono, email o modulo: il sito indica il modo più adatto per chiedere di essere ricontattati.</p><ul><li>area di interesse;</li><li>zona;</li><li>recapito preferito.</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section demo-section--blue" id="come-lavoriamo-demo" aria-labelledby="demo-process-title"><div class="container"><div class="demo-section-heading"><p class="demo-eyebrow">Come iniziare</p><h2 id="demo-process-title">Prima ascoltiamo il contesto. Poi valutiamo il passo successivo.</h2></div><ol class="demo-process-grid"><li><span>01</span><h3>Indica l’argomento</h3><p>Scegli l’area più vicina alla tua situazione e aggiungi una descrizione generale.</p></li><li><span>02</span><h3>Condividi solo il necessario</h3><p>Nel primo contatto non servono documenti o dati riservati: bastano le informazioni per ricontattarti.</p></li><li><span>03</span><h3>Ricevi un primo riscontro</h3><p>Il contatto serve a capire se e come procedere, senza anticipare una valutazione del caso.</p></li></ol></div></section>
+
+    <section class="demo-section demo-section--white" aria-labelledby="demo-brief-title"><div class="container demo-feature-grid"><figure class="demo-feature-image"><img src="/images/demo-avvocato/avvocato-02.webp" alt="Cartellina con documenti neutri e penna su una scrivania" loading="lazy" /><figcaption>Un primo messaggio può restare essenziale e ordinato.</figcaption></figure><div class="demo-feature-copy"><p class="demo-eyebrow">Prima del contatto</p><h2 id="demo-brief-title">Non devi inserire tutto nel modulo.</h2><p>Per iniziare è sufficiente spiegare l’argomento generale, la zona e il modo in cui preferisci essere ricontattato. Documenti e dettagli possono essere condivisi solo attraverso modalità adeguate.</p><ul class="demo-check-list"><li>area di interesse;</li><li>descrizione generale della situazione;</li><li>eventuale scadenza da segnalare;</li><li>email o telefono.</li></ul><a class="demo-inline-link" href="#contatti-demo">Chiedi un contatto →</a></div></div></section>
+
+    <section class="demo-section demo-section--sand" id="zone-demo" aria-labelledby="demo-zone-title"><div class="container demo-zone-layout"><div><p class="demo-eyebrow">Zona indicativa</p><h2 id="demo-zone-title">Milano e comuni della provincia.</h2><p>La zona mostrata qui serve solo a illustrare come può essere presentata sul sito. Uno studio reale dovrebbe indicare esclusivamente l’area in cui lavora davvero.</p></div><div class="demo-area-list"><span>Milano</span><span>Monza</span><span>Sesto San Giovanni</span><span>Rho</span><span>Corsico</span><span>Rozzano</span><small>Esempio di area coperta, non sede reale.</small></div></div></section>
+
+    <section class="demo-section demo-section--light" id="lavori-demo" aria-labelledby="demo-work-title"><div class="container"><div class="demo-section-heading"><div><p class="demo-eyebrow">Lo studio</p><h2 id="demo-work-title">Anche il contesto comunica il modo di lavorare.</h2></div></div><div class="demo-work-grid demo-work-grid--gallery"><figure class="demo-work-card demo-work-card--wide"><img src="/images/demo-avvocato/avvocato-01.webp" alt="Sala riunioni di uno studio legale con libreria e tavolo in legno" loading="lazy" /><figcaption>Uno spazio preparato per ascoltare</figcaption></figure><figure class="demo-work-card"><img src="/images/demo-avvocato/avvocato-02.webp" alt="Cartellina con documenti senza testo leggibile" loading="lazy" /><figcaption>Ordine prima dell’approfondimento</figcaption></figure><figure class="demo-work-card"><img src="/images/demo-avvocato/avvocato-03.webp" alt="Colloquio in ufficio con documenti senza testo leggibile" loading="lazy" /><figcaption>Il primo confronto</figcaption></figure><figure class="demo-work-card"><img src="/images/demo-avvocato/avvocato-04.webp" alt="Libreria e scrivania di un ufficio professionale" loading="lazy" /><figcaption>Riservatezza e attenzione</figcaption></figure></div><p class="demo-small-note">Immagini illustrative generate per questo sito dimostrativo: non rappresentano uno studio, clienti o pratiche reali.</p></div></section>
+
+    <section class="demo-section demo-section--white" aria-labelledby="demo-faq-title"><div class="container demo-faq-layout"><div class="demo-section-heading"><p class="demo-eyebrow">Domande frequenti</p><h2 id="demo-faq-title">Prima di chiedere un contatto.</h2></div><div class="demo-faq-list"><details open><summary>Che cosa devo scrivere nella richiesta?</summary><p>Indica l’area più vicina, la zona e una descrizione generale. Non servono documenti o tutti i dettagli della situazione.</p></details><details><summary>Posso inviare una pratica completa?</summary><p>Il modulo è pensato per il primo contatto. Per documenti o informazioni riservate è meglio attendere indicazioni sulle modalità corrette.</p></details><details><summary>Il sito dà una risposta al mio problema?</summary><p>No. La pagina spiega come chiedere un contatto, ma non fornisce consulenza legale o valutazioni sul merito della questione.</p></details><details><summary>La zona indicata è reale?</summary><p>No. Milano e i comuni mostrati sono un esempio di struttura. La demo non rappresenta uno studio reale.</p></details></div></div></section>
+
+    <section class="demo-contact-section" id="contatti-demo" aria-labelledby="demo-contact-title"><div class="container demo-contact-grid"><div><p class="demo-eyebrow">Richiesta di contatto</p><h2 id="demo-contact-title">Racconta l’argomento in modo essenziale.</h2><p>Indica l’area, la zona e come preferisci essere ricontattato. Non inserire documenti o informazioni riservate in questa demo.</p></div><div class="demo-contact-card"><div class="demo-contact-preview"><span>CONTATTI</span><strong>Studio Chiaro</strong><p>Milano e comuni della provincia. Descrivi l’argomento generale della richiesta.</p><a href="tel:+390200000000">02 0000 0000</a><a href="mailto:studio@studiochiaro.example">studio@studiochiaro.example</a></div><a class="demo-button demo-button--solid" href="mailto:studio@studiochiaro.example">Scrivici</a><a class="demo-button demo-button--light" href="tel:+390200000000">Chiama 02 0000 0000</a><small>Recapiti di esempio: questa è una pagina dimostrativa e non rappresenta un’attività reale.</small></div></div></section>
+
+    <footer class="demo-footer"><div class="container demo-footer-inner"><span>Studio Chiaro · sito dimostrativo</span><div><a href="/richiedi-sito/">Vuoi un sito simile? Richiedi il tuo →</a><small>Immagini illustrative create per questo esempio</small></div></div></footer>
+  </div>
+</BaseLayout>

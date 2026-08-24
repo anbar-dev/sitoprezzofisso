@@ -4830,6 +4830,133 @@ h1 strong {
 }
 
 /* Thermohydraulic demo: a technical midnight, copper and ice identity. */
+.demo-page.demo-lawyer {
+  --demo-navy: #20332f;
+  --demo-blue: #54746d;
+  --demo-blue-light: #e3ece8;
+  --demo-orange: #b87855;
+  --demo-paper: #f5f1ea;
+  --demo-ink: #263431;
+  --demo-muted: #68756f;
+  --demo-line: #d8e0da;
+}
+
+.demo-page.demo-lawyer .demo-banner-inner strong,
+.demo-page.demo-lawyer .demo-eyebrow,
+.demo-page.demo-lawyer .demo-hero-meta b,
+.demo-page.demo-lawyer .demo-process-grid li > span {
+  color: #e2c58d;
+}
+
+.demo-page.demo-lawyer .demo-site-hero,
+.demo-page.demo-lawyer .demo-contact-section {
+  background: var(--demo-navy);
+}
+
+.demo-page.demo-lawyer .demo-brand-mark {
+  color: var(--demo-navy);
+  background: #e2c58d;
+}
+
+.demo-page.demo-lawyer .demo-brand small {
+  color: #e2c58d;
+}
+
+.demo-page.demo-lawyer .demo-banner-inner {
+  padding-right: 16rem;
+}
+
+.demo-page.demo-lawyer .demo-site-nav nav a:hover,
+.demo-page.demo-lawyer .demo-site-nav nav a:focus-visible,
+.demo-page.demo-lawyer .demo-nav-cta:hover,
+.demo-page.demo-lawyer .demo-nav-cta:focus-visible {
+  color: #e2c58d;
+}
+
+.demo-page.demo-lawyer .demo-nav-cta {
+  border-color: #e2c58d;
+  color: #e2c58d;
+}
+
+.demo-page.demo-lawyer .demo-button--solid {
+  color: var(--demo-navy);
+  background: #e2c58d;
+}
+
+.demo-page.demo-lawyer .demo-button--solid:hover,
+.demo-page.demo-lawyer .demo-button--solid:focus-visible {
+  background: #f1d9a9;
+}
+
+.demo-page.demo-lawyer .demo-button--outline:hover,
+.demo-page.demo-lawyer .demo-button--outline:focus-visible,
+.demo-page.demo-lawyer .demo-button--light {
+  color: var(--demo-navy);
+  background: #e2c58d;
+}
+
+.demo-page.demo-lawyer .demo-button--outline:hover,
+.demo-page.demo-lawyer .demo-button--outline:focus-visible {
+  border-color: #e2c58d;
+}
+
+.demo-page.demo-lawyer .demo-area-list span {
+  border-color: #b7cec4;
+  color: var(--demo-blue);
+  background: var(--demo-blue-light);
+}
+
+.demo-page.demo-lawyer .demo-contact-card {
+  border-top-color: var(--demo-orange);
+  box-shadow: 0.8rem 0.8rem 0 #e2c58d;
+}
+
+.demo-page.demo-lawyer .demo-contact-preview a,
+.demo-page.demo-lawyer .demo-inline-link {
+  color: var(--demo-blue);
+}
+
+.demo-page.demo-lawyer .demo-floating-actions a {
+  border-color: #e2c58d;
+  background: #172722;
+}
+
+.demo-page.demo-lawyer .demo-floating-actions a:hover,
+.demo-page.demo-lawyer .demo-floating-actions a:focus-visible {
+  color: var(--demo-navy);
+  background: #e2c58d;
+}
+
+.demo-page.demo-lawyer .demo-floating-actions .demo-floating-contact {
+  border-color: var(--demo-orange);
+  background: var(--demo-orange);
+}
+
+.demo-page.demo-lawyer .demo-floating-actions .demo-floating-contact:hover,
+.demo-page.demo-lawyer .demo-floating-actions .demo-floating-contact:focus-visible {
+  color: var(--demo-white);
+  background: #9d6248;
+}
+
+@media (max-width: 38rem) {
+  .demo-page.demo-lawyer .demo-banner-inner {
+    padding-right: 0;
+  }
+
+  .demo-page.demo-lawyer .demo-banner {
+    padding-top: 4.3rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .demo-page.demo-lawyer .demo-nav-cta {
+    flex: 1 0 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* Thermohydraulic demo: a technical midnight, copper and ice identity. */
 .demo-page.demo-architect {
   --demo-navy: #2d3331;
   --demo-blue: #65766d;

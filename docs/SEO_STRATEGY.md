@@ -28,7 +28,8 @@ Cluster iniziale:
 - sito web per lattoniere;
 - sito web per fiorista;
 - sito web per commercialista;
-- sito web per meccanico.
+- sito web per meccanico;
+- sito web per avvocato.
 
 Ogni pagina deve essere veramente specifica per quella professione.
 
