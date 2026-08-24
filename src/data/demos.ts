@@ -10,6 +10,15 @@ export interface DemoSite {
 
 export const demoSites: DemoSite[] = [
   {
+    slug: 'architetto',
+    title: 'Architetto',
+    summary: 'Portfolio, ristrutturazioni d’interni, metodo e richiesta di primo contatto.',
+    image: '/images/demo-architetto/architetto-hero.webp',
+    imageAlt: 'Interno residenziale ristrutturato con soggiorno e cucina',
+    verticalPath: '/sito-web-architetto/',
+    verticalLabel: 'Scopri il modello per architetti',
+  },
+  {
     slug: 'idraulico',
     title: 'Idraulico',
     summary: 'Servizi, interventi, zona coperta e richiesta di sopralluogo.',

@@ -4830,6 +4830,133 @@ h1 strong {
 }
 
 /* Thermohydraulic demo: a technical midnight, copper and ice identity. */
+.demo-page.demo-architect {
+  --demo-navy: #2d3331;
+  --demo-blue: #65766d;
+  --demo-blue-light: #e8ede8;
+  --demo-orange: #b77755;
+  --demo-paper: #f5f1ea;
+  --demo-ink: #2d3331;
+  --demo-muted: #6d746f;
+  --demo-line: #d9ddd7;
+}
+
+.demo-page.demo-architect .demo-banner-inner strong,
+.demo-page.demo-architect .demo-eyebrow,
+.demo-page.demo-architect .demo-hero-meta b,
+.demo-page.demo-architect .demo-process-grid li > span {
+  color: #e1bd8e;
+}
+
+.demo-page.demo-architect .demo-site-hero,
+.demo-page.demo-architect .demo-contact-section {
+  background: var(--demo-navy);
+}
+
+.demo-page.demo-architect .demo-brand-mark {
+  color: var(--demo-navy);
+  background: #e1bd8e;
+}
+
+.demo-page.demo-architect .demo-brand small {
+  color: #e1bd8e;
+}
+
+.demo-page.demo-architect .demo-banner-inner {
+  padding-right: 16rem;
+}
+
+.demo-page.demo-architect .demo-site-nav nav a:hover,
+.demo-page.demo-architect .demo-site-nav nav a:focus-visible,
+.demo-page.demo-architect .demo-nav-cta:hover,
+.demo-page.demo-architect .demo-nav-cta:focus-visible {
+  color: #e1bd8e;
+}
+
+.demo-page.demo-architect .demo-nav-cta {
+  border-color: #e1bd8e;
+  color: #e1bd8e;
+}
+
+.demo-page.demo-architect .demo-button--solid {
+  color: var(--demo-navy);
+  background: #e1bd8e;
+}
+
+.demo-page.demo-architect .demo-button--solid:hover,
+.demo-page.demo-architect .demo-button--solid:focus-visible {
+  background: #f0d4b0;
+}
+
+.demo-page.demo-architect .demo-button--outline:hover,
+.demo-page.demo-architect .demo-button--outline:focus-visible,
+.demo-page.demo-architect .demo-button--light {
+  color: var(--demo-navy);
+  background: #e1bd8e;
+}
+
+.demo-page.demo-architect .demo-button--outline:hover,
+.demo-page.demo-architect .demo-button--outline:focus-visible {
+  border-color: #e1bd8e;
+}
+
+.demo-page.demo-architect .demo-area-list span {
+  border-color: #c2d1c7;
+  color: var(--demo-blue);
+  background: var(--demo-blue-light);
+}
+
+.demo-page.demo-architect .demo-contact-card {
+  border-top-color: var(--demo-orange);
+  box-shadow: 0.8rem 0.8rem 0 #e1bd8e;
+}
+
+.demo-page.demo-architect .demo-contact-preview a,
+.demo-page.demo-architect .demo-inline-link {
+  color: var(--demo-blue);
+}
+
+.demo-page.demo-architect .demo-floating-actions a {
+  border-color: #e1bd8e;
+  background: #202522;
+}
+
+.demo-page.demo-architect .demo-floating-actions a:hover,
+.demo-page.demo-architect .demo-floating-actions a:focus-visible {
+  color: var(--demo-navy);
+  background: #e1bd8e;
+}
+
+.demo-page.demo-architect .demo-floating-actions .demo-floating-contact {
+  border-color: var(--demo-orange);
+  background: var(--demo-orange);
+}
+
+.demo-page.demo-architect .demo-floating-actions .demo-floating-contact:hover,
+.demo-page.demo-architect .demo-floating-actions .demo-floating-contact:focus-visible {
+  color: var(--demo-white);
+  background: #9f6347;
+}
+
+@media (max-width: 38rem) {
+  .demo-page.demo-architect .demo-banner-inner {
+    padding-right: 0;
+  }
+
+  .demo-page.demo-architect .demo-banner {
+    padding-top: 4.3rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .demo-page.demo-architect .demo-nav-cta {
+    flex: 1 0 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* Thermohydraulic demo: a technical midnight, copper and ice identity. */
 .demo-page.demo-thermohydraulic {
   --demo-navy: #163541;
   --demo-blue: #177d87;

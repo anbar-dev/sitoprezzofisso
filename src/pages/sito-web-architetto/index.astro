@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Sito web per architetto a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Un sito web professionale per architetti: portfolio, servizi, metodo di lavoro e richiesta di primo contatto, con un prezzo base di 399 €.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="vertical-hero" aria-labelledby="page-title">
+    <div class="container vertical-hero-grid">
+      <div>
+        <p class="eyebrow vertical-eyebrow">Modello per professionisti</p>
+        <h1 id="page-title">Il sito web per il tuo studio di architettura. Fai vedere come lavori, 399 €.</h1>
+        <p class="vertical-lead">Chi cerca un architetto vuole capire in fretta che tipo di progetto può affidarti, vedere il tuo approccio e sapere come raccontarti il proprio spazio.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link vertical-light-link" href="/demo/architetto/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/prezzi/">Vedi cosa comprende</a></p>
+      </div>
+      <aside class="vertical-hero-card" aria-label="Esempio di struttura per il sito di un architetto">
+        <span class="vertical-demo-badge">Struttura esempio</span>
+        <div class="vertical-hero-card-head"><span>STUDIO DI ARCHITETTURA</span><span aria-hidden="true">01</span></div>
+        <strong>Spazi pensati per<br />essere abitati bene.</strong>
+        <ul class="mini-check-list"><li>Progetti selezionati</li><li>Metodo comprensibile</li><li>Richiesta di contatto</li></ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
+    <div class="container vertical-intro-grid"><span><b>01</b> Che tipo di progetti segui</span><span><b>02</b> Come lavori</span><span><b>03</b> Come iniziare</span></div>
+  </section>
+
+  <section class="section section--paper vertical-demo-promo" aria-labelledby="demo-promo-title">
+    <div class="container vertical-demo-promo-grid">
+      <div>
+        <p class="eyebrow">Sito dimostrativo</p>
+        <h2 id="demo-promo-title">Un esempio per presentare progetti e metodo.</h2>
+        <p>Abbiamo preparato un esempio completo per uno studio di architettura, con portfolio, servizi, approccio, zona di lavoro e richiesta di primo contatto.</p>
+        <a class="button button--dark" href="/demo/architetto/">Apri il sito dimostrativo <span aria-hidden="true">↗</span></a>
+      </div>
+      <a class="vertical-demo-promo-image" href="/demo/architetto/" aria-label="Apri il sito dimostrativo per architetti">
+        <img src="/images/demo-architetto/architetto-hero.webp" alt="Interno residenziale ristrutturato mostrato nel sito dimostrativo" loading="lazy" />
+        <span>Apri il sito dimostrativo →</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="why-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">Un portfolio bello non basta se non spiega il tuo ruolo.</h2></div>
+      <div class="vertical-copy"><p>Chi arriva sul sito spesso ha un’idea ancora incompleta: vuole ristrutturare casa, ridistribuire gli spazi o capire se il proprio immobile ha margine di miglioramento.</p><p>Il sito deve aiutare a collegare le immagini al lavoro che c’è dietro: quali incarichi segui, per chi lavori e quali informazioni servono per cominciare.</p></div>
+    </div>
+    <div class="container vertical-problem-grid">
+      <article class="vertical-card"><span>01</span><h3>Progetti senza contesto</h3><p>Una breve descrizione chiarisce il punto di partenza, le scelte progettuali e il tipo di intervento mostrato.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Servizi poco distinguibili</h3><p>Progettazione d’interni, ristrutturazione e consulenza non sono la stessa richiesta: il sito può separarle.</p></article>
+      <article class="vertical-card"><span>03</span><h3>Primo contatto prematuro</h3><p>Un brief semplice raccoglie immobile, zona e obiettivo prima di chiedere un incontro o un sopralluogo.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="services-title">
+    <div class="container">
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Fai capire quali progetti vuoi ricevere.</h2><p>Il sito non deve contenere tutto il tuo archivio: bastano alcuni lavori scelti e servizi spiegati con precisione.</p></div>
+      <div class="vertical-service-grid">
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Ristrutturazioni d’interni</h3><p>Mostra come affronti distribuzione, luce, materiali e priorità di una casa da trasformare.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Progettazione degli spazi</h3><p>Spiega per quali ambienti o esigenze può essere utile il tuo lavoro, anche prima della fase esecutiva.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Direzione e coordinamento</h3><p>Se li offri, presenta i servizi che accompagnano il progetto e chiarisci il livello di supporto previsto.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Consulenza progettuale</h3><p>Una richiesta puntuale può riguardare un layout, una scelta distributiva o un confronto prima dei lavori.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Portfolio ragionato</h3><p>Per ogni progetto bastano immagini pertinenti, una breve storia e ciò che vuoi far notare.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Primo confronto</h3><p>Indica quali dati inviare: tipo di immobile, zona, obiettivo e materiale già disponibile.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="structure-title">
+    <div class="container vertical-two-column vertical-two-column--dark">
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Dal progetto visto online a una richiesta più concreta.</h2></div>
+      <div class="vertical-structure-list">
+        <div><span>01</span><p><strong>In apertura:</strong> tipo di studio, approccio e progetti che vuoi seguire.</p></div>
+        <div><span>02</span><p><strong>Portfolio:</strong> immagini accompagnate da contesto e servizio svolto.</p></div>
+        <div><span>03</span><p><strong>Metodo:</strong> come parte il lavoro e quali sono i primi passaggi.</p></div>
+        <div><span>04</span><p><strong>Zona:</strong> area in cui accetti incarichi, senza indicare una sede inesistente.</p></div>
+        <div><span>05</span><p><strong>Contatti:</strong> un modulo breve per capire se il progetto è adatto.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="vertical-section-heading vertical-section-heading--split"><div><p class="eyebrow">Immagini del sito dimostrativo</p><h2 id="gallery-title">Le immagini funzionano meglio quando raccontano una scelta.</h2></div><a class="button button--dark" href="/demo/architetto/">Apri il sito dimostrativo <span aria-hidden="true">↗</span></a></div>
+      <div class="vertical-gallery-grid">
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-architetto/architetto-hero.webp" alt="Soggiorno e cucina di un interno ristrutturato" loading="lazy" /></div><p>Distribuzione e atmosfera di un interno</p></article>
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-architetto/campioni-materiali.webp" alt="Campioni di materiali e planimetria su un tavolo di lavoro" loading="lazy" /></div><p>Materiali e direzione del progetto</p></article>
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-architetto/bagno-finiture.webp" alt="Dettaglio di un bagno progettato con pietra e legno" loading="lazy" /></div><p>Dettagli e finiture</p></article>
+      </div>
+      <p class="gallery-note">Le immagini fanno parte del sito dimostrativo e sono accompagnate da una nota chiara: non rappresentano lavori di uno studio reale.</p>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="contact-title">
+    <div class="container vertical-contact-grid">
+      <div><p class="eyebrow">Contatto pensato per il mestiere</p><h2 id="contact-title">Aiuta chi ti scrive a spiegare lo spazio.</h2></div>
+      <div><p>Il modulo può chiedere il tipo di immobile, la zona, l’obiettivo e qualche immagine. Così il primo messaggio parte da informazioni utili, senza trasformare il sito in un sistema di prenotazione complesso.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/prezzi/">Cosa comprende il prezzo <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="value-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il valore per lo studio</p><h2 id="value-title">Il sito non sostituisce il passaparola: rende il tuo lavoro più facile da capire.</h2></div>
+      <div class="vertical-copy"><p>Un progetto condiviso da un cliente, da un collega o da una ricerca online può diventare il punto di partenza per una valutazione più consapevole.</p><ul class="plain-list"><li>un portfolio ordinato da inviare prima del confronto;</li><li>un modo per spiegare il tuo approccio senza ripetere tutto;</li><li>una richiesta iniziale più leggibile e meglio preparata.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="vertical-faq-title">
+    <div class="container faq-layout vertical-faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="vertical-faq-title">Prima di chiedere un preventivo.</h2><p>Il sito può presentare il tuo studio senza promettere risultati o trasformare ogni richiesta in una procedura complicata.</p></div>
+      <div class="faq-list">
+        <details open><summary>Quanti progetti devo inserire?</summary><p>Non serve un archivio completo. Meglio scegliere pochi progetti coerenti e accompagnarli con testi brevi che chiariscano contesto e tipo di incarico.</p></details>
+        <details><summary>Posso presentare più servizi?</summary><p>Sì, purché siano servizi che offri davvero. Il sito può distinguere progettazione, consulenza, direzione o altre attività senza creare un elenco generico.</p></details>
+        <details><summary>Devo pubblicare i prezzi dei progetti?</summary><p>No. Il sito può spiegare come chiedere un primo confronto. Tempi e costi dell’incarico dipendono dal progetto e non vanno inventati.</p></details>
+        <details><summary>Posso ricevere immagini e documenti nel modulo?</summary><p>Si può predisporre un contatto semplice. La gestione di upload complessi o aree riservate non rientra nell’offerta base e va valutata separatamente.</p></details>
+        <details><summary>Quanto costa il modello per architetti?</summary><p>La pagina rientra nell’offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="vertical-closing-title">
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online progetti, metodo e modo di iniziare.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per il tuo studio <span aria-hidden="true">→</span></a><a class="button button--dark" href="/demo/architetto/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+</BaseLayout>
