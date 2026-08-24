@@ -29,7 +29,8 @@ Cluster iniziale:
 - sito web per fiorista;
 - sito web per commercialista;
 - sito web per meccanico;
-- sito web per avvocato.
+- sito web per avvocato;
+- sito web per psicologo.
 
 Ogni pagina deve essere veramente specifica per quella professione.
 

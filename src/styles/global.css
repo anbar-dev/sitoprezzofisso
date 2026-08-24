@@ -4830,6 +4830,133 @@ h1 strong {
 }
 
 /* Thermohydraulic demo: a technical midnight, copper and ice identity. */
+.demo-page.demo-psychologist {
+  --demo-navy: #29413b;
+  --demo-blue: #668478;
+  --demo-blue-light: #e6efea;
+  --demo-orange: #b87958;
+  --demo-paper: #f4f1ea;
+  --demo-ink: #2c3b36;
+  --demo-muted: #6b7871;
+  --demo-line: #d9e1db;
+}
+
+.demo-page.demo-psychologist .demo-banner-inner strong,
+.demo-page.demo-psychologist .demo-eyebrow,
+.demo-page.demo-psychologist .demo-hero-meta b,
+.demo-page.demo-psychologist .demo-process-grid li > span {
+  color: #e5c48d;
+}
+
+.demo-page.demo-psychologist .demo-site-hero,
+.demo-page.demo-psychologist .demo-contact-section {
+  background: var(--demo-navy);
+}
+
+.demo-page.demo-psychologist .demo-brand-mark {
+  color: var(--demo-navy);
+  background: #e5c48d;
+}
+
+.demo-page.demo-psychologist .demo-brand small {
+  color: #e5c48d;
+}
+
+.demo-page.demo-psychologist .demo-banner-inner {
+  padding-right: 16rem;
+}
+
+.demo-page.demo-psychologist .demo-site-nav nav a:hover,
+.demo-page.demo-psychologist .demo-site-nav nav a:focus-visible,
+.demo-page.demo-psychologist .demo-nav-cta:hover,
+.demo-page.demo-psychologist .demo-nav-cta:focus-visible {
+  color: #e5c48d;
+}
+
+.demo-page.demo-psychologist .demo-nav-cta {
+  border-color: #e5c48d;
+  color: #e5c48d;
+}
+
+.demo-page.demo-psychologist .demo-button--solid {
+  color: var(--demo-navy);
+  background: #e5c48d;
+}
+
+.demo-page.demo-psychologist .demo-button--solid:hover,
+.demo-page.demo-psychologist .demo-button--solid:focus-visible {
+  background: #f2d6a7;
+}
+
+.demo-page.demo-psychologist .demo-button--outline:hover,
+.demo-page.demo-psychologist .demo-button--outline:focus-visible,
+.demo-page.demo-psychologist .demo-button--light {
+  color: var(--demo-navy);
+  background: #e5c48d;
+}
+
+.demo-page.demo-psychologist .demo-button--outline:hover,
+.demo-page.demo-psychologist .demo-button--outline:focus-visible {
+  border-color: #e5c48d;
+}
+
+.demo-page.demo-psychologist .demo-area-list span {
+  border-color: #bdd2c7;
+  color: var(--demo-blue);
+  background: var(--demo-blue-light);
+}
+
+.demo-page.demo-psychologist .demo-contact-card {
+  border-top-color: var(--demo-orange);
+  box-shadow: 0.8rem 0.8rem 0 #e5c48d;
+}
+
+.demo-page.demo-psychologist .demo-contact-preview a,
+.demo-page.demo-psychologist .demo-inline-link {
+  color: var(--demo-blue);
+}
+
+.demo-page.demo-psychologist .demo-floating-actions a {
+  border-color: #e5c48d;
+  background: #20332e;
+}
+
+.demo-page.demo-psychologist .demo-floating-actions a:hover,
+.demo-page.demo-psychologist .demo-floating-actions a:focus-visible {
+  color: var(--demo-navy);
+  background: #e5c48d;
+}
+
+.demo-page.demo-psychologist .demo-floating-actions .demo-floating-contact {
+  border-color: var(--demo-orange);
+  background: var(--demo-orange);
+}
+
+.demo-page.demo-psychologist .demo-floating-actions .demo-floating-contact:hover,
+.demo-page.demo-psychologist .demo-floating-actions .demo-floating-contact:focus-visible {
+  color: var(--demo-white);
+  background: #9f654a;
+}
+
+@media (max-width: 38rem) {
+  .demo-page.demo-psychologist .demo-banner-inner {
+    padding-right: 0;
+  }
+
+  .demo-page.demo-psychologist .demo-banner {
+    padding-top: 4.3rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .demo-page.demo-psychologist .demo-nav-cta {
+    flex: 1 0 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* Thermohydraulic demo: a technical midnight, copper and ice identity. */
 .demo-page.demo-lawyer {
   --demo-navy: #20332f;
   --demo-blue: #54746d;

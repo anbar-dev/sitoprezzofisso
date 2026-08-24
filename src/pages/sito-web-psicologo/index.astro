@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Sito web per psicologo a prezzo fisso | Sito Prezzo Fisso';
+const description = 'Un sito web professionale per psicologi: approccio, aree di supporto, modalità di contatto e primo colloquio, con un prezzo base di 399 €.';
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <section class="vertical-hero" aria-labelledby="page-title">
+    <div class="container vertical-hero-grid">
+      <div>
+        <p class="eyebrow vertical-eyebrow">Modello per professionisti</p>
+        <h1 id="page-title">Il sito web per il tuo studio psicologico. Fai capire come inizi, 399 €.</h1>
+        <p class="vertical-lead">Chi cerca uno psicologo vuole trovare un ambiente affidabile, capire per quali situazioni puoi essere utile e sapere come chiedere un primo contatto senza sentirsi spinto a raccontare tutto online.</p>
+        <div class="button-row">
+          <a class="button button--primary" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a>
+          <a class="text-link vertical-light-link" href="/demo/psicologo/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="vertical-hero-note"><strong>Offerta base:</strong> sito vetrina fino a 3 pagine o one-page equivalente. <a href="/prezzi/">Vedi cosa comprende</a></p>
+      </div>
+      <aside class="vertical-hero-card" aria-label="Esempio di struttura per il sito di uno psicologo">
+        <span class="vertical-demo-badge">Struttura esempio</span>
+        <div class="vertical-hero-card-head"><span>STUDIO PSICOLOGICO</span><span aria-hidden="true">01</span></div>
+        <strong>Uno spazio per<br />iniziare con calma.</strong>
+        <ul class="mini-check-list"><li>Approccio comprensibile</li><li>Aree di supporto</li><li>Primo contatto</li></ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="vertical-intro-strip" aria-label="Punti chiave della pagina">
+    <div class="container vertical-intro-grid"><span><b>01</b> Come lavori</span><span><b>02</b> A chi puoi essere utile</span><span><b>03</b> Come iniziare</span></div>
+  </section>
+
+  <section class="section section--paper vertical-demo-promo" aria-labelledby="demo-promo-title">
+    <div class="container vertical-demo-promo-grid">
+      <div>
+        <p class="eyebrow">Sito dimostrativo</p>
+        <h2 id="demo-promo-title">Un esempio per presentare uno studio con discrezione.</h2>
+        <p>Abbiamo preparato un esempio completo per uno studio psicologico, con approccio, aree di supporto, informazioni pratiche, FAQ e un primo contatto semplice.</p>
+        <a class="button button--dark" href="/demo/psicologo/">Apri il sito dimostrativo <span aria-hidden="true">↗</span></a>
+      </div>
+      <a class="vertical-demo-promo-image" href="/demo/psicologo/" aria-label="Apri il sito dimostrativo per psicologi">
+        <img src="/images/demo-psicologo/psicologo-01.webp" alt="Stanza di colloquio con due poltrone mostrata nel sito dimostrativo" loading="lazy" />
+        <span>Apri il sito dimostrativo →</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="why-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il problema commerciale</p><h2 id="why-title">La prima visita al sito deve abbassare la soglia del contatto.</h2></div>
+      <div class="vertical-copy"><p>Chi sta valutando di iniziare un percorso può avere dubbi molto concreti: come si svolge il primo colloquio, se l’approccio è adatto e quali informazioni servono per scrivere.</p><p>Il sito non deve fare diagnosi né promettere risultati. Deve offrire un contesto chiaro, umano e rispettoso per decidere se chiedere un primo contatto.</p></div>
+    </div>
+    <div class="container vertical-problem-grid">
+      <article class="vertical-card"><span>01</span><h3>Approccio poco visibile</h3><p>Spiegare come lavori e cosa aspettarsi dal primo colloquio aiuta a rendere lo studio meno distante.</p></article>
+      <article class="vertical-card vertical-card--accent"><span>02</span><h3>Informazioni troppo personali</h3><p>Il sito può invitare a condividere solo il necessario, senza chiedere dettagli sensibili dentro un modulo generico.</p></article>
+      <article class="vertical-card"><span>03</span><h3>Contatto senza contesto</h3><p>Un modulo breve o una email chiara indicano come iniziare e quali informazioni pratiche lasciare.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="services-title">
+    <div class="container">
+      <div class="vertical-section-heading"><p class="eyebrow">Cosa mettere in evidenza</p><h2 id="services-title">Fai capire per quali situazioni può essere utile scriverti.</h2><p>Le aree vanno adattate al tuo lavoro reale. Il sito può essere informativo senza diventare una pagina di consigli clinici generici.</p></div>
+      <div class="vertical-service-grid">
+        <article class="vertical-service-card"><span class="service-number">01</span><h3>Ansia e stress</h3><p>Se rientra nella tua attività, descrivi in modo sobrio per quali momenti o difficoltà una persona può chiedere supporto.</p></article>
+        <article class="vertical-service-card"><span class="service-number">02</span><h3>Cambiamenti e passaggi</h3><p>Separazioni, trasferimenti, fasi di scelta o altri cambiamenti possono essere presentati senza usare promesse assolute.</p></article>
+        <article class="vertical-service-card"><span class="service-number">03</span><h3>Relazioni e famiglia</h3><p>Indica se lavori con singoli, coppie o famiglie e chiarisci la modalità di contatto più adatta.</p></article>
+        <article class="vertical-service-card"><span class="service-number">04</span><h3>Autostima e consapevolezza</h3><p>Un testo semplice può raccontare il tuo approccio senza trasformare il sito in un test o in una valutazione.</p></article>
+        <article class="vertical-service-card"><span class="service-number">05</span><h3>Colloqui online o in studio</h3><p>Se li offri, indica le modalità disponibili e le informazioni pratiche da verificare prima di iniziare.</p></article>
+        <article class="vertical-service-card"><span class="service-number">06</span><h3>Primo colloquio</h3><p>Spiega cosa serve per chiedere un contatto e cosa non è necessario raccontare in un modulo pubblico.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" aria-labelledby="structure-title">
+    <div class="container vertical-two-column vertical-two-column--dark">
+      <div class="vertical-heading"><p class="eyebrow">Struttura ideale</p><h2 id="structure-title">Dalla prima impressione a un contatto più consapevole.</h2></div>
+      <div class="vertical-structure-list">
+        <div><span>01</span><p><strong>In apertura:</strong> chi sei, come lavori e quale tipo di spazio offri.</p></div>
+        <div><span>02</span><p><strong>Approccio:</strong> parole semplici per spiegare cosa aspettarsi.</p></div>
+        <div><span>03</span><p><strong>Aree:</strong> situazioni realmente trattate, senza diagnosi online.</p></div>
+        <div><span>04</span><p><strong>Informazioni pratiche:</strong> zona, modalità, durata e contatto da verificare.</p></div>
+        <div><span>05</span><p><strong>Riservatezza:</strong> un invito chiaro a non inserire dettagli sensibili nel modulo.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="vertical-section-heading vertical-section-heading--split"><div><p class="eyebrow">Immagini del sito dimostrativo</p><h2 id="gallery-title">L’ambiente può comunicare attenzione prima ancora del primo colloquio.</h2></div><a class="button button--dark" href="/demo/psicologo/">Apri il sito dimostrativo <span aria-hidden="true">↗</span></a></div>
+      <div class="vertical-gallery-grid">
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-psicologo/psicologo-01.webp" alt="Stanza di colloquio con due poltrone e luce naturale" loading="lazy" /></div><p>Un luogo per iniziare con calma</p></article>
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-psicologo/psicologo-02.webp" alt="Quaderno aperto senza testo leggibile su un tavolino" loading="lazy" /></div><p>Spazio per ascolto e riflessione</p></article>
+        <article class="vertical-gallery-card"><div class="gallery-visual"><img src="/images/demo-psicologo/psicologo-03.webp" alt="Colloquio rappresentato da due persone senza volti visibili" loading="lazy" /></div><p>Il primo incontro</p></article>
+      </div>
+      <p class="gallery-note">Le immagini fanno parte del sito dimostrativo e sono accompagnate da una nota chiara: non rappresentano uno studio o persone reali.</p>
+    </div>
+  </section>
+
+  <section class="section section--accent" aria-labelledby="contact-title">
+    <div class="container vertical-contact-grid">
+      <div><p class="eyebrow">Contatto pensato per il mestiere</p><h2 id="contact-title">Spiega come chiedere un primo contatto, senza forzare la confidenza.</h2></div>
+      <div><p>Il modulo può chiedere solo nome, recapito, modalità preferita e una frase generale sul motivo del contatto. Il sito deve lasciare alla persona la scelta di cosa raccontare e quando.</p><div class="button-row"><a class="button button--dark" href="/richiedi-sito/">Richiedi il sito da 399 € <span aria-hidden="true">→</span></a><a class="text-link" href="/prezzi/">Cosa comprende il prezzo <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="value-title">
+    <div class="container vertical-two-column">
+      <div class="vertical-heading"><p class="eyebrow">Il valore per lo studio</p><h2 id="value-title">Un sito chiaro può rendere il primo passo meno faticoso.</h2></div>
+      <div class="vertical-copy"><p>Chi arriva da un riferimento o da una ricerca può capire in autonomia chi sei, come lavori e quale contatto preferisci prima di scrivere.</p><ul class="plain-list"><li>un contesto professionale da consultare con calma;</li><li>informazioni pratiche raccolte in un unico punto;</li><li>una richiesta iniziale più semplice da gestire.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section--paper" aria-labelledby="vertical-faq-title">
+    <div class="container faq-layout vertical-faq-layout">
+      <div class="faq-intro"><p class="eyebrow">Domande frequenti</p><h2 id="vertical-faq-title">Prima di chiedere un preventivo.</h2><p>Il sito può creare fiducia senza sostituire il percorso professionale o promettere un risultato terapeutico.</p></div>
+      <div class="faq-list">
+        <details open><summary>Devo pubblicare molte informazioni personali?</summary><p>No. Puoi presentare formazione, approccio e modalità di lavoro scegliendo solo le informazioni che vuoi rendere pubbliche.</p></details>
+        <details><summary>Posso spiegare il mio approccio?</summary><p>Sì. È utile usare parole comprensibili e testi verificati da te, evitando diagnosi, test online o promesse di risultato.</p></details>
+        <details><summary>Il modulo può raccogliere il motivo della richiesta?</summary><p>Può chiedere una frase generale, ma è meglio ricordare di non inserire dettagli sensibili o informazioni che richiedono un canale adeguato.</p></details>
+        <details><summary>Posso inserire colloqui online?</summary><p>Sì, se li offri davvero. Il sito può spiegare la modalità e rimandare alle informazioni pratiche da verificare prima di iniziare.</p></details>
+        <details><summary>Quanto costa il modello per psicologi?</summary><p>La pagina rientra nell’offerta base da 399 € se il progetto resta dentro il perimetro del sito vetrina fino a 3 pagine o one-page equivalente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-cta" aria-labelledby="vertical-closing-title">
+    <div class="container closing-inner"><p class="eyebrow">Una base concreta</p><h2 id="vertical-closing-title">Porta online approccio, informazioni pratiche e primo contatto.</h2><div class="button-row"><a class="button button--primary" href="/richiedi-sito/">Richiedi il sito per il tuo studio <span aria-hidden="true">→</span></a><a class="button button--dark" href="/demo/psicologo/">Guarda il sito dimostrativo <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+</BaseLayout>

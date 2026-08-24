@@ -10,6 +10,15 @@ export interface DemoSite {
 
 export const demoSites: DemoSite[] = [
   {
+    slug: 'psicologo',
+    title: 'Psicologo',
+    summary: 'Approccio, aree di supporto, modalità pratiche e primo contatto.',
+    image: '/images/demo-psicologo/psicologo-01.webp',
+    imageAlt: 'Stanza di colloquio con due poltrone e luce naturale',
+    verticalPath: '/sito-web-psicologo/',
+    verticalLabel: 'Scopri il modello per psicologi',
+  },
+  {
     slug: 'avvocato',
     title: 'Avvocato',
     summary: 'Aree di attività, metodo di contatto, zona indicativa e primo confronto.',
