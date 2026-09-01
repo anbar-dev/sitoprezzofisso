@@ -10,6 +10,15 @@ export interface DemoSite {
 
 export const demoSites: DemoSite[] = [
   {
+    slug: 'fisioterapista',
+    title: 'Fisioterapista',
+    summary: 'Approccio, riabilitazione, prima valutazione e richiesta di informazioni.',
+    image: '/images/demo-fisioterapista/fisioterapista-hero.png',
+    imageAlt: 'Fisioterapista che guida un esercizio di mobilità in uno studio luminoso',
+    verticalPath: '/sito-web-fisioterapista/',
+    verticalLabel: 'Scopri il modello per fisioterapisti',
+  },
+  {
     slug: 'nutrizionista',
     title: 'Nutrizionista',
     summary: 'Approccio, percorsi, prima visita e richiesta di informazioni.',

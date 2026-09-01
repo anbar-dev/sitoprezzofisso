@@ -5582,3 +5582,122 @@ h1 strong {
     text-align: center;
   }
 }
+
+/* Fisioterapista demo: a calm movement-focused identity for evaluation and recovery. */
+.demo-page.demo-physiotherapist {
+  --demo-navy: #263f46;
+  --demo-blue: #5f858b;
+  --demo-blue-light: #e5efee;
+  --demo-orange: #c57955;
+  --demo-paper: #f3f1ea;
+  --demo-ink: #2e3c40;
+  --demo-muted: #6b7779;
+  --demo-line: #d7e0df;
+}
+
+.demo-page.demo-physiotherapist .demo-banner-inner strong,
+.demo-page.demo-physiotherapist .demo-brand small,
+.demo-page.demo-physiotherapist .demo-eyebrow,
+.demo-page.demo-physiotherapist .demo-hero-meta b,
+.demo-page.demo-physiotherapist .demo-process-grid li > span {
+  color: #e4c67e;
+}
+
+.demo-page.demo-physiotherapist .demo-site-hero,
+.demo-page.demo-physiotherapist .demo-contact-section {
+  background: var(--demo-navy);
+}
+
+.demo-page.demo-physiotherapist .demo-brand-mark {
+  color: var(--demo-navy);
+  background: #e4c67e;
+}
+
+.demo-page.demo-physiotherapist .demo-nav-cta {
+  border-color: #e4c67e;
+  color: #e4c67e;
+}
+
+.demo-page.demo-physiotherapist .demo-nav-cta:hover,
+.demo-page.demo-physiotherapist .demo-nav-cta:focus-visible {
+  color: var(--demo-navy);
+  background: #e4c67e;
+}
+
+.demo-page.demo-physiotherapist .demo-button--solid {
+  color: var(--demo-navy);
+  background: #e4c67e;
+}
+
+.demo-page.demo-physiotherapist .demo-button--solid:hover,
+.demo-page.demo-physiotherapist .demo-button--solid:focus-visible {
+  background: #f0d99f;
+}
+
+.demo-page.demo-physiotherapist .demo-button--outline:hover,
+.demo-page.demo-physiotherapist .demo-button--outline:focus-visible,
+.demo-page.demo-physiotherapist .demo-button--light {
+  color: var(--demo-navy);
+  background: #e4c67e;
+}
+
+.demo-page.demo-physiotherapist .demo-button--outline:hover,
+.demo-page.demo-physiotherapist .demo-button--outline:focus-visible {
+  border-color: #e4c67e;
+}
+
+.demo-page.demo-physiotherapist .demo-area-list span {
+  border-color: #b9d2d1;
+  color: var(--demo-blue);
+  background: var(--demo-blue-light);
+}
+
+.demo-page.demo-physiotherapist .demo-contact-card {
+  border-top-color: var(--demo-orange);
+  box-shadow: 0.8rem 0.8rem 0 #e4c67e;
+}
+
+.demo-page.demo-physiotherapist .demo-contact-preview a,
+.demo-page.demo-physiotherapist .demo-inline-link {
+  color: var(--demo-blue);
+}
+
+.demo-page.demo-physiotherapist .demo-floating-actions a {
+  border-color: #e4c67e;
+  background: #1d3339;
+}
+
+.demo-page.demo-physiotherapist .demo-floating-actions a:hover,
+.demo-page.demo-physiotherapist .demo-floating-actions a:focus-visible {
+  color: var(--demo-navy);
+  background: #e4c67e;
+}
+
+.demo-page.demo-physiotherapist .demo-floating-actions .demo-floating-contact {
+  border-color: var(--demo-orange);
+  background: var(--demo-orange);
+}
+
+.demo-page.demo-physiotherapist .demo-floating-actions .demo-floating-contact:hover,
+.demo-page.demo-physiotherapist .demo-floating-actions .demo-floating-contact:focus-visible {
+  color: var(--demo-white);
+  background: #a55e3f;
+}
+
+@media (max-width: 38rem) {
+  .demo-page.demo-physiotherapist .demo-banner-inner {
+    padding-right: 0;
+  }
+
+  .demo-page.demo-physiotherapist .demo-banner {
+    padding-top: 4.3rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .demo-page.demo-physiotherapist .demo-nav-cta {
+    flex: 1 0 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}
