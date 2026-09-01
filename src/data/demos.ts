@@ -10,6 +10,15 @@ export interface DemoSite {
 
 export const demoSites: DemoSite[] = [
   {
+    slug: 'veterinario',
+    title: 'Veterinario',
+    summary: 'Specie seguite, prevenzione, prima visita e richiesta di informazioni.',
+    image: '/images/demo-veterinario/veterinario-hero.png',
+    imageAlt: 'Veterinario che visita un cane in un ambiente luminoso',
+    verticalPath: '/sito-web-veterinario/',
+    verticalLabel: 'Scopri il modello per veterinari',
+  },
+  {
     slug: 'fisioterapista',
     title: 'Fisioterapista',
     summary: 'Approccio, riabilitazione, prima valutazione e richiesta di informazioni.',

@@ -5701,3 +5701,122 @@ h1 strong {
     text-align: center;
   }
 }
+
+/* Veterinario demo: a warm, clear identity for prevention, visits and pet care. */
+.demo-page.demo-veterinarian {
+  --demo-navy: #294247;
+  --demo-blue: #5c8584;
+  --demo-blue-light: #e5efed;
+  --demo-orange: #c77a55;
+  --demo-paper: #f5f1e9;
+  --demo-ink: #303d3d;
+  --demo-muted: #6c7775;
+  --demo-line: #d7e1de;
+}
+
+.demo-page.demo-veterinarian .demo-banner-inner strong,
+.demo-page.demo-veterinarian .demo-brand small,
+.demo-page.demo-veterinarian .demo-eyebrow,
+.demo-page.demo-veterinarian .demo-hero-meta b,
+.demo-page.demo-veterinarian .demo-process-grid li > span {
+  color: #e6c77c;
+}
+
+.demo-page.demo-veterinarian .demo-site-hero,
+.demo-page.demo-veterinarian .demo-contact-section {
+  background: var(--demo-navy);
+}
+
+.demo-page.demo-veterinarian .demo-brand-mark {
+  color: var(--demo-navy);
+  background: #e6c77c;
+}
+
+.demo-page.demo-veterinarian .demo-nav-cta {
+  border-color: #e6c77c;
+  color: #e6c77c;
+}
+
+.demo-page.demo-veterinarian .demo-nav-cta:hover,
+.demo-page.demo-veterinarian .demo-nav-cta:focus-visible {
+  color: var(--demo-navy);
+  background: #e6c77c;
+}
+
+.demo-page.demo-veterinarian .demo-button--solid {
+  color: var(--demo-navy);
+  background: #e6c77c;
+}
+
+.demo-page.demo-veterinarian .demo-button--solid:hover,
+.demo-page.demo-veterinarian .demo-button--solid:focus-visible {
+  background: #f1dda0;
+}
+
+.demo-page.demo-veterinarian .demo-button--outline:hover,
+.demo-page.demo-veterinarian .demo-button--outline:focus-visible,
+.demo-page.demo-veterinarian .demo-button--light {
+  color: var(--demo-navy);
+  background: #e6c77c;
+}
+
+.demo-page.demo-veterinarian .demo-button--outline:hover,
+.demo-page.demo-veterinarian .demo-button--outline:focus-visible {
+  border-color: #e6c77c;
+}
+
+.demo-page.demo-veterinarian .demo-area-list span {
+  border-color: #b8d2d0;
+  color: var(--demo-blue);
+  background: var(--demo-blue-light);
+}
+
+.demo-page.demo-veterinarian .demo-contact-card {
+  border-top-color: var(--demo-orange);
+  box-shadow: 0.8rem 0.8rem 0 #e6c77c;
+}
+
+.demo-page.demo-veterinarian .demo-contact-preview a,
+.demo-page.demo-veterinarian .demo-inline-link {
+  color: var(--demo-blue);
+}
+
+.demo-page.demo-veterinarian .demo-floating-actions a {
+  border-color: #e6c77c;
+  background: #1d3438;
+}
+
+.demo-page.demo-veterinarian .demo-floating-actions a:hover,
+.demo-page.demo-veterinarian .demo-floating-actions a:focus-visible {
+  color: var(--demo-navy);
+  background: #e6c77c;
+}
+
+.demo-page.demo-veterinarian .demo-floating-actions .demo-floating-contact {
+  border-color: var(--demo-orange);
+  background: var(--demo-orange);
+}
+
+.demo-page.demo-veterinarian .demo-floating-actions .demo-floating-contact:hover,
+.demo-page.demo-veterinarian .demo-floating-actions .demo-floating-contact:focus-visible {
+  color: var(--demo-white);
+  background: #a55f40;
+}
+
+@media (max-width: 38rem) {
+  .demo-page.demo-veterinarian .demo-banner-inner {
+    padding-right: 0;
+  }
+
+  .demo-page.demo-veterinarian .demo-banner {
+    padding-top: 4.3rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .demo-page.demo-veterinarian .demo-nav-cta {
+    flex: 1 0 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}
