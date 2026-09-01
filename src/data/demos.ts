@@ -10,6 +10,15 @@ export interface DemoSite {
 
 export const demoSites: DemoSite[] = [
   {
+    slug: 'consulente-lavoro',
+    title: 'Consulente del lavoro',
+    summary: 'Paghe, assunzioni, scadenze e richiesta di confronto.',
+    image: '/images/demo-consulente-lavoro/consulente-lavoro-hero.png',
+    imageAlt: 'Consulente del lavoro che esamina documenti con una titolare',
+    verticalPath: '/sito-web-consulente-lavoro/',
+    verticalLabel: 'Scopri il modello per consulenti del lavoro',
+  },
+  {
     slug: 'veterinario',
     title: 'Veterinario',
     summary: 'Specie seguite, prevenzione, prima visita e richiesta di informazioni.',

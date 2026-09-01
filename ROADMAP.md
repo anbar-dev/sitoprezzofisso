@@ -88,6 +88,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] sito web per nutrizionista
 - [x] sito web per fisioterapista
 - [x] sito web per veterinario
+- [x] sito web per consulente del lavoro
 
 ## Phase 6 — Demo
 
@@ -119,6 +120,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] Demo nutrizionista
 - [x] Demo fisioterapista
 - [x] Demo veterinario
+- [x] Demo consulente del lavoro
 
 ## Phase 7 — Contenuti commerciali SEO
 

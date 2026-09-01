@@ -34,6 +34,7 @@ Cluster iniziale:
 - sito web per nutrizionista.
 - sito web per fisioterapista.
 - sito web per veterinario.
+- sito web per consulente del lavoro.
 
 Ogni pagina deve essere veramente specifica per quella professione.
 

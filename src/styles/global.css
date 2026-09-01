@@ -5820,3 +5820,122 @@ h1 strong {
     text-align: center;
   }
 }
+
+/* Consulente del lavoro demo: an orderly, warm identity for payroll and employer support. */
+.demo-page.demo-labour-consultant {
+  --demo-navy: #273b46;
+  --demo-blue: #5b7b86;
+  --demo-blue-light: #e7eef0;
+  --demo-orange: #c47b54;
+  --demo-paper: #f4f1ea;
+  --demo-ink: #2f3c42;
+  --demo-muted: #6b777b;
+  --demo-line: #d7e0e2;
+}
+
+.demo-page.demo-labour-consultant .demo-banner-inner strong,
+.demo-page.demo-labour-consultant .demo-brand small,
+.demo-page.demo-labour-consultant .demo-eyebrow,
+.demo-page.demo-labour-consultant .demo-hero-meta b,
+.demo-page.demo-labour-consultant .demo-process-grid li > span {
+  color: #e7c47e;
+}
+
+.demo-page.demo-labour-consultant .demo-site-hero,
+.demo-page.demo-labour-consultant .demo-contact-section {
+  background: var(--demo-navy);
+}
+
+.demo-page.demo-labour-consultant .demo-brand-mark {
+  color: var(--demo-navy);
+  background: #e7c47e;
+}
+
+.demo-page.demo-labour-consultant .demo-nav-cta {
+  border-color: #e7c47e;
+  color: #e7c47e;
+}
+
+.demo-page.demo-labour-consultant .demo-nav-cta:hover,
+.demo-page.demo-labour-consultant .demo-nav-cta:focus-visible {
+  color: var(--demo-navy);
+  background: #e7c47e;
+}
+
+.demo-page.demo-labour-consultant .demo-button--solid {
+  color: var(--demo-navy);
+  background: #e7c47e;
+}
+
+.demo-page.demo-labour-consultant .demo-button--solid:hover,
+.demo-page.demo-labour-consultant .demo-button--solid:focus-visible {
+  background: #f1d99e;
+}
+
+.demo-page.demo-labour-consultant .demo-button--outline:hover,
+.demo-page.demo-labour-consultant .demo-button--outline:focus-visible,
+.demo-page.demo-labour-consultant .demo-button--light {
+  color: var(--demo-navy);
+  background: #e7c47e;
+}
+
+.demo-page.demo-labour-consultant .demo-button--outline:hover,
+.demo-page.demo-labour-consultant .demo-button--outline:focus-visible {
+  border-color: #e7c47e;
+}
+
+.demo-page.demo-labour-consultant .demo-area-list span {
+  border-color: #b8d0d2;
+  color: var(--demo-blue);
+  background: var(--demo-blue-light);
+}
+
+.demo-page.demo-labour-consultant .demo-contact-card {
+  border-top-color: var(--demo-orange);
+  box-shadow: 0.8rem 0.8rem 0 #e7c47e;
+}
+
+.demo-page.demo-labour-consultant .demo-contact-preview a,
+.demo-page.demo-labour-consultant .demo-inline-link {
+  color: var(--demo-blue);
+}
+
+.demo-page.demo-labour-consultant .demo-floating-actions a {
+  border-color: #e7c47e;
+  background: #1d3038;
+}
+
+.demo-page.demo-labour-consultant .demo-floating-actions a:hover,
+.demo-page.demo-labour-consultant .demo-floating-actions a:focus-visible {
+  color: var(--demo-navy);
+  background: #e7c47e;
+}
+
+.demo-page.demo-labour-consultant .demo-floating-actions .demo-floating-contact {
+  border-color: var(--demo-orange);
+  background: var(--demo-orange);
+}
+
+.demo-page.demo-labour-consultant .demo-floating-actions .demo-floating-contact:hover,
+.demo-page.demo-labour-consultant .demo-floating-actions .demo-floating-contact:focus-visible {
+  color: var(--demo-white);
+  background: #a65f40;
+}
+
+@media (max-width: 38rem) {
+  .demo-page.demo-labour-consultant .demo-banner-inner {
+    padding-right: 0;
+  }
+
+  .demo-page.demo-labour-consultant .demo-banner {
+    padding-top: 4.3rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .demo-page.demo-labour-consultant .demo-nav-cta {
+    flex: 1 0 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}
