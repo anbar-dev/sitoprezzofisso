@@ -10,6 +10,15 @@ export interface DemoSite {
 
 export const demoSites: DemoSite[] = [
   {
+    slug: 'nutrizionista',
+    title: 'Nutrizionista',
+    summary: 'Approccio, percorsi, prima visita e richiesta di informazioni.',
+    image: '/images/demo-nutrizionista/nutrizionista-hero.png',
+    imageAlt: 'Ingredienti stagionali e appunti senza testo leggibile in una cucina luminosa',
+    verticalPath: '/sito-web-nutrizionista/',
+    verticalLabel: 'Scopri il modello per nutrizionisti',
+  },
+  {
     slug: 'psicologo',
     title: 'Psicologo',
     summary: 'Approccio, aree di supporto, modalità pratiche e primo contatto.',

@@ -4841,6 +4841,125 @@ h1 strong {
   --demo-line: #d9e1db;
 }
 
+/* Nutrizionista demo: a calm, practical identity built around food, habits and conversation. */
+.demo-page.demo-nutritionist {
+  --demo-navy: #29443b;
+  --demo-blue: #6d8a78;
+  --demo-blue-light: #e7efe8;
+  --demo-orange: #c2794d;
+  --demo-paper: #f5f1e8;
+  --demo-ink: #2d3931;
+  --demo-muted: #6d786e;
+  --demo-line: #d9e1d6;
+}
+
+.demo-page.demo-nutritionist .demo-banner-inner strong,
+.demo-page.demo-nutritionist .demo-brand small,
+.demo-page.demo-nutritionist .demo-eyebrow,
+.demo-page.demo-nutritionist .demo-hero-meta b,
+.demo-page.demo-nutritionist .demo-process-grid li > span {
+  color: #e6c978;
+}
+
+.demo-page.demo-nutritionist .demo-site-hero,
+.demo-page.demo-nutritionist .demo-contact-section {
+  background: var(--demo-navy);
+}
+
+.demo-page.demo-nutritionist .demo-brand-mark {
+  color: var(--demo-navy);
+  background: #e6c978;
+}
+
+.demo-page.demo-nutritionist .demo-nav-cta {
+  border-color: #e6c978;
+  color: #e6c978;
+}
+
+.demo-page.demo-nutritionist .demo-nav-cta:hover,
+.demo-page.demo-nutritionist .demo-nav-cta:focus-visible {
+  color: var(--demo-navy);
+  background: #e6c978;
+}
+
+.demo-page.demo-nutritionist .demo-button--solid {
+  color: var(--demo-navy);
+  background: #e6c978;
+}
+
+.demo-page.demo-nutritionist .demo-button--solid:hover,
+.demo-page.demo-nutritionist .demo-button--solid:focus-visible {
+  background: #f1dda0;
+}
+
+.demo-page.demo-nutritionist .demo-button--outline:hover,
+.demo-page.demo-nutritionist .demo-button--outline:focus-visible,
+.demo-page.demo-nutritionist .demo-button--light {
+  color: var(--demo-navy);
+  background: #e6c978;
+}
+
+.demo-page.demo-nutritionist .demo-button--outline:hover,
+.demo-page.demo-nutritionist .demo-button--outline:focus-visible {
+  border-color: #e6c978;
+}
+
+.demo-page.demo-nutritionist .demo-area-list span {
+  border-color: #bfd4c2;
+  color: var(--demo-blue);
+  background: var(--demo-blue-light);
+}
+
+.demo-page.demo-nutritionist .demo-contact-card {
+  border-top-color: var(--demo-orange);
+  box-shadow: 0.8rem 0.8rem 0 #e6c978;
+}
+
+.demo-page.demo-nutritionist .demo-contact-preview a,
+.demo-page.demo-nutritionist .demo-inline-link {
+  color: var(--demo-blue);
+}
+
+.demo-page.demo-nutritionist .demo-floating-actions a {
+  border-color: #e6c978;
+  background: #20362f;
+}
+
+.demo-page.demo-nutritionist .demo-floating-actions a:hover,
+.demo-page.demo-nutritionist .demo-floating-actions a:focus-visible {
+  color: var(--demo-navy);
+  background: #e6c978;
+}
+
+.demo-page.demo-nutritionist .demo-floating-actions .demo-floating-contact {
+  border-color: var(--demo-orange);
+  background: var(--demo-orange);
+}
+
+.demo-page.demo-nutritionist .demo-floating-actions .demo-floating-contact:hover,
+.demo-page.demo-nutritionist .demo-floating-actions .demo-floating-contact:focus-visible {
+  color: var(--demo-white);
+  background: #a55f3b;
+}
+
+@media (max-width: 38rem) {
+  .demo-page.demo-nutritionist .demo-banner-inner {
+    padding-right: 0;
+  }
+
+  .demo-page.demo-nutritionist .demo-banner {
+    padding-top: 4.3rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .demo-page.demo-nutritionist .demo-nav-cta {
+    flex: 1 0 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
 .demo-page.demo-psychologist .demo-banner-inner strong,
 .demo-page.demo-psychologist .demo-eyebrow,
 .demo-page.demo-psychologist .demo-hero-meta b,

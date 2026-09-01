@@ -31,6 +31,7 @@ Cluster iniziale:
 - sito web per meccanico;
 - sito web per avvocato;
 - sito web per psicologo.
+- sito web per nutrizionista.
 
 Ogni pagina deve essere veramente specifica per quella professione.
 

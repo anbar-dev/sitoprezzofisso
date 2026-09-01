@@ -85,6 +85,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] sito web per architetto
 - [x] sito web per avvocato
 - [x] sito web per psicologo
+- [x] sito web per nutrizionista
 
 ## Phase 6 — Demo
 
@@ -113,6 +114,7 @@ Solo dopo approvazione della pagina idraulico:
 - [x] Demo architetto
 - [x] Demo avvocato
 - [x] Demo psicologo
+- [x] Demo nutrizionista
 
 ## Phase 7 — Contenuti commerciali SEO
 
